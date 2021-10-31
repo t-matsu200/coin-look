@@ -1,5 +1,6 @@
 import { VFC } from 'react';
 import Head from 'next/head';
+import icon from '../../../public/img/icon.png';
 
 interface MetaData {
   pageTitle?: string
@@ -16,8 +17,8 @@ const Seo: VFC<MetaData> = ({
 }) => {
   const title = pageTitle ? pageTitle : '【仮想通貨取引の始め方・やり方】￤やり方・取引所・口座解説・税金・リスクを紹介！ | CoinLook(コインルック)';
   const description = pageDescription ? pageDescription : '【仮想通貨取引について解説！】CoinLookは仮想通貨取引に興味のある方・取引を始めたい方に向けた暗号資産取引解説サイトです。';
-  const url = 'https://coin-look.net';
-  const imgUrl = '/img/icon.png';
+  const url = 'https://coin-app-1br.pages.dev';
+  const imgUrl = icon.src;
   const imgWidth = pageImgWidth ? pageImgWidth : 1280;
   const imgHeight = pageImgHeight ? pageImgHeight : 640;
 
