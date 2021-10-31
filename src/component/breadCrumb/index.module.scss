@@ -1,0 +1,20 @@
+.bread_crumb {
+  margin-top: 10px;
+}
+
+.bread_crumb a {
+  color: #999;
+  text-decoration: none;
+  font-size: 80%;
+}
+
+.bread_crumb a:not(:first-child):before {
+  content: " > ";
+}
+
+@media (max-width: 767px) {
+  .bread_crumb {
+    display: none;
+  }
+}
+

@@ -1,0 +1,142 @@
+.header_container {
+  background-color: #fff;
+  padding: 0 20px;
+}
+  
+.header {
+  max-width: 944px;
+  margin: 0 auto;
+}
+
+.inner {
+  max-width: 944px;
+  margin: 0 auto;
+}
+
+.first_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: flex-start;
+  font-size: 12px;
+}
+
+.first_row .logo {
+  -ms-flex-preferred-size: 155px;
+  flex-basis: 155px;
+}
+
+.first_row .logo img {
+  display: block;
+}
+
+.first_row div {
+  display: block;
+  padding-right: 20px;
+  color: #4a4a4a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-preferred-size: calc(100% - 275px);
+  flex-basis: calc(100% - 275px);
+  max-width: calc(100% - 275px);
+  padding: 0 20px;
+}
+
+.second_row {
+  border-bottom: 1px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  white-space: nowrap;
+  height: 31px;
+}
+
+.second_row::-webkit-scrollbar {
+  display: none;
+}
+
+.header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.header_menu div {
+  overflow: hidden;
+}
+
+.header_menu div a {
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-block;
+  color: #4a4a4a;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+}
+
+@media (max-width: 767px) {
+  .header_container {
+    padding: 0;
+  }
+
+  .inner {
+    margin: 50px 0 0;
+  }
+
+  .first_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .first_row .logo {
+    -ms-flex-preferred-size: 50px;
+    flex-basis: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    width: 100%;
+    z-index: 5;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .first_row div {
+    -ms-flex-preferred-size: 35px;
+    flex-basis: 35px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+

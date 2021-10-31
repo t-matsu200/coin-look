@@ -1,0 +1,137 @@
+
+.wrap_box {
+  padding: 0;
+  width: 420px;
+  border: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  letter-spacing: normal;
+  vertical-align: top;
+}
+
+.box_content {
+  background: #fff;
+  overflow: hidden;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,.12), 0 2px 3px 0 rgba(0,0,0,.22);
+  transition: .4s;
+}
+
+.box_content:hover {
+  box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+	transform: translateY(-4px);
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner img {
+  width: 140px;
+  max-width: 100%;
+  transition: .4s;
+  opacity: 1;
+  object-fit: cover;
+}
+
+.thumbnail {
+  margin-bottom: 0;
+  position: relative;
+  height: 157px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+.wrap_thumbnail {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.box_desc {
+  padding: 0;
+  width: calc(100% - 167px);
+  word-wrap: break-word;
+  position: relative;
+}
+
+.content_title {
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.content_title a {
+  width: 100%;
+  text-align: left;
+  display: block;
+  overflow-y: hidden;
+  color: #000;
+}
+
+.description {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #000;
+  height: 72px;
+  text-align: left;
+  overflow-y: hidden;
+}
+
+@media (min-width: 768px) {
+
+  .thumbnail {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .inner img {
+    width: 125px;
+  }
+
+  .wrap_box {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .thumbnail {
+    width: 25%;
+    height: 125px;
+  }
+
+  .wrap_thumbnail {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    background-color: transparent;
+  }
+
+  .box_desc {
+    width: calc(100% - 135px);
+  }
+
+  .content_title {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrap_box {
+    width: 50%;
+  }
+}
