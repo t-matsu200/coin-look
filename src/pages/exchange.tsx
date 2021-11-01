@@ -4,6 +4,7 @@ import BreadCrunb from '../component/breadCrumb';
 import ExchangeComponent from '../component/exchange';
 import SideBar from '../component/sideBar';
 import FooterArrow from '../component/footerArrow';
+import styles from '../styles/Home.module.scss';
 
 
 export default function Exchange(props) {
@@ -14,7 +15,7 @@ export default function Exchange(props) {
         pageDescription="【仮想通貨取引所について解説！】CoinLookは仮想通貨取引に興味のある方・取引を始めたい方に向けた仮想通貨取引解説サイトです。" />
       <BreadCrunb itemList={[{name: '取引所', path: '/exchange'}]} />
       <div>
-        <div style={{display: 'flex'}}>
+        <div className={styles.display_flex}>
           <ExchangeComponent />
           <SideBar />
         </div>

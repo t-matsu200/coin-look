@@ -132,7 +132,7 @@
 }
 
 .check_point:before {
-  content: "Check Point";
+  content: "Look Point";
   text-transform: capitalize;
   font-size: 16px;
   line-height: 21px;
@@ -161,6 +161,43 @@
   list-style: none;
   font-size: 12px;
   padding: 8px;
+}
+
+.app_link_title {
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  color: yellowgreen;
+}
+
+.app_a_style_ios {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 13px;
+  width: 250px;
+  height: 83px;
+}
+
+.app_icon_style_ios {
+  border-radius: 13px;
+  width: 250px;
+  height: 80px;
+}
+
+.app_a_style2 {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 13px;
+  width: 250px;
+  height: 108px;
+  margin-left: 20px;
+}
+
+.app_icon_style2 {
+  border-radius: '13px';
+  width: 268px;
+  height: 116px;
+  margin-top: 8px;
 }
 
 @media (min-width: 768px) {
