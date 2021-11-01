@@ -1,0 +1,11 @@
+.ad_disp {
+  display: inline-block;
+  min-width: 160px;
+  min-height: 620px;
+}
+
+@media screen and (max-width: 680px) {
+	.ad_disp {
+    display: none;
+  }
+}

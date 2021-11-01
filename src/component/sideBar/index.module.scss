@@ -1,0 +1,66 @@
+.container {
+  max-width: 372px;
+  margin: 0 auto;
+}
+
+.sticky {
+  position: sticky;
+  top: 10px;
+}
+
+.twitter_window header {
+  margin: 20px 0 5px;
+  border-bottom: 3px solid #10bdc2;
+}
+
+.inner {
+  margin: 0;
+}
+
+.twitter_window header h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-bottom: 3px;
+}
+
+.twitter_content {
+  background-color: #fff;
+  padding: 12px;
+  min-height: 390px;
+}
+
+.list_item a {
+  color: dodgerblue;
+  word-break: break-all;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .container {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+
+  .twitter_window header {
+    margin: 0;
+    border-bottom-width: 2px;
+  }
+
+  .inner {
+    width: 100%;
+    padding: 12px 12px 0;
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../component/header';
 import Footer from '../component/footer';
+import Analytics from '../component/analytics';
 import styles from './index.module.scss';
 
 
@@ -11,6 +12,7 @@ type LayoutProps = {
 function MainLayout({ children }: LayoutProps): JSX.Element {
   return (
     <>
+      <Analytics />
       <div className={styles.default_layout}>
         <Header />
         <div className={styles.base_display}>
