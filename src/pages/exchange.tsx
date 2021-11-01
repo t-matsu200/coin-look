@@ -3,6 +3,7 @@ import Seo from '../component/seo';
 import BreadCrunb from '../component/breadCrumb';
 import ExchangeComponent from '../component/exchange';
 import SideBar from '../component/sideBar';
+import FooterArrow from '../component/footerArrow';
 
 
 export default function Exchange(props) {
@@ -18,6 +19,7 @@ export default function Exchange(props) {
           <SideBar />
         </div>
       </div>
+      <FooterArrow />
     </MainLayout>
   );
 }

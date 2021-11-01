@@ -1,0 +1,65 @@
+.table_content_footer {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.table_scroll {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin: 40px;
+  pointer-events: none;
+}
+
+.table_scroll_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  pointer-events: all;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 30px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #10bdc2;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  border: 0;
+}
+
+.table_scroll_btn:hover {
+  opacity: 0.6;
+}
+
+.arrow_top {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 10px;
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  position: relative;
+}
