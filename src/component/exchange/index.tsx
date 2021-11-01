@@ -10,6 +10,8 @@ import dmmCoinLogo from '../../../public/img/dmmBitcoin.png';
 import bgCoincheckLogo from '../../../public/img/bg-coincheck.png';
 import bgBitFlyerLogo from '../../../public/img/bg-bitFlyer.png';
 import bgBitPointLogo from '../../../public/img/bg-bitpoint.png';
+import bgGmoCoinLogo from '../../../public/img/bg-gmoCoin.png';
+import bgDmmCoinLogo from '../../../public/img/bg-dmmCoin.png';
 
 
 export default function ExchangeComponent() {
@@ -143,9 +145,20 @@ export default function ExchangeComponent() {
                     <p>国内では最多となる17銘柄を扱っており、初心者にもおすすめです。</p>
                     <p>また{coincheck}では、国内初のIEO（Initial Exchange Offering）として「{pallet}」が実施されました。<br/>今後もまたIEOが実施される可能性もありますので、募集に応募できるように口座開設を済ませておくと良いでしょう。</p>
                     <p>「{pallet}」を購入できるのは今の所、{coincheck}だけです。<br/>専用のウォレットアプリがリリースされており、初心者でも簡単に{pltStaking}を始めることができます。</p>
+                    <p className={styles.app_link_title}>PLT公式ウォレットアプリ</p>
+                    <div style={{marginBottom: '40px'}}>
+                        <a href="https://apps.apple.com/us/app/plt%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88/id1581055631?itsct=apps_box_badge&amp;itscg=30200" className={styles.app_a_style_ios}><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1629936000&h=b4b2be2c77906d82686b2bb3270eca0e" alt="Download on the App Store" className={styles.app_icon_style_ios} /></a>
+                        <a href='https://play.google.com/store/apps/details?id=com.palettechain.wallet&hl=ja&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' className={styles.app_a_style2}><img alt='Google Play で手に入れよう' src='https://play.google.com/intl/ja/badges/static/images/badges/ja_badge_web_generic.png' className={styles.app_icon_style2}/></a>
+                    </div>
+                    <p>口座開設後、{coincheck}にログインしたら<span style={colorRed}>必ず2段階認証の設定</span>をしましょう。<br/>先にスマートフォンにGoogle Authenticator（Google 認証システム）をインストールしておくとスムーズです。</p>
+                    <p className={styles.app_link_title}>Google Authenticator</p>
+                    <div>
+                        <a href="https://apps.apple.com/us/app/google-authenticator/id388497605?itsct=apps_box_badge&amp;itscg=30200" className={styles.app_a_style_ios}><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1284940800&h=7fc6b39acc8ae5a42ad4b87ff8c7f88d" alt="Download on the App Store" className={styles.app_icon_style_ios} /></a>
+                        <a href='https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=ja&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' className={styles.app_a_style2}><img alt='Get it on Google Play' src='https://play.google.com/intl/us-en/badges/static/images/badges/en_badge_web_generic.png' className={styles.app_icon_style2} /></a>
+                    </div>
                 </div>
 
-                <div className={styles.check_point}>
+                {/* <div className={styles.check_point}>
                     <a className={styles.account_link} href="https://coincheck.com/registrations?code=VXNlcjoyOTA1Nzcw">口座開設する</a>
                     <div className={styles.appeal}><span>この招待リンクから本人確認を完了すると、500円をプレゼント！</span></div>
                     <ul className={styles.appeal_ul}>
@@ -154,7 +167,7 @@ export default function ExchangeComponent() {
                         <li>*URLに"code="が含まれることを確認の上、メールアドレス登録をお願いいたします。</li>
                         <li>*報酬対象は月間10人までとなります。1ヶ月間の申請者数が10人を超えた場合は報酬対象外になります。</li>
                     </ul>
-                </div>
+                </div> */}
             </div>
 
             <hr />
@@ -170,7 +183,7 @@ export default function ExchangeComponent() {
                     <p>また、テゾス({tezos})やポルカドット({polkadot})など、{coincheck}では扱っていない銘柄も取り扱っていますので、こちらも口座開設を済ませておく事をおすすめします。</p>
                 </div>
 
-                <div className={styles.check_point}>
+                {/* <div className={styles.check_point}>
                     <a className={styles.account_link} href="https://bitflyer.com/invitation?id=e3ilarco&lang=ja-JP">公式アプリをダウンロード</a>
                     <div className={styles.appeal}><span>この招待リンクから公式アプリをダウンロードすると、<br/>500円をプレゼント！</span></div>
                     <ul className={styles.appeal_ul}>
@@ -178,7 +191,7 @@ export default function ExchangeComponent() {
                         <li>*この招待リンク以外から会員登録した場合には、報酬付与は無効となります。</li>
                         <li>*紹介URLをクリックして表示されたページから、別のページに移動してしまうと、報酬対象外になります。</li>
                     </ul>
-                </div>
+                </div> */}
             </div>
 
             <hr />
@@ -194,7 +207,7 @@ export default function ExchangeComponent() {
                 </div>
 
 
-                <div className={styles.check_point}>
+                {/* <div className={styles.check_point}>
                     <a className={styles.account_link} href="https://www.bitpoint.co.jp/lp/referral/?invitationCd=YIHBHIRLFT&afid=PaAKUxGd&argument=E4y65Xyx&dmai=a60e69a5d44eea">口座開設する</a>
                     <div className={styles.appeal}><span>この招待リンクから口座開設を完了すると、1000円をプレゼント！</span></div>
                     <ul className={styles.appeal_ul}>
@@ -202,6 +215,33 @@ export default function ExchangeComponent() {
                         <li>*紹介URLをクリックして表示されたページから、別のページに移動してしまうと、報酬対象外になります。</li>
                         <li>*URLに"invitationCd="が含まれることを確認の上、口座開設をお願いいたします。</li>
                     </ul>
+                </div> */}
+            </div>
+
+            <hr />
+            <h3>GMOコイン</h3>
+            <div className={styles.exchange_block}>
+                <div className={styles.bg_logo}>
+                    <img src={bgGmoCoinLogo.src} alt="GMO coin logo" />
+                </div>
+                <div className={styles.content_main}>
+                    <p>2016年に設立されたGMOコイン株式会社が運営する暗号資産取引所。</p>
+                    <p>スマホアプリの使い勝手に定評があり、初心者にもおすすめの取引所です。</p>
+                    <p>基本的な手数料が全部無料であることも特徴の一つです。<br/>他の取引所やウォレットに小額の送金が必要になった場合など、口座開設を済ませておくとスムーズに利用できて便利です。</p>
+                </div>
+            </div>
+
+            <hr />
+            <h3>DMM Bitcoin</h3>
+            <div className={styles.exchange_block}>
+                <div className={styles.bg_logo}>
+                    <img src={bgDmmCoinLogo.src} alt="DMM Bitcoin logo" />
+                </div>
+                <div className={styles.content_main}>
+                    <p>2016年に設立された株式会社DMM Bitcoinが運営する暗号資産取引所。</p>
+                    <p>アルトコインのレバレッジ取引を行うことができる点に特徴があります。<br/>レバレッジ取引とは元手を担保にその何倍もの取引を可能にする方法です。<br/>他の取引所ではアルトコインのレバレッジ取引は、あまり対応していないことが多いです。</p>
+                    <p>また、送金手数料が他の取引所に比べ割安なのが特徴です。</p>
+                    <p>よく口座開設キャンペーンを実施している印象がありますので、他の取引所よりもお得に口座開設できるかもしれません。</p>
                 </div>
             </div>
 

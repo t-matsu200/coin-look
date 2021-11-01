@@ -4,8 +4,8 @@
 }
 
 .content img {
-  width: 92%;
-  margin: auto;
+  width: 80%;
+  margin-left: 8px;
   display: block;
 }
 
@@ -63,9 +63,7 @@
 
 @media (min-width: 768px) {
   .content {
-    max-width: 624px;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 624px;
     flex: 0 0 624px;
     margin: 0 16px 40px 0;
   }
