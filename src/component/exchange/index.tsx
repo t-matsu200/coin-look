@@ -146,13 +146,13 @@ export default function ExchangeComponent() {
                     <p>また{coincheck}では、国内初のIEO（Initial Exchange Offering）として「{pallet}」が実施されました。<br/>今後もまたIEOが実施される可能性もありますので、募集に応募できるように口座開設を済ませておくと良いでしょう。</p>
                     <p>「{pallet}」を購入できるのは今の所、{coincheck}だけです。<br/>専用のウォレットアプリがリリースされており、初心者でも簡単に{pltStaking}を始めることができます。</p>
                     <p className={styles.app_link_title}>PLT公式ウォレットアプリ</p>
-                    <div style={{marginBottom: '40px'}}>
+                    <div className={styles.app_icons}>
                         <a href="https://apps.apple.com/us/app/plt%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88/id1581055631?itsct=apps_box_badge&amp;itscg=30200" className={styles.app_a_style_ios}><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1629936000&h=b4b2be2c77906d82686b2bb3270eca0e" alt="Download on the App Store" className={styles.app_icon_style_ios} /></a>
                         <a href='https://play.google.com/store/apps/details?id=com.palettechain.wallet&hl=ja&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' className={styles.app_a_style2}><img alt='Google Play で手に入れよう' src='https://play.google.com/intl/ja/badges/static/images/badges/ja_badge_web_generic.png' className={styles.app_icon_style2}/></a>
                     </div>
                     <p>口座開設後、{coincheck}にログインしたら<span style={colorRed}>必ず2段階認証の設定</span>をしましょう。<br/>先にスマートフォンにGoogle Authenticator（Google 認証システム）をインストールしておくとスムーズです。</p>
                     <p className={styles.app_link_title}>Google Authenticator</p>
-                    <div>
+                    <div className={styles.app_icons}>
                         <a href="https://apps.apple.com/us/app/google-authenticator/id388497605?itsct=apps_box_badge&amp;itscg=30200" className={styles.app_a_style_ios}><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1284940800&h=7fc6b39acc8ae5a42ad4b87ff8c7f88d" alt="Download on the App Store" className={styles.app_icon_style_ios} /></a>
                         <a href='https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=ja&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' className={styles.app_a_style2}><img alt='Get it on Google Play' src='https://play.google.com/intl/us-en/badges/static/images/badges/en_badge_web_generic.png' className={styles.app_icon_style2} /></a>
                     </div>

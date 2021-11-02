@@ -163,6 +163,10 @@
   padding: 8px;
 }
 
+.app_icons {
+  margin-bottom: 40px;
+}
+
 .app_link_title {
   margin: auto;
   text-align: center;
@@ -198,6 +202,21 @@
   width: 268px;
   height: 116px;
   margin-top: 8px;
+}
+
+
+@media (max-width: 480px) {
+  .bg_logo img {
+    max-width: 380px;
+  }
+
+  .app_icons {
+    text-align: center;
+  }
+
+  .app_a_style2 {
+    margin-left: -12px;
+  }
 }
 
 @media (min-width: 768px) {

@@ -175,3 +175,9 @@
     max-width: 1170px;
   }
 }
+
+@media (max-width: 480px) {
+  .footer_sitemap {
+    display: contents;
+  }
+}
