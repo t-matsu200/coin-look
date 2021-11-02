@@ -49,6 +49,10 @@ thead, tbody, tfoot, tr, td, th {
   border-width: 0;
 }
 
+.padding-left-40 {
+  padding-left: 40px;
+}
+
 @media (max-width: 767px) {
   html {
     -webkit-user-select: none;
