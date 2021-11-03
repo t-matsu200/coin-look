@@ -20,6 +20,7 @@ function HomeComponent() {
         <div className={styles.content_body}>
           <p>当ブログは仮想通貨（暗号資産）取引初心者に向けた解説サイトです。</p>
           <p>実際に仮想通貨取引所を利用してみて感じた事などを記事にしていますので、是非参考にしてみてください。</p>
+          <p>資金決済法の改正（令和2年5月1日施行）により、法令上、<strong>「仮想通貨」</strong>は<strong>「暗号資産」</strong>へ呼称変更されました。</p>
         </div>
       </div>
       <div className={styles.title_box}>

@@ -58,7 +58,7 @@ export default function ExchangeComponent() {
         </div>
         <div className={styles.content_body}>
             <div className={styles.content_main}>
-                <p><span style={colorRed}><strong>仮想通貨取引初心者の方には、海外の取引所ではなく国内の取引所での仮想通取引をおすすめします。</strong></span></p>
+                <p><strong>仮想通貨取引初心者の方には、海外の取引所ではなく国内の取引所での仮想通取引をおすすめします。</strong></p>
                 <p>この記事では仮想通貨初心者におすすめの<span style={colorYellowBorder}>国内取引所の特徴</span>や<span style={colorYellowBorder}>海外の取引所をおすすめしない理由</span>について解説していきます。</p>
                 <p>この記事を読めば、<strong>仮想通貨初心者の方が日本国内の取引所を利用した方が良い理由</strong>が明らかになります。</p>
             </div>
@@ -300,6 +300,7 @@ export default function ExchangeComponent() {
                     </ul>
                 </div>
             </div>
+            <Advertisement htmlString={AppConstant.biccore} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
         </div>
       </div>
     </>
