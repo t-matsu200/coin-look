@@ -53,6 +53,10 @@ thead, tbody, tfoot, tr, td, th {
   padding-left: 40px;
 }
 
+.danger {
+  color: red;
+}
+
 @media (max-width: 767px) {
   html {
     -webkit-user-select: none;
