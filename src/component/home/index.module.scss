@@ -69,6 +69,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .wrap_title:before, .wrap_title:after {
+    width: 30%;
+  }
+}
+
 @media screen and (max-width: 1040px) {
   .grid_box {
     margin-top: 20px;

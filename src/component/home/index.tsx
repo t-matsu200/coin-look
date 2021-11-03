@@ -1,6 +1,9 @@
 import styles from './index.module.scss';
 import HomeArticle from '../../component/homeArticle';
 import ContentHeader from '../../component/contentHeader';
+import Advertisement from '../advertisement';
+import AppConstant from '../../constant';
+
 import exchangeLogo from '../../../public/img/exchange.png';
 import bankLogo from '../../../public/img/bank.png';
 import homeLogo from '../../../public/img/bg-home.png';
@@ -29,6 +32,7 @@ function HomeComponent() {
           <HomeArticle title="口座解説｜暗号資産取引の際に必要となるオススメの銀行口座を紹介！" description="暗号資産取引所の口座解説方法や、取引所に入金する際に必要となる銀行口座について解説！"
             href="/account" imgUrl={bankLogo} />
         </div>
+        <Advertisement htmlString={AppConstant.biccore} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" display="block" />
       </div>
     </>
   );

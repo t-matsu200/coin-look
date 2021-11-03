@@ -10,7 +10,7 @@ export default function AccountComponent() {
   const subTitle2 = '口座開設後の流れ';
   const subTitle3 = '仮想通貨取引口座への入金・手数料';
   const subTitle4 = '複数の取引所で口座開設するメリット';
-  const subTitle5 = '仮想通貨購入までの流れ まとめ';
+  const subTitle5 = '仮想通貨取引所の口座開設 まとめ';
   const coincheck = <a href="https://coincheck.com/ja" target="_blank" rel="noopener noreferrer" style={{color: '#5fc7ca', textDecoration: 'underline'}}>Coincheck</a>
 
   return (
@@ -194,7 +194,7 @@ export default function AccountComponent() {
                     <ul className={styles.matome_ul}>
                         <li><strong>口座開設費・維持費は無料です。</strong></li>
                         <li>口座開設審査に少し時間がかかる事があります。</li>
-                        <li><strong>住信SBIネット銀行</strong>は入金手数料が安くてお得です。</li>
+                        <li>日本円を入金する時は<strong>住信SBIネット銀行</strong>の口座が有ると入金手数料が安くてお得です。</li>
                         <li>複数の取引所で口座開設することで<strong>新規銘柄の上場・IEO</strong>などに対し、すぐにアクションを起こす事ができます。</li>
                     </ul>
                 </div>
