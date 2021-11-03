@@ -1,6 +1,9 @@
 import styles from './index.module.scss';
 import ContentHeader from '../../component/contentHeader';
 import TableContent from '../../component/tableContent';
+import Advertisement from '../advertisement';
+import AppConstant from '../../constant';
+
 import chartLogo from '../../../public/img/chart1.svg';
 import coincheckLogo from '../../../public/img/coincheck.png';
 import bitFlyerLogo from '../../../public/img/bitFlyer.png';
@@ -66,6 +69,8 @@ export default function ExchangeComponent() {
               {subTitle: subTitle4, path: '/exchange', as: '#sec4'},
               {subTitle: subTitle5, path: '/exchange', as: '#sec5'}
               ]} />
+
+            <Advertisement htmlString={AppConstant.biccore} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
             <h2 id="sec1">{subTitle1}</h2>
             <p>この記事で紹介する<span style={colorYellowBorder}>国内の仮想通貨取引所</span>の一覧となります。</p><br/>
