@@ -10,11 +10,14 @@ import bitFlyerLogo from '../../../public/img/bitFlyer.png';
 import bitPointLogo from '../../../public/img/BITPoint.png';
 import gmoCoinLogo from '../../../public/img/GMOcoin.png';
 import dmmCoinLogo from '../../../public/img/dmmBitcoin.png';
+import huobiLogo from '../../../public/img/huobi.png';
 import bgCoincheckLogo from '../../../public/img/bg-coincheck.png';
 import bgBitFlyerLogo from '../../../public/img/bg-bitFlyer.png';
 import bgBitPointLogo from '../../../public/img/bg-bitpoint.png';
 import bgGmoCoinLogo from '../../../public/img/bg-gmoCoin.png';
 import bgDmmCoinLogo from '../../../public/img/bg-dmmCoin.png';
+import bgHuobiLogo from '../../../public/img/bg-huobi.png';
+import huobiCampaign from '../../../public/img/huobi-campaign.png';
 
 
 export default function ExchangeComponent() {
@@ -70,7 +73,7 @@ export default function ExchangeComponent() {
               {subTitle: subTitle5, path: '/exchange', as: '#sec5'}
               ]} />
 
-            <Advertisement htmlString={AppConstant.biccore} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
+            <Advertisement htmlString={AppConstant.huobiRect} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
             <h2 id="sec1">{subTitle1}</h2>
             <p>この記事で紹介する<span style={colorYellowBorder}>国内の仮想通貨取引所</span>の一覧となります。</p><br/>
@@ -87,7 +90,7 @@ export default function ExchangeComponent() {
                     <tbody>
                         <tr>
                             <td>
-                                <a href="https://coincheck.com/ja" target="_blank" rel="noopener noreferrer">
+                                <a href="https://coincheck.com/ja/registrations?code=VXNlcjoyOTA1Nzcw" target="_blank" rel="noopener noreferrer">
                                     <div><img src={coincheckLogo.src} alt="Coincheck logo"></img></div>Coincheck
                                 </a>
                             </td>
@@ -107,11 +110,21 @@ export default function ExchangeComponent() {
                         </tr>
                         <tr>
                             <td>
-                                <a href="https://www.bitpoint.co.jp" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.bitpoint.co.jp/lp/referral/?invitationCd=YIHBHIRLFT&afid=PaAKUxGd&argument=E4y65Xyx&dmai=a60e69a5d44eea" target="_blank" rel="noopener noreferrer">
                                     <div><img src={bitPointLogo.src} alt="BITPoint logo"></img></div>BITPoint
                                 </a>
                             </td>
                             <td>10種類</td>
+                            <td>○</td>
+                            <td>○</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://h.accesstrade.net/sp/cc?rk=0100orb700lt2u" rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
+                                    <div><img src={huobiLogo.src} alt="Huobi logo"></img></div>Huobi Japan
+                                </a>
+                            </td>
+                            <td>14種類</td>
                             <td>○</td>
                             <td>○</td>
                         </tr>
@@ -150,6 +163,11 @@ export default function ExchangeComponent() {
                     <p>国内では最多となる17銘柄を扱っており、初心者にもおすすめです。</p>
                     <p>また{coincheck}では、国内初のIEO（Initial Exchange Offering）として「{pallet}」が実施されました。<br/>今後もまたIEOが実施される可能性もありますので、募集に応募できるように口座開設を済ませておくと良いでしょう。</p>
                     <p>「{pallet}」を購入できるのは今の所、{coincheck}だけです。<br/>専用のウォレットアプリがリリースされており、初心者でも簡単に{pltStaking}を始めることができます。</p>
+
+                    <div className={styles.check_point}>
+                        <a className={styles.account_link} href="https://coincheck.com/registrations?code=VXNlcjoyOTA1Nzcw">口座開設する</a>
+                    </div>
+
                     <p className={styles.app_link_title}>PLT公式ウォレットアプリ</p>
                     <div className={styles.app_icons}>
                         <a href="https://apps.apple.com/us/app/plt%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88/id1581055631?itsct=apps_box_badge&amp;itscg=30200" className={styles.app_a_style_ios}><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1629936000&h=b4b2be2c77906d82686b2bb3270eca0e" alt="Download on the App Store" className={styles.app_icon_style_ios} /></a>
@@ -162,17 +180,6 @@ export default function ExchangeComponent() {
                         <a href='https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=ja&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' className={styles.app_a_style2}><img alt='Get it on Google Play' src='https://play.google.com/intl/us-en/badges/static/images/badges/en_badge_web_generic.png' className={styles.app_icon_style2} /></a>
                     </div>
                 </div>
-
-                {/* <div className={styles.check_point}>
-                    <a className={styles.account_link} href="https://coincheck.com/registrations?code=VXNlcjoyOTA1Nzcw">口座開設する</a>
-                    <div className={styles.appeal}><span>この招待リンクから本人確認を完了すると、500円をプレゼント！</span></div>
-                    <ul className={styles.appeal_ul}>
-                        <li>*この招待リンク以外から会員登録した場合には、報酬付与は無効となります。</li>
-                        <li>*紹介URLをクリックして表示されたページから、別のページに移動してしまうと、報酬対象外になります。</li>
-                        <li>*URLに"code="が含まれることを確認の上、メールアドレス登録をお願いいたします。</li>
-                        <li>*報酬対象は月間10人までとなります。1ヶ月間の申請者数が10人を超えた場合は報酬対象外になります。</li>
-                    </ul>
-                </div> */}
             </div>
 
             <hr />
@@ -188,15 +195,9 @@ export default function ExchangeComponent() {
                     <p>また、テゾス({tezos})やポルカドット({polkadot})など、{coincheck}では扱っていない銘柄も取り扱っていますので、こちらも口座開設を済ませておく事をおすすめします。</p>
                 </div>
 
-                {/* <div className={styles.check_point}>
+                <div className={styles.check_point}>
                     <a className={styles.account_link} href="https://bitflyer.com/invitation?id=e3ilarco&lang=ja-JP">公式アプリをダウンロード</a>
-                    <div className={styles.appeal}><span>この招待リンクから公式アプリをダウンロードすると、<br/>500円をプレゼント！</span></div>
-                    <ul className={styles.appeal_ul}>
-                        <li>*この招待リンクはスマートフォンからアクセスした時のみ、有効となります。</li>
-                        <li>*この招待リンク以外から会員登録した場合には、報酬付与は無効となります。</li>
-                        <li>*紹介URLをクリックして表示されたページから、別のページに移動してしまうと、報酬対象外になります。</li>
-                    </ul>
-                </div> */}
+                </div>
             </div>
 
             <hr />
@@ -212,15 +213,31 @@ export default function ExchangeComponent() {
                 </div>
 
 
-                {/* <div className={styles.check_point}>
+                <div className={styles.check_point}>
                     <a className={styles.account_link} href="https://www.bitpoint.co.jp/lp/referral/?invitationCd=YIHBHIRLFT&afid=PaAKUxGd&argument=E4y65Xyx&dmai=a60e69a5d44eea">口座開設する</a>
-                    <div className={styles.appeal}><span>この招待リンクから口座開設を完了すると、1000円をプレゼント！</span></div>
-                    <ul className={styles.appeal_ul}>
-                        <li>*この招待リンク以外から会員登録した場合には、報酬付与は無効となります。</li>
-                        <li>*紹介URLをクリックして表示されたページから、別のページに移動してしまうと、報酬対象外になります。</li>
-                        <li>*URLに"invitationCd="が含まれることを確認の上、口座開設をお願いいたします。</li>
-                    </ul>
-                </div> */}
+                </div>
+            </div>
+
+            <hr />
+            <h3>フォビジャパン（Huobi Japaan）</h3>
+            <div className={styles.exchange_block}>
+                <div className={styles.bg_logo}>
+                    <img src={bgHuobiLogo.src} alt="Huobi Japan logo" />
+                </div>
+                <div className={styles.content_main}>
+                    <p>170か国で数千万人のユーザーにサービスを提供する<strong>Huobiグループ</strong>の日本法人、フォビジャパン株式会社が運営する暗号資産取引所。</p>
+                    <p>Huobiグループは<strong>セキュリティーが強い</strong>ことで高い評価を得ているようです。</p>
+                    <p>日本の法律に則った金融サービスを展開しており、<strong>入金手数料は無料</strong>です。</p>
+                    <p><strong>HT（フォビトークン）</strong>というEthereumブロックチェーン上の分散型仮想通貨を取り扱っており、<strong>保有量に応じて全8段階の取引手数料の割引</strong>が行われます。2021/11/1現在、評価額は1,500円前後となっています。</p>
+                    <p>2022/1/24まで、<span className="yellow-border">HTが最大30,000円相当貰えるキャンペーンを実施中</span>ですので、口座開設するなら今がお得です。</p>
+                </div>
+                <div className={styles.check_point}>
+                    <a href="https://h.accesstrade.net/sp/cc?rk=0100orb700lt2u" rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
+                        <div className={styles.appeal_img}>
+                            <img src={huobiCampaign.src} alt="フォビジャパン（Huobi Japan)" />
+                        </div>
+                    </a>
+                </div>
             </div>
 
             <hr />

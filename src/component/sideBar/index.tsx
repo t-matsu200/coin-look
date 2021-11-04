@@ -61,7 +61,7 @@ export default function SideBar() {
             <TwitterBlock />
           </div>
           <div className={styles.advertisement_block}>
-            <Advertisement htmlString={htmlString1} />
+            <Advertisement htmlString={htmlString1} padding="12px 0 0" />
           </div>
           <div className={styles.advertisement_block}>
             <Advertisement htmlString={htmlString2} />

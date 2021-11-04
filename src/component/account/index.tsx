@@ -5,6 +5,12 @@ import Advertisement from '../advertisement';
 import AppConstant from '../../constant';
 
 import accountLogo from '../../../public/img/bg-account.png';
+import bgCoincheckLogo from '../../../public/img/bg-coincheck.png';
+import bgBitFlyerLogo from '../../../public/img/bg-bitFlyer.png';
+import bgBitPointLogo from '../../../public/img/bg-bitpoint.png';
+import bgGmoCoinLogo from '../../../public/img/bg-gmoCoin.png';
+import bgDmmCoinLogo from '../../../public/img/bg-dmmCoin.png';
+import bgHuobiLogo from '../../../public/img/bg-huobi.png';
 
 
 export default function AccountComponent() {
@@ -39,7 +45,7 @@ export default function AccountComponent() {
             {subTitle: subTitle5, path: '/account', as: '#sec5'}
             ]} />
           
-          <Advertisement htmlString={AppConstant.biccore} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
+          <Advertisement htmlString={AppConstant.huobiRect} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
           <h2 id="sec1">{subTitle1}</h2>
           <div>
@@ -86,6 +92,7 @@ export default function AccountComponent() {
 
               <h3>Coincheck</h3>
               <div className={styles.table_block}>
+                <img src={bgCoincheckLogo.src} alt="Coincheck logo" />
                 <table>
                   <thead>
                     <tr>
@@ -103,6 +110,7 @@ export default function AccountComponent() {
               </div>
 
               <h3>bitFlyer</h3>
+              <img src={bgBitFlyerLogo.src} alt="bitFlyer logo" />
               <div className={styles.table_block}>
                 <table>
                   <thead>
@@ -123,6 +131,7 @@ export default function AccountComponent() {
               </div>
 
               <h3>BITPoint</h3>
+              <img src={bgBitPointLogo.src} alt="BITPoint logo" style={{margin: "60px 0 60px"}} />
               <div className={styles.table_block}>
                 <table>
                   <thead>
@@ -142,7 +151,29 @@ export default function AccountComponent() {
                 </table>
               </div>
 
+              <h3>Huobi Japan</h3>
+              <img src={bgHuobiLogo.src} alt="Huobi logo" />
+              <div className={styles.table_block}>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>入金手数料</th>
+                      <td>
+                        <div>・銀行振込：無料<br/>・クイック入金：無料</div>
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>備考</th>
+                      <td>・入出金手数料が無料<br/>・HT保有量に応じて取引手数料が割引</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
               <h3>GMOコイン</h3>
+              <img src={bgGmoCoinLogo.src} alt="GMO coin logo" />
               <div className={styles.table_block}>
                 <table>
                   <thead>
@@ -163,6 +194,7 @@ export default function AccountComponent() {
               </div>
 
               <h3>DMM Bitcoin</h3>
+              <img src={bgDmmCoinLogo.src} alt="DMM Bitcoin logo" />
               <div className={styles.table_block}>
                 <table>
                   <thead>

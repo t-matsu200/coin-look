@@ -49,7 +49,7 @@ export default function BeginnerComponent() {
             {subTitle: subTitle6, path: '/beginner', as: '#sec6'}
             ]} />
           
-          <Advertisement htmlString={AppConstant.biccore} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
+          <Advertisement htmlString={AppConstant.huobiRect} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
           <h2 id="sec1">{subTitle1}</h2>
           <div className={styles.check_point}>
@@ -107,7 +107,8 @@ export default function BeginnerComponent() {
               <p><strong>受け取った通貨の取得価額</strong>は、報酬を受け取る権利が確定した時点での時価 * 数量になります。</p>
               <p>頻繁に利益が発生する場合は受け取る権利が確定した回数分、(受け取る権利が確定した時点での時価 * 数量)を計算する必要があることに注意してください。</p>
               <p>なお、この計算方法は<strong>国内で得た場合</strong>の計算方法です。</p>
-              <p><strong>ステーキング等で得た利益を売却する場合</strong>は、更にその売却額を雑所得に加算します。</p>
+              <p><strong>ステーキング等で得た利益を売却する場合</strong>は、以下のように雑所得に加算します。<br/>計算結果がマイナスの場合、加算はされません。</p>
+              <p><strong>売却額 - (受け取る権利が確定した時点での時価 * 数量)</strong></p>
             </div>
           </div>
 
