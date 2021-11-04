@@ -18,6 +18,7 @@ import bgGmoCoinLogo from '../../../public/img/bg-gmoCoin.png';
 import bgDmmCoinLogo from '../../../public/img/bg-dmmCoin.png';
 import bgHuobiLogo from '../../../public/img/bg-huobi.png';
 import huobiCampaign from '../../../public/img/huobi-campaign.png';
+import bitpointCampaign from '../../../public/img/bitpoint-campaign.png';
 
 
 export default function ExchangeComponent() {
@@ -214,7 +215,11 @@ export default function ExchangeComponent() {
 
 
                 <div className={styles.check_point}>
-                    <a className={styles.account_link} href="https://www.bitpoint.co.jp/lp/referral/?invitationCd=YIHBHIRLFT&afid=PaAKUxGd&argument=E4y65Xyx&dmai=a60e69a5d44eea">口座開設する</a>
+                    <a href="https://www.bitpoint.co.jp/lp/referral/?invitationCd=YIHBHIRLFT&afid=PaAKUxGd&argument=E4y65Xyx&dmai=a60e69a5d44eea"  target="_blank" rel="noopener noreferrer">
+                        <div className={styles.appeal_img}>
+                            <img src={bitpointCampaign.src} alt="BITPoint" />
+                        </div>
+                    </a>
                 </div>
             </div>
 
