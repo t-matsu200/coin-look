@@ -55,6 +55,7 @@
   color: #fff;
   font-weight: 300;
   text-align: center;
+  max-width: 104px;
 }
 
 .table_block table tr:nth-child(even) td {
@@ -69,6 +70,10 @@
   padding: 10px;
   vertical-align: middle;
   border: solid 1px #647190;;
+}
+
+.table_block table td {
+  width: 100%;
 }
 
 .account_link{

@@ -118,6 +118,12 @@
   color: #f8f8ff;
 }
 
+.appeal_img {
+  animation: vibrations 2s linear infinite;
+  transition: 0.3s;
+  text-align: center;
+}
+
 .foreign_list ul {
   padding-top: 12px;
   padding-left: 32px;

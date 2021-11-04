@@ -65,7 +65,7 @@ export default function AccountComponent() {
             {subTitle: subTitle5, path: '/account', as: '#sec5'}
             ]} />
 
-          <Advertisement htmlString={AppConstant.biccore} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
+          <Advertisement htmlString={AppConstant.huobiRect} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
           <h2 id="sec1">{subTitle1}</h2>
           <div>
@@ -85,6 +85,9 @@ export default function AccountComponent() {
                 <p>また、仮想通貨初心者の方には<span className={styles.color_yellow_border}>購入した通貨の長期保有</span>をおすすめします。<br/>短期間での売買は頻繁に価格推移を確認しなければならず、精神がすり減る作業になりますので、初心者にはおすすめしません。</p>
               </div>
           </div>
+
+          <hr/>
+          <Advertisement htmlString={AppConstant.biccore} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
           <h2 id="sec2">{subTitle2}</h2>
           <div>
@@ -455,6 +458,9 @@ export default function AccountComponent() {
             </div>
 
           </div>
+
+          <hr />
+          <Advertisement htmlString={AppConstant.huobiMinWide} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
           <h2 id="sec4">{subTitle4}</h2>
           <div>

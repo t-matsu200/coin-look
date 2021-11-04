@@ -57,6 +57,12 @@ thead, tbody, tfoot, tr, td, th {
   color: red;
 }
 
+.yellow-border {
+  color: #000000;
+  background-color: #ffff00;
+  font-weight: bold;
+}
+
 @media (max-width: 767px) {
   html {
     -webkit-user-select: none;
