@@ -58,12 +58,9 @@
   max-width: 104px;
 }
 
-.table_block table tr:nth-child(even) td {
-  background: #f2f5fa;
-}
-
-.table_block table td a img {
-  padding-right: 8px;
+.table_block img {
+  display: block;
+  margin: auto;
 }
 
 .table_block table th, .table_block table td {
