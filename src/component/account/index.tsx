@@ -102,6 +102,10 @@ export default function AccountComponent() {
                   </thead>
                   <tbody>
                     <tr>
+                      <th>板取引可能</th>
+                      <td>BTC, ETH, FCT, MONA, PLT</td>
+                    </tr>
+                    <tr>
                       <th>備考</th>
                       <td>・銀行振込で無料となるのは「GMOあおぞらネット銀行」と「住信SBIネット銀行」のみ<br/>・手数料が770円となる範囲は入金額29,000円まで</td>
                     </tr>
@@ -110,8 +114,8 @@ export default function AccountComponent() {
               </div>
 
               <h3>bitFlyer</h3>
-              <img src={bgBitFlyerLogo.src} alt="bitFlyer logo" />
               <div className={styles.table_block}>
+                <img src={bgBitFlyerLogo.src} alt="bitFlyer logo" />
                 <table>
                   <thead>
                     <tr>
@@ -123,6 +127,10 @@ export default function AccountComponent() {
                   </thead>
                   <tbody>
                     <tr>
+                      <th>板取引可能</th>
+                      <td>BTC, XRP, ETH, XLM, MONA</td>
+                    </tr>
+                    <tr>
                       <th>備考</th>
                       <td>・銀行振込で無料となるのは「住信SBIネット銀行」のみ</td>
                     </tr>
@@ -131,8 +139,8 @@ export default function AccountComponent() {
               </div>
 
               <h3>BITPoint</h3>
-              <img src={bgBitPointLogo.src} alt="BITPoint logo" style={{margin: "60px 0 60px"}} />
               <div className={styles.table_block}>
+                <img src={bgBitPointLogo.src} alt="BITPoint logo" style={{margin: "60px 0 60px"}} />
                 <table>
                   <thead>
                     <tr>
@@ -144,6 +152,10 @@ export default function AccountComponent() {
                   </thead>
                   <tbody>
                     <tr>
+                      <th>板取引可能</th>
+                      <td>BTC, TRX, XRP, ETH, BCH, LTC, BAT</td>
+                    </tr>
+                    <tr>
                       <th>備考</th>
                       <td>・即時入金ができるのは「住信SBIネット銀行」と「PayPay銀行」、「イオン銀行」のみ</td>
                     </tr>
@@ -152,8 +164,8 @@ export default function AccountComponent() {
               </div>
 
               <h3>Huobi Japan</h3>
-              <img src={bgHuobiLogo.src} alt="Huobi logo" />
               <div className={styles.table_block}>
+                <img src={bgHuobiLogo.src} alt="Huobi logo" />
                 <table>
                   <thead>
                     <tr>
@@ -173,8 +185,8 @@ export default function AccountComponent() {
               </div>
 
               <h3>GMOコイン</h3>
-              <img src={bgGmoCoinLogo.src} alt="GMO coin logo" />
               <div className={styles.table_block}>
+                <img src={bgGmoCoinLogo.src} alt="GMO coin logo" />
                 <table>
                   <thead>
                     <tr>
@@ -194,8 +206,8 @@ export default function AccountComponent() {
               </div>
 
               <h3>DMM Bitcoin</h3>
-              <img src={bgDmmCoinLogo.src} alt="DMM Bitcoin logo" />
               <div className={styles.table_block}>
+                <img src={bgDmmCoinLogo.src} alt="DMM Bitcoin logo" />
                 <table>
                   <thead>
                     <tr>
