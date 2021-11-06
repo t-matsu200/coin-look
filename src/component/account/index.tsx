@@ -20,7 +20,7 @@ export default function AccountComponent() {
   const subTitle3 = '仮想通貨取引口座の入金手数料について';
   const subTitle4 = '複数の取引所で口座開設するメリット';
   const subTitle5 = '仮想通貨取引所の口座開設 まとめ';
-  const coincheck = <a href="https://coincheck.com/ja" target="_blank" rel="noopener noreferrer" style={{color: '#5fc7ca', textDecoration: 'underline'}}>Coincheck</a>
+  const coincheck = <a href={AppConstant.coincheck} target="_blank" rel="noopener noreferrer" style={{color: '#5fc7ca', textDecoration: 'underline'}}>Coincheck</a>
 
   return (
     <>
@@ -236,6 +236,8 @@ export default function AccountComponent() {
               <p>上記で解説している取引所に関して<strong>口座開設費・維持費は無料</strong>ですので、口座開設をしておいても損をする事はないでしょう。</p>
             </div>
           </div>
+
+          <Advertisement htmlString={AppConstant.ledgerNano} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
           <h2 id="sec5">{subTitle5}</h2>
           <div className={styles.content_main}>

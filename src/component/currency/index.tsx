@@ -24,9 +24,21 @@ export default function AccountComponent() {
 
   const subTitle1 = '仮想通貨の買い方・買うタイミング';
   const subTitle2 = '仮想通貨の将来性';
-  const subTitle3 = '国内の仮想通貨取引所で買える銘柄の特徴';
-  const subTitle4 = '仮想通貨の開発状況';
-  const subTitle5 = '国内の仮想通貨取引所で買える銘柄について まとめ';
+  const subTitle3 = 'ビットコイン';
+  const subTitle4 = 'イーサリアム（イーサ）';
+  const subTitle5 = 'カルダノ（エイダコイン）';
+  const subTitle6 = 'パレットトークン';
+  const subTitle7 = 'IOST';
+  const subTitle8 = 'JasmyCoin（ジャスミーコイン）';
+  const subTitle9 = 'Lisk（リスク）';
+  const subTitle10 = 'リップル';
+  const subTitle11 = 'ネム（新通貨：シンボル）';
+  const subTitle12 = 'ライトコイン';
+  const subTitle13 = 'ポルカドット';
+  const subTitle14 = 'トロン';
+  const subTitle15 = 'ベーシックアテンショントークン（BAT）';
+  const subTitle16 = '仮想通貨の開発状況';
+  const subTitle17 = '国内の仮想通貨取引所で買える銘柄について まとめ';
 
   function makeLink(url: string, text=null) {
     if (text) {
@@ -64,7 +76,19 @@ export default function AccountComponent() {
             {subTitle: subTitle2, path: '/account', as: '#sec2'},
             {subTitle: subTitle3, path: '/account', as: '#sec3'},
             {subTitle: subTitle4, path: '/account', as: '#sec4'},
-            {subTitle: subTitle5, path: '/account', as: '#sec5'}
+            {subTitle: subTitle5, path: '/account', as: '#sec5'},
+            {subTitle: subTitle6, path: '/account', as: '#sec6'},
+            {subTitle: subTitle7, path: '/account', as: '#sec7'},
+            {subTitle: subTitle8, path: '/account', as: '#sec8'},
+            {subTitle: subTitle9, path: '/account', as: '#sec9'},
+            {subTitle: subTitle10, path: '/account', as: '#sec10'},
+            {subTitle: subTitle11, path: '/account', as: '#sec11'},
+            {subTitle: subTitle12, path: '/account', as: '#sec12'},
+            {subTitle: subTitle13, path: '/account', as: '#sec13'},
+            {subTitle: subTitle14, path: '/account', as: '#sec14'},
+            {subTitle: subTitle15, path: '/account', as: '#sec15'},
+            {subTitle: subTitle16, path: '/account', as: '#sec16'},
+            {subTitle: subTitle17, path: '/account', as: '#sec17'}
             ]} />
 
           <Advertisement htmlString={AppConstant.huobiRect} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
@@ -89,7 +113,7 @@ export default function AccountComponent() {
           </div>
 
           <hr/>
-          <Advertisement htmlString={AppConstant.biccore} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
+          <Advertisement htmlString={AppConstant.ledgerNano} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
           <h2 id="sec2">{subTitle2}</h2>
           <div>
@@ -110,390 +134,386 @@ export default function AccountComponent() {
           </div>
 
           <h2 id="sec3">{subTitle3}</h2>
-          <div>
-            <h3>ビットコイン</h3>
-            <div className={styles.currency_logo}>
-              <img src={bitcoinIcon.src} alt="ビットコイン　ロゴ" />
-            </div>
-            <div className={styles.table_block}>
-              <table>
-                <tr>
-                  <th>通貨名</th>
-                  <td>BTC</td>
-                </tr>
-                <tr>
-                  <th>国内の取引所</th>
-                  <td>大体の取引所で取り扱い有り</td>
-                </tr>
-                <tr>
-                  <th>紹介サイト</th>
-                  <td>{makeLink("https://bitcoin.org/ja/")}</td>
-                </tr>
-                <tr>
-                  <th>GitHub</th>
-                  <td>{makeLink("https://github.com/bitcoin")}</td>
-                </tr>
-                <tr>
-                  <th>特徴</th>
-                  <td>・日本ではビッグカメラやDMM.comなどで決済可能。<br/>・決済に特化、徐々に使える場所が増えている。<br/>・過去にはビットコインとビットコインキャッシュにハードフォーク（分裂）した。</td>
-                </tr>
-              </table>
-            </div>
+          <div className={styles.currency_logo}>
+            <img src={bitcoinIcon.src} alt="ビットコイン　ロゴ" />
+          </div>
+          <div className={styles.table_block}>
+            <table>
+              <tr>
+                <th>通貨名</th>
+                <td>BTC</td>
+              </tr>
+              <tr>
+                <th>国内の取引所</th>
+                <td>大体の取引所で取り扱い有り</td>
+              </tr>
+              <tr>
+                <th>紹介サイト</th>
+                <td>{makeLink("https://bitcoin.org/ja/")}</td>
+              </tr>
+              <tr>
+                <th>GitHub</th>
+                <td>{makeLink("https://github.com/bitcoin")}</td>
+              </tr>
+              <tr>
+                <th>特徴</th>
+                <td>・日本ではビッグカメラやDMM.comなどで決済可能。<br/>・決済に特化、徐々に使える場所が増えている。<br/>・過去にはビットコインとビットコインキャッシュにハードフォーク（分裂）した。</td>
+              </tr>
+            </table>
+          </div>
 
-            <h3>イーサリアム（イーサ）</h3>
-            <div className={styles.currency_logo}>
-              <img src={ethIcon.src} alt="イーサ　ロゴ" />
-            </div>
-            <div className={styles.table_block}>
-              <table>
-                <tr>
-                  <th>通貨名</th>
-                  <td>ETH</td>
-                </tr>
-                <tr>
-                  <th>国内の取引所</th>
-                  <td>大体の取引所で取り扱い有り</td>
-                </tr>
-                <tr>
-                  <th>紹介サイト</th>
-                  <td>{makeLink("https://ethereum.org/ja/")}</td>
-                </tr>
-                <tr>
-                  <th>GitHub</th>
-                  <td>{makeLink("https://github.com/ethereum")}</td>
-                </tr>
-                <tr>
-                  <th>特徴</th>
-                  <td>・スマートコントラクト。<br/>・過去にはイーサリアムとイーサリアムクラシックにハードフォーク（分裂）した。</td>
-                </tr>
-              </table>
-            </div>
+          <h2 id="sec4">{subTitle4}</h2>
+          <div className={styles.currency_logo}>
+            <img src={ethIcon.src} alt="イーサ　ロゴ" />
+          </div>
+          <div className={styles.table_block}>
+            <table>
+              <tr>
+                <th>通貨名</th>
+                <td>ETH</td>
+              </tr>
+              <tr>
+                <th>国内の取引所</th>
+                <td>大体の取引所で取り扱い有り</td>
+              </tr>
+              <tr>
+                <th>紹介サイト</th>
+                <td>{makeLink("https://ethereum.org/ja/")}</td>
+              </tr>
+              <tr>
+                <th>GitHub</th>
+                <td>{makeLink("https://github.com/ethereum")}</td>
+              </tr>
+              <tr>
+                <th>特徴</th>
+                <td>・スマートコントラクト。<br/>・過去にはイーサリアムとイーサリアムクラシックにハードフォーク（分裂）した。</td>
+              </tr>
+            </table>
+          </div>
 
-            <h3>カルダノ（エイダコイン）</h3>
-            <div className={styles.currency_logo}>
-              <img src={adaIcon.src} alt="カルダノ　ロゴ" />
-            </div>
-            <div className={styles.table_block}>
-              <table>
-                <tr>
-                  <th>通貨名</th>
-                  <td>Cardano（ADA）</td>
-                </tr>
-                <tr>
-                  <th>国内の取引所</th>
-                  <td>{bitPoint}</td>
-                </tr>
-                <tr>
-                  <th>紹介サイト</th>
-                  <td>{makeLink("https://cardano.org/")}</td>
-                </tr>
-                <tr>
-                  <th>GitHub</th>
-                  <td>{makeLink("https://github.com/cardano-foundation")}</td>
-                </tr>
-                <tr>
-                  <th>特徴</th>
-                  <td>・独自のスマートコントラクト「Plutus(プルータス)」。<br/>・元はブロックチェーン技術を取り入れたオンラインカジノで利用。</td>
-                </tr>
-              </table>
-            </div>
+          <h2 id="sec5">{subTitle5}</h2>
+          <div className={styles.currency_logo}>
+            <img src={adaIcon.src} alt="カルダノ　ロゴ" />
+          </div>
+          <div className={styles.table_block}>
+            <table>
+              <tr>
+                <th>通貨名</th>
+                <td>Cardano（ADA）</td>
+              </tr>
+              <tr>
+                <th>国内の取引所</th>
+                <td>{bitPoint}</td>
+              </tr>
+              <tr>
+                <th>紹介サイト</th>
+                <td>{makeLink("https://cardano.org/")}</td>
+              </tr>
+              <tr>
+                <th>GitHub</th>
+                <td>{makeLink("https://github.com/cardano-foundation")}</td>
+              </tr>
+              <tr>
+                <th>特徴</th>
+                <td>・独自のスマートコントラクト「Plutus(プルータス)」。<br/>・元はブロックチェーン技術を取り入れたオンラインカジノで利用。</td>
+              </tr>
+            </table>
+          </div>
 
-            <h3>パレットトークン</h3>
-            <div className={styles.currency_logo}>
-              <img src={pltIcon.src} alt="パレットトークン　ロゴ" />
-            </div>
-            <div className={styles.table_block}>
-              <table>
-                <tr>
-                  <th>通貨名</th>
-                  <td>PLT</td>
-                </tr>
-                <tr>
-                  <th>国内の取引所</th>
-                  <td>{coincheck}</td>
-                </tr>
-                <tr>
-                  <th>紹介サイト</th>
-                  <td>{makeLink("https://hashpalette.com/")}</td>
-                </tr>
-                <tr>
-                  <th>GitHub</th>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <th>特徴</th>
-                  <td>・コインチェックにて、<strong>国内としては初めてIEO（Initial Exchange Offering）が実施</strong><br/>・NFTのプラットフォーム「Pallet」で手数料の支払いとして利用される<br/>・ZOZO創業者前澤友作氏を引受先とする第三者割当増資で、約4.8億円の資金を調達<br/>・公式PLTウォレットアプリで簡単にステーキングが可能（{makeLink("https://apps.apple.com/us/app/id1581055631", "iOS")}・{makeLink("https://play.google.com/store/apps/details?id=com.palettechain.wallet&hl=ja&gl=US", "Android")} ）</td>
-                </tr>
-              </table>
-            </div>
+          <h2 id="sec6">{subTitle6}</h2>
+          <div className={styles.currency_logo}>
+            <img src={pltIcon.src} alt="パレットトークン　ロゴ" />
+          </div>
+          <div className={styles.table_block}>
+            <table>
+              <tr>
+                <th>通貨名</th>
+                <td>PLT</td>
+              </tr>
+              <tr>
+                <th>国内の取引所</th>
+                <td>{coincheck}</td>
+              </tr>
+              <tr>
+                <th>紹介サイト</th>
+                <td>{makeLink("https://hashpalette.com/")}</td>
+              </tr>
+              <tr>
+                <th>GitHub</th>
+                <td>-</td>
+              </tr>
+              <tr>
+                <th>特徴</th>
+                <td>・コインチェックにて、<strong>国内としては初めてIEO（Initial Exchange Offering）が実施</strong><br/>・NFTのプラットフォーム「Pallet」で手数料の支払いとして利用される<br/>・ZOZO創業者前澤友作氏を引受先とする第三者割当増資で、約4.8億円の資金を調達<br/>・公式PLTウォレットアプリで簡単にステーキングが可能（{makeLink("https://apps.apple.com/us/app/id1581055631", "iOS")}・{makeLink("https://play.google.com/store/apps/details?id=com.palettechain.wallet&hl=ja&gl=US", "Android")} ）</td>
+              </tr>
+            </table>
+          </div>
 
-            <h3>IOST</h3>
-            <div className={styles.currency_logo}>
-              <img src={iostIcon.src} alt="IOST　ロゴ" />
-            </div>
-            <div className={styles.table_block}>
-              <table>
-                <tr>
-                  <th>通貨名</th>
-                  <td>IOST</td>
-                </tr>
-                <tr>
-                  <th>国内の取引所</th>
-                  <td>{coincheck}</td>
-                </tr>
-                <tr>
-                  <th>紹介サイト</th>
-                  <td>{makeLink("https://iost.io/")}</td>
-                </tr>
-                <tr>
-                  <th>GitHub</th>
-                  <td>{makeLink("https://github.com/iost-official")}</td>
-                </tr>
-                <tr>
-                  <th>特徴</th>
-                  <td>・ユーザーにオンラインサービスとデジタル商品の交換方法を提供するプラットフォームで使われる<br/>・医療分野で実証実験が進んでいるらしい<br/>・一定条件を満たしたユーザーを対象に、仮想通貨（DON）の無料配布（エアドロップ）を行う</td>
-                </tr>
-              </table>
-            </div>
+          <h2 id="sec7">{subTitle7}</h2>
+          <div className={styles.currency_logo}>
+            <img src={iostIcon.src} alt="IOST　ロゴ" />
+          </div>
+          <div className={styles.table_block}>
+            <table>
+              <tr>
+                <th>通貨名</th>
+                <td>IOST</td>
+              </tr>
+              <tr>
+                <th>国内の取引所</th>
+                <td>{coincheck}</td>
+              </tr>
+              <tr>
+                <th>紹介サイト</th>
+                <td>{makeLink("https://iost.io/")}</td>
+              </tr>
+              <tr>
+                <th>GitHub</th>
+                <td>{makeLink("https://github.com/iost-official")}</td>
+              </tr>
+              <tr>
+                <th>特徴</th>
+                <td>・ユーザーにオンラインサービスとデジタル商品の交換方法を提供するプラットフォームで使われる<br/>・医療分野で実証実験が進んでいるらしい<br/>・一定条件を満たしたユーザーを対象に、仮想通貨（DON）の無料配布（エアドロップ）を行う</td>
+              </tr>
+            </table>
+          </div>
 
-            <h3>JasmyCoin（ジャスミーコイン）</h3>
-            <div className={styles.currency_logo}>
-              <img src={jmyIcon.src} alt="ジャスミー　ロゴ" />
-            </div>
-            <div className={styles.table_block}>
-              <table>
-                <tr>
-                  <th>通貨名</th>
-                  <td>JASMY（JMY）</td>
-                </tr>
-                <tr>
-                  <th>国内の取引所</th>
-                  <td>{bitPoint}</td>
-                </tr>
-                <tr>
-                  <th>紹介サイト</th>
-                  <td>{makeLink("https://www.jasmy.co.jp/")}</td>
-                </tr>
-                <tr>
-                  <th>GitHub</th>
-                  <td>{makeLink("https://github.com/iost-official")}</td>
-                </tr>
-                <tr>
-                  <th>特徴</th>
-                  <td>・スマートコントラクト<br/>・BITPoint上場後、数日で値上がり率100%以上を記録！<br/>・創業メンバーは、ソニー株式会社の第7代社長の安藤氏を筆頭に元ソニーのメンバー<br/>・Jasmy IoT Platformを使ったIoT開発環境・ブロックチェーンデータ分析が利用可能になり、個人情報の一元管理、運用が実現できるエコシステム<br/>・Jリーグ「サガン鳥栖」の公式スポンサー</td>
-                </tr>
-              </table>
-            </div>
+          <h2 id="sec8">{subTitle8}</h2>
+          <div className={styles.currency_logo}>
+            <img src={jmyIcon.src} alt="ジャスミー　ロゴ" />
+          </div>
+          <div className={styles.table_block}>
+            <table>
+              <tr>
+                <th>通貨名</th>
+                <td>JASMY（JMY）</td>
+              </tr>
+              <tr>
+                <th>国内の取引所</th>
+                <td>{bitPoint}</td>
+              </tr>
+              <tr>
+                <th>紹介サイト</th>
+                <td>{makeLink("https://www.jasmy.co.jp/")}</td>
+              </tr>
+              <tr>
+                <th>GitHub</th>
+                <td>{makeLink("https://github.com/iost-official")}</td>
+              </tr>
+              <tr>
+                <th>特徴</th>
+                <td>・スマートコントラクト<br/>・BITPoint上場後、数日で値上がり率100%以上を記録！<br/>・創業メンバーは、ソニー株式会社の第7代社長の安藤氏を筆頭に元ソニーのメンバー<br/>・Jasmy IoT Platformを使ったIoT開発環境・ブロックチェーンデータ分析が利用可能になり、個人情報の一元管理、運用が実現できるエコシステム<br/>・Jリーグ「サガン鳥栖」の公式スポンサー</td>
+              </tr>
+            </table>
+          </div>
 
-            <h3>Lisk（リスク）</h3>
-            <div className={styles.currency_logo}>
-              <img src={lskIcon.src} alt="リスク　ロゴ" />
-            </div>
-            <div className={styles.table_block}>
-              <table>
-                <tr>
-                  <th>通貨名</th>
-                  <td>LSK</td>
-                </tr>
-                <tr>
-                  <th>国内の取引所</th>
-                  <td>・{coincheck}<br/>・{bitFlyer}<br/>・{gmoCoin}</td>
-                </tr>
-                <tr>
-                  <th>紹介サイト</th>
-                  <td>{makeLink("https://lisk.com/")}</td>
-                </tr>
-                <tr>
-                  <th>GitHub</th>
-                  <td>{makeLink("https://github.com/LiskHQ")}</td>
-                </tr>
-                <tr>
-                  <th>特徴</th>
-                  <td>・スマートコントラクト<br/>・メインとなるチェーンのほかにサイドチェーンを活用してトークンを構築していけることが特徴（スケーラビリティや開発の柔軟性）<br/>・プラットフォーム的な性質を持つブロックチェーン</td>
-                </tr>
-              </table>
-            </div>
+          <h2 id="sec9">{subTitle9}</h2>
+          <div className={styles.currency_logo}>
+            <img src={lskIcon.src} alt="リスク　ロゴ" />
+          </div>
+          <div className={styles.table_block}>
+            <table>
+              <tr>
+                <th>通貨名</th>
+                <td>LSK</td>
+              </tr>
+              <tr>
+                <th>国内の取引所</th>
+                <td>・{coincheck}<br/>・{bitFlyer}<br/>・{gmoCoin}</td>
+              </tr>
+              <tr>
+                <th>紹介サイト</th>
+                <td>{makeLink("https://lisk.com/")}</td>
+              </tr>
+              <tr>
+                <th>GitHub</th>
+                <td>{makeLink("https://github.com/LiskHQ")}</td>
+              </tr>
+              <tr>
+                <th>特徴</th>
+                <td>・スマートコントラクト<br/>・メインとなるチェーンのほかにサイドチェーンを活用してトークンを構築していけることが特徴（スケーラビリティや開発の柔軟性）<br/>・プラットフォーム的な性質を持つブロックチェーン</td>
+              </tr>
+            </table>
+          </div>
 
-            <h3>リップル</h3>
-            <div className={styles.currency_logo}>
-              <img src={xrpIcon.src} alt="リップル　ロゴ" />
-            </div>
-            <div className={styles.table_block}>
-              <table>
-                <tr>
-                  <th>通貨名</th>
-                  <td>XRP</td>
-                </tr>
-                <tr>
-                  <th>国内の取引所</th>
-                  <td>・{coincheck}<br/>・{bitFlyer}<br/>・{bitPoint}<br/>・{gmoCoin}<br/>・{dmmCoin}</td>
-                </tr>
-                <tr>
-                  <th>紹介サイト</th>
-                  <td>{makeLink("https://ripple.com/xrp/")}</td>
-                </tr>
-                <tr>
-                  <th>GitHub</th>
-                  <td>{makeLink("https://github.com/ripple")}</td>
-                </tr>
-                <tr>
-                  <th>特徴</th>
-                  <td>・高速で安価な国際送金。（海外送金の際に銀行を経由しない為、送金のプロセスが簡略化される）</td>
-                </tr>
-              </table>
-            </div>
+          <h2 id="sec10">{subTitle10}</h2>
+          <div className={styles.currency_logo}>
+            <img src={xrpIcon.src} alt="リップル　ロゴ" />
+          </div>
+          <div className={styles.table_block}>
+            <table>
+              <tr>
+                <th>通貨名</th>
+                <td>XRP</td>
+              </tr>
+              <tr>
+                <th>国内の取引所</th>
+                <td>・{coincheck}<br/>・{bitFlyer}<br/>・{bitPoint}<br/>・{gmoCoin}<br/>・{dmmCoin}</td>
+              </tr>
+              <tr>
+                <th>紹介サイト</th>
+                <td>{makeLink("https://ripple.com/xrp/")}</td>
+              </tr>
+              <tr>
+                <th>GitHub</th>
+                <td>{makeLink("https://github.com/ripple")}</td>
+              </tr>
+              <tr>
+                <th>特徴</th>
+                <td>・高速で安価な国際送金。（海外送金の際に銀行を経由しない為、送金のプロセスが簡略化される）</td>
+              </tr>
+            </table>
+          </div>
 
-            <h3>ネム（新通貨：シンボル）</h3>
-            <div className={styles.currency_logo}>
-              <img src={xemIcon.src} alt="ネム　ロゴ" />
-            </div>
-            <div className={styles.table_block}>
-              <table>
-                <tr>
-                  <th>通貨名</th>
-                  <td>XEM（新通貨：XYM）</td>
-                </tr>
-                <tr>
-                  <th>国内の取引所</th>
-                  <td>・{coincheck}<br/>・{gmoCoin}<br/>・{dmmCoin}</td>
-                </tr>
-                <tr>
-                  <th>紹介サイト</th>
-                  <td>{makeLink("https://t.co/hhDgOcobjj?amp=1")}<br/>※ Discordの招待リンクです</td>
-                </tr>
-                <tr>
-                  <th>GitHub</th>
-                  <td>{makeLink("https://github.com/NemProject")}</td>
-                </tr>
-                <tr>
-                  <th>特徴</th>
-                  <td>・新通貨XYM（Symbol）をXEM所有者に付与する方針？<br/>・ブロックを承認する作業であるハーベストでの報酬獲得が容易。<br/>・国内にも決済で使用できる店舗が多少存在する。<br/>・{makeLink("https://ja.wikipedia.org/wiki/Coincheck#%E6%9A%97%E5%8F%B7%E9%80%9A%E8%B2%A8%E6%B5%81%E5%87%BA%E4%BA%8B%E4%BB%B6", "コインチェック事件")}</td>
-                </tr>
-              </table>
-            </div>
+          <h2 id="sec11">{subTitle11}</h2>
+          <div className={styles.currency_logo}>
+            <img src={xemIcon.src} alt="ネム　ロゴ" />
+          </div>
+          <div className={styles.table_block}>
+            <table>
+              <tr>
+                <th>通貨名</th>
+                <td>XEM（新通貨：XYM）</td>
+              </tr>
+              <tr>
+                <th>国内の取引所</th>
+                <td>・{coincheck}<br/>・{gmoCoin}<br/>・{dmmCoin}</td>
+              </tr>
+              <tr>
+                <th>紹介サイト</th>
+                <td>{makeLink("https://t.co/hhDgOcobjj?amp=1")}<br/>※ Discordの招待リンクです</td>
+              </tr>
+              <tr>
+                <th>GitHub</th>
+                <td>{makeLink("https://github.com/NemProject")}</td>
+              </tr>
+              <tr>
+                <th>特徴</th>
+                <td>・新通貨XYM（Symbol）をXEM所有者に付与する方針？<br/>・ブロックを承認する作業であるハーベストでの報酬獲得が容易。<br/>・国内にも決済で使用できる店舗が多少存在する。<br/>・{makeLink("https://ja.wikipedia.org/wiki/Coincheck#%E6%9A%97%E5%8F%B7%E9%80%9A%E8%B2%A8%E6%B5%81%E5%87%BA%E4%BA%8B%E4%BB%B6", "コインチェック事件")}</td>
+              </tr>
+            </table>
+          </div>
 
-            <h3>ライトコイン</h3>
-            <div className={styles.currency_logo}>
-              <img src={ltcIcon.src} alt="ライトコイン　ロゴ" />
-            </div>
-            <div className={styles.table_block}>
-              <table>
-                <tr>
-                  <th>通貨名</th>
-                  <td>LTC</td>
-                </tr>
-                <tr>
-                  <th>国内の取引所</th>
-                  <td>大体の取引所で取り扱い有り</td>
-                </tr>
-                <tr>
-                  <th>紹介サイト</th>
-                  <td>{makeLink("https://litecoin.org/ja/")}</td>
-                </tr>
-                <tr>
-                  <th>GitHub</th>
-                  <td>{makeLink("https://github.com/litecoin-project")}</td>
-                </tr>
-                <tr>
-                  <th>特徴</th>
-                  <td>・元Googleの社員であるCharlie Lee氏がGithub上で公開したアルトコイン<br/>・ビットコインよりもトランザクション完了までのスピードが速く、より安い手数料で決済できることが特徴</td>
-                </tr>
-              </table>
-            </div>
+          <h2 id="sec12">{subTitle12}</h2>
+          <div className={styles.currency_logo}>
+            <img src={ltcIcon.src} alt="ライトコイン　ロゴ" />
+          </div>
+          <div className={styles.table_block}>
+            <table>
+              <tr>
+                <th>通貨名</th>
+                <td>LTC</td>
+              </tr>
+              <tr>
+                <th>国内の取引所</th>
+                <td>大体の取引所で取り扱い有り</td>
+              </tr>
+              <tr>
+                <th>紹介サイト</th>
+                <td>{makeLink("https://litecoin.org/ja/")}</td>
+              </tr>
+              <tr>
+                <th>GitHub</th>
+                <td>{makeLink("https://github.com/litecoin-project")}</td>
+              </tr>
+              <tr>
+                <th>特徴</th>
+                <td>・元Googleの社員であるCharlie Lee氏がGithub上で公開したアルトコイン<br/>・ビットコインよりもトランザクション完了までのスピードが速く、より安い手数料で決済できることが特徴</td>
+              </tr>
+            </table>
+          </div>
 
-            <h3>ポルカドット</h3>
-            <div className={styles.currency_logo}>
-              <img src={porcaIcon.src} alt="ポルカドット　ロゴ" />
-            </div>
-            <div className={styles.table_block}>
-              <table>
-                <tr>
-                  <th>通貨名</th>
-                  <td>DOT</td>
-                </tr>
-                <tr>
-                  <th>国内の取引所</th>
-                  <td>大体の取引所で取り扱い有り</td>
-                </tr>
-                <tr>
-                  <th>紹介サイト</th>
-                  <td>{makeLink("https://polkadot.network/ja/")}</td>
-                </tr>
-                <tr>
-                  <th>GitHub</th>
-                  <td>{makeLink("https://github.com/paritytech")}</td>
-                </tr>
-                <tr>
-                  <th>特徴</th>
-                  <td>・Web3.0という世界の実現を目指す（個人情報をブロックチェーン上でユーザー同士が分散管理し、不正アクセスや情報漏洩のリスク軽減）<br/>・ポルカドットを介して異なるブロックチェーン同士（異なる仮想通貨同士）を取引所などを介さずに運用できるようにする事を目指している<br/>・ステーキング利率が高め</td>
-                </tr>
-              </table>
-            </div>
+          <h2 id="sec13">{subTitle13}</h2>
+          <div className={styles.currency_logo}>
+            <img src={porcaIcon.src} alt="ポルカドット　ロゴ" />
+          </div>
+          <div className={styles.table_block}>
+            <table>
+              <tr>
+                <th>通貨名</th>
+                <td>DOT</td>
+              </tr>
+              <tr>
+                <th>国内の取引所</th>
+                <td>大体の取引所で取り扱い有り</td>
+              </tr>
+              <tr>
+                <th>紹介サイト</th>
+                <td>{makeLink("https://polkadot.network/ja/")}</td>
+              </tr>
+              <tr>
+                <th>GitHub</th>
+                <td>{makeLink("https://github.com/paritytech")}</td>
+              </tr>
+              <tr>
+                <th>特徴</th>
+                <td>・Web3.0という世界の実現を目指す（個人情報をブロックチェーン上でユーザー同士が分散管理し、不正アクセスや情報漏洩のリスク軽減）<br/>・ポルカドットを介して異なるブロックチェーン同士（異なる仮想通貨同士）を取引所などを介さずに運用できるようにする事を目指している<br/>・ステーキング利率が高め</td>
+              </tr>
+            </table>
+          </div>
 
-            <h3>トロン</h3>
-            <div className={styles.currency_logo}>
-              <img src={trxIcon.src} alt="トロン　ロゴ" />
-            </div>
-            <div className={styles.table_block}>
-              <table>
-                <tr>
-                  <th>通貨名</th>
-                  <td>TRX</td>
-                </tr>
-                <tr>
-                  <th>国内の取引所</th>
-                  <td>・{bitPoint}<br/>・{huobi}</td>
-                </tr>
-                <tr>
-                  <th>紹介サイト</th>
-                  <td>{makeLink("https://tron.network/index?lng=jap")}</td>
-                </tr>
-                <tr>
-                  <th>GitHub</th>
-                  <td>{makeLink("https://github.com/tronprotocol")}</td>
-                </tr>
-                <tr>
-                  <th>特徴</th>
-                  <td>・ブロックチェーン技術を利用し、デジタルコンテンツを配信する場を提供することを目的としたブロックチェーンプラットフォーム<br/>・クリエイターはトロン上で独自のトークンを発行し、売ることが可能</td>
-                </tr>
-              </table>
-            </div>
+          <h2 id="sec14">{subTitle14}</h2>
+          <div className={styles.currency_logo}>
+            <img src={trxIcon.src} alt="トロン　ロゴ" />
+          </div>
+          <div className={styles.table_block}>
+            <table>
+              <tr>
+                <th>通貨名</th>
+                <td>TRX</td>
+              </tr>
+              <tr>
+                <th>国内の取引所</th>
+                <td>・{bitPoint}<br/>・{huobi}</td>
+              </tr>
+              <tr>
+                <th>紹介サイト</th>
+                <td>{makeLink("https://tron.network/index?lng=jap")}</td>
+              </tr>
+              <tr>
+                <th>GitHub</th>
+                <td>{makeLink("https://github.com/tronprotocol")}</td>
+              </tr>
+              <tr>
+                <th>特徴</th>
+                <td>・ブロックチェーン技術を利用し、デジタルコンテンツを配信する場を提供することを目的としたブロックチェーンプラットフォーム<br/>・クリエイターはトロン上で独自のトークンを発行し、売ることが可能</td>
+              </tr>
+            </table>
+          </div>
 
-            <h3>ベーシックアテンショントークン（BAT）</h3>
-            <div className={styles.currency_logo}>
-              <img src={batIcon.src} alt="BAT　ロゴ" />
-            </div>
-            <div className={styles.table_block}>
-              <table>
-                <tr>
-                  <th>通貨名</th>
-                  <td>BAT</td>
-                </tr>
-                <tr>
-                  <th>国内の取引所</th>
-                  <td>大体の取引所で取り扱い有り</td>
-                </tr>
-                <tr>
-                  <th>紹介サイト</th>
-                  <td>{makeLink("https://basicattentiontoken.org/")}</td>
-                </tr>
-                <tr>
-                  <th>GitHub</th>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <th>特徴</th>
-                  <td>・ウェブブラウザ<strong>Brave</strong>でブラウジング中に受信した広告を見るとBATが付与される<br/>・<strong>Brave</strong>で受け取ったBATは{bitFlyer}の口座に自動送金可能<br/>・<strong>Braveの認証済みクリエイター</strong>に投げ銭ができる（投げ銭を試してみたい方は{makeLink("https://vulnerability-page.tk/", "こちら")}のサイトにアクセスしてみてください。筆者が作成したサイトです。）</td>
-                </tr>
-              </table>
-            </div>
-
+          <h2 id="sec15">{subTitle15}</h2>
+          <div className={styles.currency_logo}>
+            <img src={batIcon.src} alt="BAT　ロゴ" />
+          </div>
+          <div className={styles.table_block}>
+            <table>
+              <tr>
+                <th>通貨名</th>
+                <td>BAT</td>
+              </tr>
+              <tr>
+                <th>国内の取引所</th>
+                <td>大体の取引所で取り扱い有り</td>
+              </tr>
+              <tr>
+                <th>紹介サイト</th>
+                <td>{makeLink("https://basicattentiontoken.org/")}</td>
+              </tr>
+              <tr>
+                <th>GitHub</th>
+                <td>-</td>
+              </tr>
+              <tr>
+                <th>特徴</th>
+                <td>・ウェブブラウザ<strong>Brave</strong>でブラウジング中に受信した広告を見るとBATが付与される<br/>・<strong>Brave</strong>で受け取ったBATは{bitFlyer}の口座に自動送金可能<br/>・<strong>Braveの認証済みクリエイター</strong>に投げ銭ができる（投げ銭を試してみたい方は{makeLink("https://vulnerability-page.tk/", "こちら")}のサイトにアクセスしてみてください。筆者が作成したサイトです。）</td>
+              </tr>
+            </table>
           </div>
 
           <hr />
           <Advertisement htmlString={AppConstant.huobiMinWide} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
-          <h2 id="sec4">{subTitle4}</h2>
+          <h2 id="sec16">{subTitle16}</h2>
           <div>
             <div className={styles.content_main}>
               <p>仮想通貨の開発状況は<span className={styles.color_yellow_border}>公式サイトのロードマップ</span>や<span className={styles.color_yellow_border}>GitHub上のソースコード</span>などから確認できます。<br/>GitHubのリンクは上の記事で紹介していますので、興味のある方は確認してみてください。</p>
@@ -502,7 +522,7 @@ export default function AccountComponent() {
             </div>
           </div>
 
-          <h2 id="sec4">{subTitle5}</h2>
+          <h2 id="sec17">{subTitle17}</h2>
           <div className={styles.content_main}>
             <div className={styles.check_point}>
               <ul className={styles.matome_ul}>

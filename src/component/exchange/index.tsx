@@ -37,16 +37,14 @@ export default function ExchangeComponent() {
         return <a href={url} target="_blank" rel="noopener noreferrer" style={isViolet ? colorViolet : colorLink}>{text}</a>
     }
 
-    const coincheck = makeLink('https://coincheck.com/ja', 'Coincheck', true);
+    const coincheck = makeLink(AppConstant.coincheck, 'Coincheck', true);
     const pallet = makeLink('https://hashpalette.com', 'パレットトークン');
     const pltStaking = makeLink('https://hashpalette.medium.com/plt%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%AC%E3%82%A4%E3%83%89%E2%91%A1-%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%81%AE%E5%AE%9F%E8%A1%8C-c42abaf20120', 'ステーキング');
 
-    const bitFlyer = makeLink('https://bitflyer.com/ja-jp', 'bitFlyer', true);
     const getBitcoin = makeLink('https://bitflyer.com/ja-jp/ex/getcoin',  'ビットコインをもらう');
     const polkadot = makeLink('https://polkadot.network/ja/', 'Polkadot');
     const tezos = makeLink('https://tezos.com', 'Tezos/XTZ');
 
-    const bitPoint = makeLink('https://www.bitpoint.co.jp', 'BITPoint', true);
     const cardano = makeLink('https://cardano.org', 'CARDANO/ADA COIN');
     const jasmy = makeLink('https://www.jasmy.co.jp', 'Jasmy');
 
@@ -91,7 +89,7 @@ export default function ExchangeComponent() {
                     <tbody>
                         <tr>
                             <td>
-                                <a href="https://coincheck.com/ja/registrations?code=VXNlcjoyOTA1Nzcw" target="_blank" rel="noopener noreferrer">
+                                <a href={AppConstant.coincheck} target="_blank" rel="noopener noreferrer">
                                     <div><img src={coincheckLogo.src} alt="Coincheck logo"></img></div>Coincheck
                                 </a>
                             </td>
@@ -111,7 +109,7 @@ export default function ExchangeComponent() {
                         </tr>
                         <tr>
                             <td>
-                                <a href="https://www.bitpoint.co.jp/lp/referral/?invitationCd=YIHBHIRLFT&afid=PaAKUxGd&argument=E4y65Xyx&dmai=a60e69a5d44eea" target="_blank" rel="noopener noreferrer">
+                                <a href={AppConstant.bitPoint} target="_blank" rel="noopener noreferrer">
                                     <div><img src={bitPointLogo.src} alt="BITPoint logo"></img></div>BITPoint
                                 </a>
                             </td>
@@ -121,7 +119,7 @@ export default function ExchangeComponent() {
                         </tr>
                         <tr>
                             <td>
-                                <a href="https://h.accesstrade.net/sp/cc?rk=0100orb700lt2u" rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
+                                <a href={AppConstant.huobiJp} rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
                                     <div><img src={huobiLogo.src} alt="Huobi logo"></img></div>Huobi Japan
                                 </a>
                             </td>
@@ -141,7 +139,7 @@ export default function ExchangeComponent() {
                         </tr>
                         <tr>
                             <td>
-                                <a href="https://coin.z.com/jp" target="_blank" rel="noopener noreferrer">
+                                <a href="https://bitcoin.dmm.com/" target="_blank" rel="noopener noreferrer">
                                     <div><img src={dmmCoinLogo.src} alt="DMM Bitcoin logo"></img></div>DMM Bitcoin
                                 </a>
                             </td>
@@ -272,6 +270,8 @@ export default function ExchangeComponent() {
                     <p>よく口座開設キャンペーンを実施している印象がありますので、他の取引所よりもお得に口座開設できるかもしれません。</p>
                 </div>
             </div>
+
+            <Advertisement htmlString={AppConstant.ledgerNano} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
             <h2 id="sec3">{subTitle3}</h2>
             <div className={styles.foreign_block}>
