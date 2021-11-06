@@ -5,7 +5,6 @@ import ContentHeader from '../../component/contentHeader';
 import exchangeLogo from '../../../public/img/exchange-s.png';
 import bankLogo from '../../../public/img/bank-s.png';
 import currencyLogo from '../../../public/img/currency.png';
-import homeLogo from '../../../public/img/home.png';
 
 
 function HomeComponent() {
@@ -14,7 +13,7 @@ function HomeComponent() {
       <div className={styles.content}>
         <div className={styles.content_head}>
           <ContentHeader title="仮想通貨取引 解説サイト" />
-          <img src={homeLogo.src} alt="仮想通貨取引初心者向けの解説サイト" />
+          <img src="/img/home.avif" width={700} />
         </div>
         <div className={styles.content_body}>
           <p>当ブログは仮想通貨（暗号資産）取引の初心者に向けた解説サイトです。</p>
