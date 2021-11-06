@@ -18,7 +18,7 @@ export default function HomeArticle({ title, description, href, imgUrl }: Layout
             <Link href={href}>
               <figure className={styles.thumbnail}>
                 <div className={styles.wrap_thumbnail}>
-                  <img src={imgUrl.src} alt={title} />
+                  <img src={imgUrl.src} alt={title} width={140} height={140} />
                 </div>
               </figure>
             </Link>

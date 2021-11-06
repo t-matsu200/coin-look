@@ -11,7 +11,7 @@ function Header() {
           <div className={styles.first_row}>
             <div className={styles.logo}>
               <Link href="/">
-                <img src={Icon.src} alt="Site Icon" />
+                <img src={Icon.src} alt="Site Icon" width={155} height={50} />
               </Link>
             </div>
             <div>【暗号資産】初心者向けにわかりやすく解説！</div>
