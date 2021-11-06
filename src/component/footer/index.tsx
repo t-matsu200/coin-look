@@ -11,7 +11,7 @@ function Footer() {
                 <div>
                     <div className={styles.footer_logo}>
                         <Link href="/">
-                            <img src={logo.src}  alt="CoinLook" />
+                            <img src={logo.src}  alt="CoinLook" width={184} height={60} />
                         </Link>
                     </div>
                     <div className={styles.footer_desc}>
