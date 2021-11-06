@@ -17,6 +17,7 @@ import iostIcon from '../../../public/img/icon/icon-iost.png';
 import jmyIcon from '../../../public/img/icon/icon-jmy.png';
 import batIcon from '../../../public/img/icon/icon-bat.png';
 import porcaIcon from '../../../public/img/icon/icon-porca.png';
+import trxIcon from '../../../public/img/icon/icon-trx.png';
 
 
 export default function AccountComponent() {
@@ -39,6 +40,7 @@ export default function AccountComponent() {
   const coincheck = makeLink('https://coincheck.com/ja', 'Coincheck');
   const dmmCoin = makeLink('https://bitcoin.dmm.com/', 'DMM Bitcoin');
   const gmoCoin = makeLink('https://coin.z.com/jp/', 'GMOコイン');
+  const huobi = makeLink('https://coin.z.com/jp/', 'Huobi Japan');
 
   return (
     <>
@@ -424,6 +426,35 @@ export default function AccountComponent() {
                 <tr>
                   <th>特徴</th>
                   <td>・Web3.0という世界の実現を目指す（個人情報をブロックチェーン上でユーザー同士が分散管理し、不正アクセスや情報漏洩のリスク軽減）<br/>・ポルカドットを介して異なるブロックチェーン同士（異なる仮想通貨同士）を取引所などを介さずに運用できるようにする事を目指している<br/>・ステーキング利率が高め</td>
+                </tr>
+              </table>
+            </div>
+
+            <h3>トロン</h3>
+            <div className={styles.currency_logo}>
+              <img src={trxIcon.src} alt="トロン　ロゴ" />
+            </div>
+            <div className={styles.table_block}>
+              <table>
+                <tr>
+                  <th>通貨名</th>
+                  <td>TRX</td>
+                </tr>
+                <tr>
+                  <th>国内の取引所</th>
+                  <td>・{bitPoint}<br/>・{huobi}</td>
+                </tr>
+                <tr>
+                  <th>紹介サイト</th>
+                  <td>{makeLink("https://tron.network/index?lng=jap")}</td>
+                </tr>
+                <tr>
+                  <th>GitHub</th>
+                  <td>{makeLink("https://github.com/tronprotocol")}</td>
+                </tr>
+                <tr>
+                  <th>特徴</th>
+                  <td>・ブロックチェーン技術を利用し、デジタルコンテンツを配信する場を提供することを目的としたブロックチェーンプラットフォーム<br/>・クリエイターはトロン上で独自のトークンを発行し、売ることが可能</td>
                 </tr>
               </table>
             </div>
