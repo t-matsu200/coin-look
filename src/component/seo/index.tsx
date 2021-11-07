@@ -15,8 +15,10 @@ const Seo: VFC<MetaData> = ({
   pageImgWidth,
   pageImgHeight
 }) => {
-  const title = pageTitle ? pageTitle : '【仮想通貨取引の始め方・やり方】￤やり方・取引所・口座解説・税金・リスクを紹介！ | CoinLook(コインルック)';
-  const description = pageDescription ? pageDescription : '【仮想通貨取引について解説！】CoinLookは仮想通貨取引に興味のある方・取引を始めたい方に向けた暗号資産取引解説サイトです。';
+  let title = pageTitle ? pageTitle : '【初心者向けに解説！】仮想通貨／ビットコイン取引における日本国内取引所の口座開設方法・サービス比較￤取引の始め方・取引所のサービス比較・口座開設方法を紹介！';
+  title += '| CoinLook(コインルック)';
+  let description = pageDescription ? pageDescription : '初心者向けに仮想通貨取引の始め方・取引所のサービス比較について分かりやすく解説！';
+  description += '￤CoinLookは仮想通貨取引に興味のある方・取引を始めたい方に向けた仮想通貨取引の解説サイトです。';
   const url = 'https://coin-look.pages.dev/';
   const imgUrl = icon.src;
   const imgWidth = pageImgWidth ? pageImgWidth : 1280;

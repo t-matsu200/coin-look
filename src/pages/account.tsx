@@ -11,8 +11,8 @@ export default function Account(props) {
 
   return (
     <MainLayout>
-      <Seo pageTitle="【仮想通貨取引所の口座開設】￤国内の各仮想通貨取引所の口座開設方法を紹介！ | CoinLook(コインルック)"
-        pageDescription="【仮想通貨取引所の口座開設方法について解説！】CoinLookは仮想通貨取引に興味のある方・取引を始めたい方に向けた仮想通貨取引の解説サイトです。" />
+      <Seo pageTitle="【初心者向け】仮想通貨／ビットコイン取引所の口座開設方法￤国内の各仮想通貨取引所の口座開設方法を紹介！"
+        pageDescription="これから暗号資産(仮想通貨)投資を始めたい初心者向けに、国内の各仮想通貨取引所の口座開設方法・複数取引所を利用するメリットなどを紹介！" />
       <BreadCrunb itemList={[{name: '口座開設', path: '/account'}]} />
       <div>
         <div className={styles.display_flex}>

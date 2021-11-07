@@ -11,6 +11,8 @@ import bgBitPointLogo from '../../../public/img/bg-bitpoint.png';
 import bgGmoCoinLogo from '../../../public/img/bg-gmoCoin.png';
 import bgDmmCoinLogo from '../../../public/img/bg-dmmCoin.png';
 import bgHuobiLogo from '../../../public/img/bg-huobi.png';
+import huobiCampaign from '../../../public/img/huobi-campaign.png';
+import bitpointCampaign from '../../../public/img/bitpoint-campaign.png';
 
 
 export default function AccountComponent() {
@@ -28,14 +30,14 @@ export default function AccountComponent() {
         <div>
           <div className={styles.content_head}>
               <ContentHeader title="仮想通貨取引所の口座開設方法について｜複数の仮想通貨取引所で口座開設するメリット、入金手数料を抑える方法についても解説！" />
-              <img src={accountLogo.src} alt="仮想通貨取引口座の開設について解説" />
+              <img src={accountLogo.src} alt="仮想通貨取引口座の開設について解説" width={584} height={440} />
           </div>
         </div>
         <div className={styles.content_body}>
           <div className={styles.content_main}>
-              <p><span className={styles.color_red}><strong>仮想通貨の売買を始めるには、仮想通貨取引所への口座開設（アカウント作成）をする必要があります。</strong></span></p>
+              <p><span className="danger"><strong>仮想通貨の売買を始めるには、仮想通貨取引所への口座開設（アカウント作成）をする必要があります。</strong></span></p>
               <p>この記事では<strong>取引所の口座開設の流れ</strong>について解説します。</p>
-              <p>仮想通貨初心者にもおすすめの<span className={styles.color_yellow_border}>振込手数料がお得な銀行</span>や<span className={styles.color_yellow_border}>複数の取引所で口座開設するメリット</span>についても解説していきます。</p>
+              <p>仮想通貨初心者にもおすすめの<span className="yellow-border">振込手数料がお得な銀行</span>や<span className="yellow-border">複数の取引所で口座開設するメリット</span>についても解説していきます。</p>
           </div>
           <TableContent listItem={[
             {subTitle: subTitle1, path: '/account', as: '#sec1'},
@@ -92,7 +94,7 @@ export default function AccountComponent() {
 
               <h3>Coincheck</h3>
               <div className={styles.table_block}>
-                <img src={bgCoincheckLogo.src} alt="Coincheck logo" />
+                <img src={bgCoincheckLogo.src} alt="Coincheck logo" width={400} height={300} />
                 <table>
                   <thead>
                     <tr>
@@ -111,6 +113,9 @@ export default function AccountComponent() {
                     </tr>
                   </tbody>
                 </table>
+                <div className={styles.check_point}>
+                  <a className={styles.account_link} href={AppConstant.coincheck}>口座開設する</a>
+                </div>
               </div>
 
               <h3>bitFlyer</h3>
@@ -132,10 +137,13 @@ export default function AccountComponent() {
                     </tr>
                     <tr>
                       <th>備考</th>
-                      <td>・銀行振込で無料となるのは「住信SBIネット銀行」のみ</td>
+                      <td>・銀行振込で無料となるのは「住信SBIネット銀行」のみ<br/>・スマートフォンアプリからクイック本人確認が可能</td>
                     </tr>
                   </tbody>
                 </table>
+                <div className={styles.check_point}>
+                  <a className={styles.account_link} href="https://bitflyer.com/invitation?id=e3ilarco&lang=ja-JP">公式アプリをダウンロード</a>
+                </div>
               </div>
 
               <h3>BITPoint</h3>
@@ -157,10 +165,17 @@ export default function AccountComponent() {
                     </tr>
                     <tr>
                       <th>備考</th>
-                      <td>・即時入金ができるのは「住信SBIネット銀行」と「PayPay銀行」、「イオン銀行」のみ</td>
+                      <td>・即時入金ができるのは「住信SBIネット銀行」と「PayPay銀行」、「イオン銀行」のみ<br/>・国内の取引所では取扱の少ない銘柄を上場<br/>・口座開設キャンペーンをよく実施している</td>
                     </tr>
                   </tbody>
                 </table>
+                <div className={styles.check_point}>
+                  <a href={AppConstant.bitPoint} target="_blank" rel="noopener noreferrer">
+                    <div className={styles.appeal_img}>
+                      <img src={bitpointCampaign.src} alt="BITPoint" width={400} height={230} />
+                    </div>
+                  </a>
+                </div>
               </div>
 
               <h3>Huobi Japan</h3>
@@ -182,6 +197,13 @@ export default function AccountComponent() {
                     </tr>
                   </tbody>
                 </table>
+                <div className={styles.check_point}>
+                  <a href={AppConstant.huobiJp} rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
+                    <div className={styles.appeal_img}>
+                      <img src={huobiCampaign.src} alt="フォビジャパン（Huobi Japan)" />
+                    </div>
+                  </a>
+                </div>
               </div>
 
               <h3>GMOコイン</h3>
@@ -220,7 +242,7 @@ export default function AccountComponent() {
                   <tbody>
                     <tr>
                       <th>備考</th>
-                      <td>・入出金手数料、送金手数料が無料</td>
+                      <td>・入出金手数料、送金手数料が無料<br/>・口座開設キャンペーンをよく実施している</td>
                     </tr>
                   </tbody>
                 </table>

@@ -173,6 +173,11 @@
   margin-top: 8px;
 }
 
+@media (max-width: 560px) {
+  .content_head img {
+    height: auto;
+  }
+}
 
 @media (max-width: 480px) {
   .bg_logo img {
@@ -207,16 +212,4 @@
     overflow-x: scroll;
     white-space: nowrap;
   }
-}
-
-@keyframes vibrations{0%{-webkit-transform:translate(0);transform:translate(0)}1%{-webkit-transform:translate(4px);transform:translate(4px)}2%{-webkit-transform:translate(0);transform:translate(0)}3%{-webkit-transform:translate(-4px);transform:translate(-4px)}4%{-webkit-transform:translate(0);transform:translate(0)}5%{-webkit-transform:translate(4px);transform:translate(4px)}6%{-webkit-transform:translate(0);transform:translate(0)}7%{-webkit-transform:translate(-4px);transform:translate(-4px)}8%{-webkit-transform:translate(0);transform:translate(0)}9%{-webkit-transform:translate(4px);transform:translate(4px)}10%{-webkit-transform:translate(0);transform:translate(0)}11%{-webkit-transform:translate(-4px);transform:translate(-4px)}12%{-webkit-transform:translate(0);transform:translate(0)}100%{-webkit-transform:translate(0);transform:translate(0)}}
-
-.color_red {
-  color: '#ff0000';
-}
-
-.color_yellow_border {
-  color: #000000;
-  background-color: #ffff00;
-  font-weight: bold;
 }

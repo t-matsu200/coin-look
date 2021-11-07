@@ -29,15 +29,15 @@ export default function BeginnerComponent() {
         <div>
             <div className={styles.content_head}>
                 <ContentHeader title="仮想通貨取引初心者の注意すべき点｜仮想通貨取引で発生する税金についても解説！" />
-                <img src={beginnerLogo.src} alt="仮想通貨取引初心者の注意すべき点について解説" />
+                <img src={beginnerLogo.src} alt="仮想通貨取引初心者の注意すべき点について解説" width={584} height={440} />
             </div>
         </div>
 
         <div className={styles.content_body}>
           <div className={styles.content_main}>
-              <p><span className={styles.color_red}><strong>仮想通貨取引を始めるにあたって、何に気をつければ良いのでしょうか？</strong></span></p>
+              <p><span className="danger"><strong>仮想通貨取引を始めるにあたって、何に気をつければ良いのでしょうか？</strong></span></p>
               <p>この記事では<strong>仮想通貨投資でやってはいけないこと</strong>について解説します。</p>
-              <p>仮想通貨初心者が気をつけるべき点として、<span className={styles.color_yellow_border}>発生する税金</span>についても解説していきます。</p>
+              <p>仮想通貨初心者が気をつけるべき点として、<span className="yellow-border">発生する税金</span>についても解説していきます。</p>
           </div>
 
           <TableContent listItem={[

@@ -94,12 +94,19 @@
   color: #f8f8ff;
 }
 
+.appeal_img {
+  animation: vibrations 2s linear infinite;
+  transition: 0.3s;
+  text-align: center;
+}
+
 .check_point {
   padding: 25px 30px;
   border: 1px solid #10bdc2;
   border-radius: 8px;
   margin: 20px 0;
   position: relative;
+  margin: 48px 0 48px;
 }
 
 .check_point:before {
@@ -134,59 +141,23 @@
   padding: 8px;
 }
 
-.app_icons {
-  margin-bottom: 40px;
+@media (max-width: 800px) {
+
+  .table_block table td {
+    width: 70%;
+  }
 }
 
-.app_link_title {
-  margin: auto;
-  text-align: center;
-  font-weight: bold;
-  color: yellowgreen;
+@media (max-width: 580px) {
+  .content_head img {
+    height: auto;
+  }
 }
-
-.app_a_style_ios {
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 13px;
-  width: 250px;
-  height: 83px;
-}
-
-.app_icon_style_ios {
-  border-radius: 13px;
-  width: 250px;
-  height: 80px;
-}
-
-.app_a_style2 {
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 13px;
-  width: 250px;
-  height: 108px;
-  margin-left: 20px;
-}
-
-.app_icon_style2 {
-  border-radius: '13px';
-  width: 268px;
-  height: 116px;
-  margin-top: 8px;
-}
-
 
 @media (max-width: 480px) {
+
   .bg_logo img {
     max-width: 380px;
-  }
-
-  .app_icons {
-    text-align: center;
-  }
-
-  .app_a_style2 {
-    margin-left: -12px;
   }
 }
 
@@ -212,13 +183,3 @@
 }
 
 @keyframes vibrations{0%{-webkit-transform:translate(0);transform:translate(0)}1%{-webkit-transform:translate(4px);transform:translate(4px)}2%{-webkit-transform:translate(0);transform:translate(0)}3%{-webkit-transform:translate(-4px);transform:translate(-4px)}4%{-webkit-transform:translate(0);transform:translate(0)}5%{-webkit-transform:translate(4px);transform:translate(4px)}6%{-webkit-transform:translate(0);transform:translate(0)}7%{-webkit-transform:translate(-4px);transform:translate(-4px)}8%{-webkit-transform:translate(0);transform:translate(0)}9%{-webkit-transform:translate(4px);transform:translate(4px)}10%{-webkit-transform:translate(0);transform:translate(0)}11%{-webkit-transform:translate(-4px);transform:translate(-4px)}12%{-webkit-transform:translate(0);transform:translate(0)}100%{-webkit-transform:translate(0);transform:translate(0)}}
-
-.color_red {
-  color: '#ff0000';
-}
-
-.color_yellow_border {
-  color: #000000;
-  background-color: #ffff00;
-  font-weight: bold;
-}

@@ -11,8 +11,8 @@ export default function Exchange(props) {
 
   return (
     <MainLayout>
-      <Seo pageTitle="【仮想通貨取引所の種類】￤初心者にオススメの国内の各仮想通貨取引所を紹介！ | CoinLook(コインルック)"
-        pageDescription="【仮想通貨取引所について解説！】CoinLookは仮想通貨取引に興味のある方・取引を始めたい方に向けた仮想通貨取引の解説サイトです。" />
+      <Seo pageTitle="【初心者向けの日本国内取引所は？】仮想通貨／ビットコイン取引所のサービス比較￤初心者にオススメの国内の各仮想通貨取引所を紹介！"
+        pageDescription="これから暗号資産(仮想通貨)投資を始めたい初心者向けにおすすめの国内の各仮想通貨取引所サービスを比較！" />
       <BreadCrunb itemList={[{name: '取引所', path: '/exchange'}]} />
       <div>
         <div className={styles.display_flex}>
