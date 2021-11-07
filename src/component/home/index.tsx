@@ -13,7 +13,7 @@ function HomeComponent() {
       <div className={styles.content}>
         <div className={styles.content_head}>
           <ContentHeader title="仮想通貨取引 解説サイト" />
-          <img src="/img/home.avif" width={700} />
+          <img src="/img/home.avif" width={700} height={500} />
         </div>
         <div className={styles.content_body}>
           <p>当ブログは仮想通貨（暗号資産）取引の初心者に向けた解説サイトです。</p>

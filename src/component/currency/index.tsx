@@ -59,16 +59,16 @@ export default function AccountComponent() {
       <div className={styles.content}>
         <div>
             <div className={styles.content_head}>
-                <ContentHeader title="国内の仮想通貨取引所で買える銘柄について｜初心者におすすめの仮想通貨の買い方についても解説！" />
-                <img src={currencyLogo.src} alt="国内の仮想通貨取引所で買える銘柄について解説" />
+                <ContentHeader title="国内の仮想通貨取引所で買える銘柄・特徴について｜初心者におすすめの仮想通貨の買い方についても解説！" />
+                <img src={currencyLogo.src} alt="国内の仮想通貨取引所で買える銘柄について解説" width={584} height={440} />
             </div>
         </div>
         <div className={styles.content_body}>
           <div className={styles.content_main}>
-              <p><span className={styles.color_red}><strong>仮想通貨で儲けるためには、将来性があって安全な通貨を適切に選び、投資する必要があります。</strong></span></p>
+              <p><span className="danger"><strong>仮想通貨で儲けるためには、将来性があって安全な通貨を適切に選び、投資する必要があります。</strong></span></p>
               <p>近年、大きな流行りとなっている仮想通貨、気になっている方も多いと思います。</p>
               <p>この記事では<strong>国内の仮想通貨取引所で買える銘柄</strong>について解説します。</p>
-              <p>仮想通貨初心者におすすめの<span className={styles.color_yellow_border}>仮想通貨の買い方</span>や<span className={styles.color_yellow_border}>仮想通貨の銘柄、開発状況</span>についても解説していきます。</p>
+              <p>仮想通貨初心者におすすめの<span className="yellow-border">仮想通貨の買い方</span>や<span className="yellow-border">仮想通貨の銘柄、開発状況</span>についても解説していきます。</p>
           </div>
 
           <TableContent listItem={[
@@ -99,16 +99,16 @@ export default function AccountComponent() {
                 <h3>仮想通貨の買い方</h3>
                 <p>取引所に開設した口座に日本円を入金すると、その取引所内で仮想通貨を購入できます。</p>
                 <p>仮想通貨取引所には<strong>「販売所」</strong>と<strong>「取引所」</strong>の2種類があります。<br/><strong>「販売所」</strong>では仮想通貨取引所と直接仮想通貨の取引を行います。<br/><strong>「取引所」</strong>では取引所に登録している個人同士(ユーザー間)で仮想通貨の取引を行います。</p>
-                <p><strong>「取引所」</strong>で取引した方が<span className={styles.color_yellow_border}>スプレッド（実質的な手数料）が安く抑えられる</span>ので、基本的には取引所での取引をおすすめします。<br/><strong>「販売所」</strong>でしか取り扱いのない銘柄もありますので、各取引所の案内を確認してみてください。</p>
-                <p>所謂「板取引」というのは、取引所での取引をさす事が多いです。<br/>初心者の方が初めて「板取引」を行う場合、購入または売却価格を指定して注文する<span className={styles.color_yellow_border}>「指値注文」</span>が分かりやすいと思います。</p>
+                <p><strong>「取引所」</strong>で取引した方が<span className="yellow-border">スプレッド（実質的な手数料）が安く抑えられる</span>ので、基本的には取引所での取引をおすすめします。<br/><strong>「販売所」</strong>でしか取り扱いのない銘柄もありますので、各取引所の案内を確認してみてください。</p>
+                <p>所謂「板取引」というのは、取引所での取引をさす事が多いです。<br/>初心者の方が初めて「板取引」を行う場合、購入または売却価格を指定して注文する<span className="yellow-border">「指値注文」</span>が分かりやすいと思います。</p>
               </div>
               <div className={styles.content_main}>
                 <h3>仮想通貨を買うタイミング</h3>
                 <p>大体の取引所では、各銘柄の<strong>仮想通貨/日本円のチャート</strong>が確認できます。</p>
                 <p>チャートから最大で約1年前までの価格変動が確認できますので、現在の価格が過去と比べてどの辺りを推移しているのかが確認できます。</p>
-                <p>仮想通貨の購入タイミングとしては、過去に比べ<span className={styles.color_yellow_border}>安い価格帯を推移している銘柄</span>を狙って少しずつ買い増しする事をおすすめします。</p>
+                <p>仮想通貨の購入タイミングとしては、過去に比べ<span className="yellow-border">安い価格帯を推移している銘柄</span>を狙って少しずつ買い増しする事をおすすめします。</p>
                 <p>仮想通貨は投資と同じですので、<strong>人生を賭けるような無理な投資はNGです！</strong><br/>ポートフォリオの5%くらいが良いとされるレポートも有るようです。<br/>仮想通貨購入は必ず余剰資金で購入するようにしましょう。</p>
-                <p>また、仮想通貨初心者の方には<span className={styles.color_yellow_border}>購入した通貨の長期保有</span>をおすすめします。<br/>短期間での売買は頻繁に価格推移を確認しなければならず、精神がすり減る作業になりますので、初心者にはおすすめしません。</p>
+                <p>また、仮想通貨初心者の方には<span className="yellow-border">購入した通貨の長期保有</span>をおすすめします。<br/>短期間での売買は頻繁に価格推移を確認しなければならず、精神がすり減る作業になりますので、初心者にはおすすめしません。</p>
               </div>
           </div>
 
@@ -135,7 +135,7 @@ export default function AccountComponent() {
 
           <h2 id="sec3">{subTitle3}</h2>
           <div className={styles.currency_logo}>
-            <img src={bitcoinIcon.src} alt="ビットコイン　ロゴ" />
+            <img src={bitcoinIcon.src} alt="ビットコイン　ロゴ" width={180} height={180} />
           </div>
           <div className={styles.table_block}>
             <table>
@@ -164,7 +164,7 @@ export default function AccountComponent() {
 
           <h2 id="sec4">{subTitle4}</h2>
           <div className={styles.currency_logo}>
-            <img src={ethIcon.src} alt="イーサ　ロゴ" />
+            <img src={ethIcon.src} alt="イーサ　ロゴ" width={180} height={180} />
           </div>
           <div className={styles.table_block}>
             <table>
@@ -193,7 +193,7 @@ export default function AccountComponent() {
 
           <h2 id="sec5">{subTitle5}</h2>
           <div className={styles.currency_logo}>
-            <img src={adaIcon.src} alt="カルダノ　ロゴ" />
+            <img src={adaIcon.src} alt="カルダノ　ロゴ" width={180} height={180} />
           </div>
           <div className={styles.table_block}>
             <table>
@@ -222,7 +222,7 @@ export default function AccountComponent() {
 
           <h2 id="sec6">{subTitle6}</h2>
           <div className={styles.currency_logo}>
-            <img src={pltIcon.src} alt="パレットトークン　ロゴ" />
+            <img src={pltIcon.src} alt="パレットトークン　ロゴ" width={180} height={180} />
           </div>
           <div className={styles.table_block}>
             <table>
@@ -251,7 +251,7 @@ export default function AccountComponent() {
 
           <h2 id="sec7">{subTitle7}</h2>
           <div className={styles.currency_logo}>
-            <img src={iostIcon.src} alt="IOST　ロゴ" />
+            <img src={iostIcon.src} alt="IOST　ロゴ" width={180} height={180} />
           </div>
           <div className={styles.table_block}>
             <table>
@@ -280,7 +280,7 @@ export default function AccountComponent() {
 
           <h2 id="sec8">{subTitle8}</h2>
           <div className={styles.currency_logo}>
-            <img src={jmyIcon.src} alt="ジャスミー　ロゴ" />
+            <img src={jmyIcon.src} alt="ジャスミー　ロゴ" width={180} height={180} />
           </div>
           <div className={styles.table_block}>
             <table>
@@ -309,7 +309,7 @@ export default function AccountComponent() {
 
           <h2 id="sec9">{subTitle9}</h2>
           <div className={styles.currency_logo}>
-            <img src={lskIcon.src} alt="リスク　ロゴ" />
+            <img src={lskIcon.src} alt="リスク　ロゴ" width={180} height={180} />
           </div>
           <div className={styles.table_block}>
             <table>
@@ -338,7 +338,7 @@ export default function AccountComponent() {
 
           <h2 id="sec10">{subTitle10}</h2>
           <div className={styles.currency_logo}>
-            <img src={xrpIcon.src} alt="リップル　ロゴ" />
+            <img src={xrpIcon.src} alt="リップル　ロゴ" width={180} height={180} />
           </div>
           <div className={styles.table_block}>
             <table>
@@ -367,7 +367,7 @@ export default function AccountComponent() {
 
           <h2 id="sec11">{subTitle11}</h2>
           <div className={styles.currency_logo}>
-            <img src={xemIcon.src} alt="ネム　ロゴ" />
+            <img src={xemIcon.src} alt="ネム　ロゴ" width={180} height={180} />
           </div>
           <div className={styles.table_block}>
             <table>
@@ -396,7 +396,7 @@ export default function AccountComponent() {
 
           <h2 id="sec12">{subTitle12}</h2>
           <div className={styles.currency_logo}>
-            <img src={ltcIcon.src} alt="ライトコイン　ロゴ" />
+            <img src={ltcIcon.src} alt="ライトコイン　ロゴ" width={180} height={180} />
           </div>
           <div className={styles.table_block}>
             <table>
@@ -425,7 +425,7 @@ export default function AccountComponent() {
 
           <h2 id="sec13">{subTitle13}</h2>
           <div className={styles.currency_logo}>
-            <img src={porcaIcon.src} alt="ポルカドット　ロゴ" />
+            <img src={porcaIcon.src} alt="ポルカドット　ロゴ" width={180} height={180} />
           </div>
           <div className={styles.table_block}>
             <table>
@@ -454,7 +454,7 @@ export default function AccountComponent() {
 
           <h2 id="sec14">{subTitle14}</h2>
           <div className={styles.currency_logo}>
-            <img src={trxIcon.src} alt="トロン　ロゴ" />
+            <img src={trxIcon.src} alt="トロン　ロゴ" width={180} height={180} />
           </div>
           <div className={styles.table_block}>
             <table>
@@ -483,7 +483,7 @@ export default function AccountComponent() {
 
           <h2 id="sec15">{subTitle15}</h2>
           <div className={styles.currency_logo}>
-            <img src={batIcon.src} alt="BAT　ロゴ" />
+            <img src={batIcon.src} alt="BAT　ロゴ" width={180} height={180} />
           </div>
           <div className={styles.table_block}>
             <table>
@@ -516,9 +516,9 @@ export default function AccountComponent() {
           <h2 id="sec16">{subTitle16}</h2>
           <div>
             <div className={styles.content_main}>
-              <p>仮想通貨の開発状況は<span className={styles.color_yellow_border}>公式サイトのロードマップ</span>や<span className={styles.color_yellow_border}>GitHub上のソースコード</span>などから確認できます。<br/>GitHubのリンクは上の記事で紹介していますので、興味のある方は確認してみてください。</p>
-              <p>全てではありませんが各仮想通貨は<span className={styles.color_yellow_border}>国際会議</span>を開催しているので、そちらもチェックしておくと良いでしょう。</p>
-              <p>また、<span className={styles.color_yellow_border}>Twitter公式アカウントのつぶやき</span>なども参考になりますので、フォローしておくのも良いでしょう。</p>
+              <p>仮想通貨の開発状況は<span className="yellow-border">公式サイトのロードマップ</span>や<span className="yellow-border">GitHub上のソースコード</span>などから確認できます。<br/>GitHubのリンクは上の記事で紹介していますので、興味のある方は確認してみてください。</p>
+              <p>全てではありませんが各仮想通貨は<span className="yellow-border">国際会議</span>を開催しているので、そちらもチェックしておくと良いでしょう。</p>
+              <p>また、<span className="yellow-border">Twitter公式アカウントのつぶやき</span>なども参考になりますので、フォローしておくのも良いでしょう。</p>
             </div>
           </div>
 

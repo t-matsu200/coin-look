@@ -11,8 +11,8 @@ export default function Beginner(props) {
 
   return (
     <MainLayout>
-      <Seo pageTitle="【仮想通貨取引の注意点】￤仮想通貨取引初心者が気をつけるべき点を解説！ | CoinLook(コインルック)"
-        pageDescription="【仮想通貨取引の注意点を解説！】CoinLookは仮想通貨取引に興味のある方・取引を始めたい方に向けた仮想通貨取引の解説サイトです。" />
+      <Seo pageTitle="【仮想通貨取引に注意点おける注意点とは？】仮想通貨／ビットコイン取引を始めたい初心者が気をつけるべき点を解説！"
+        pageDescription="初心者向けが仮想通貨取引を始める際の注意点・税金について分かりやすく解説！" />
       <BreadCrunb itemList={[{name: '初心者の注意点', path: '/beginner'}]} />
       <div>
         <div className={styles.display_flex}>

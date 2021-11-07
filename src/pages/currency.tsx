@@ -8,11 +8,14 @@ import styles from '../styles/Home.module.scss';
 
 
 export default function Currency(props) {
+  const now = new Date();
+  const year = now.getFullYear().toString();
+  const month = (now.getMonth() + 1).toString();
 
   return (
     <MainLayout>
-      <Seo pageTitle="【仮想通貨の種類】￤国内の仮想通貨取引所で買える銘柄を紹介！ | CoinLook(コインルック)"
-        pageDescription="【仮想通貨の銘柄について解説！】CoinLookは仮想通貨取引に興味のある方・取引を始めたい方に向けた仮想通貨取引の解説サイトです。" />
+      <Seo pageTitle={`【${year}年${month}月最新】仮想通貨のおすすめ銘柄・特徴￤国内の仮想通貨取引所で買える銘柄を紹介！`}
+        pageDescription="おすすめの仮想通貨の銘柄や特徴を初心者にも分かりやすく解説しています。" />
       <BreadCrunb itemList={[{name: '通貨', path: '/account'}]} />
       <div>
         <div className={styles.display_flex}>
