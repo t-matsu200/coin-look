@@ -73,59 +73,6 @@
   width: 100%;
 }
 
-.account_link{
-  animation: vibrations 2s linear infinite;
-  background: #00A0E9;
-  border-radius: 10px;
-  box-sizing: border-box;
-  color: #fff;
-  display: block;
-  line-height: 1;
-  padding: 15px 30px 15px 15px;
-  text-align: center;
-  width: 68%;
-  margin: auto;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.account_link:hover {
-  background: #9FD9F6;
-  color: #f8f8ff;
-}
-
-.appeal_img {
-  animation: vibrations 2s linear infinite;
-  transition: 0.3s;
-  text-align: center;
-}
-
-.check_point {
-  padding: 25px 30px;
-  border: 1px solid #10bdc2;
-  border-radius: 8px;
-  margin: 20px 0;
-  position: relative;
-  margin: 48px 0 48px;
-}
-
-.check_point:before {
-  content: "Look Point";
-  text-transform: capitalize;
-  font-size: 16px;
-  line-height: 21px;
-  color: #10bdc2;
-  font-weight: 700;
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background-color: #fff;
-  width: 150px;
-  text-align: center;
-}
-
 .appeal {
   text-align: center;
   font-weight: bold;
@@ -181,5 +128,3 @@
     white-space: nowrap;
   }
 }
-
-@keyframes vibrations{0%{-webkit-transform:translate(0);transform:translate(0)}1%{-webkit-transform:translate(4px);transform:translate(4px)}2%{-webkit-transform:translate(0);transform:translate(0)}3%{-webkit-transform:translate(-4px);transform:translate(-4px)}4%{-webkit-transform:translate(0);transform:translate(0)}5%{-webkit-transform:translate(4px);transform:translate(4px)}6%{-webkit-transform:translate(0);transform:translate(0)}7%{-webkit-transform:translate(-4px);transform:translate(-4px)}8%{-webkit-transform:translate(0);transform:translate(0)}9%{-webkit-transform:translate(4px);transform:translate(4px)}10%{-webkit-transform:translate(0);transform:translate(0)}11%{-webkit-transform:translate(-4px);transform:translate(-4px)}12%{-webkit-transform:translate(0);transform:translate(0)}100%{-webkit-transform:translate(0);transform:translate(0)}}

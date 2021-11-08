@@ -113,8 +113,8 @@ export default function AccountComponent() {
                     </tr>
                   </tbody>
                 </table>
-                <div className={styles.check_point}>
-                  <a className={styles.account_link} href={AppConstant.coincheck}>口座開設する</a>
+                <div className="check-point">
+                  <a className="account-link" href={AppConstant.coincheck}>口座開設する</a>
                 </div>
               </div>
 
@@ -141,8 +141,8 @@ export default function AccountComponent() {
                     </tr>
                   </tbody>
                 </table>
-                <div className={styles.check_point}>
-                  <a className={styles.account_link} href="https://bitflyer.com/invitation?id=e3ilarco&lang=ja-JP">公式アプリをダウンロード</a>
+                <div className="check-point">
+                  <a className="account-link" href="https://bitflyer.com/invitation?id=e3ilarco&lang=ja-JP">公式アプリをダウンロード</a>
                 </div>
               </div>
 
@@ -169,9 +169,9 @@ export default function AccountComponent() {
                     </tr>
                   </tbody>
                 </table>
-                <div className={styles.check_point}>
+                <div className="check-point">
                   <a href={AppConstant.bitPoint} target="_blank" rel="noopener noreferrer">
-                    <div className={styles.appeal_img}>
+                    <div className="appeal-img">
                       <img src={bitpointCampaign.src} alt="BITPoint" width={400} height={230} />
                     </div>
                   </a>
@@ -197,9 +197,9 @@ export default function AccountComponent() {
                     </tr>
                   </tbody>
                 </table>
-                <div className={styles.check_point}>
+                <div className="check-point">
                   <a href={AppConstant.huobiJp} rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
-                    <div className={styles.appeal_img}>
+                    <div className="appeal-img">
                       <img src={huobiCampaign.src} alt="フォビジャパン（Huobi Japan)" />
                     </div>
                   </a>
@@ -246,6 +246,15 @@ export default function AccountComponent() {
                     </tr>
                   </tbody>
                 </table>
+                <div className="check-point">
+                  <a href={AppConstant.dmmCoin} rel="nofollow">
+                    <div className="appeal-img">
+                      <img width="300" height="250" alt="" src="https://www20.a8.net/svt/bgt?aid=211106049229&wid=001&eno=01&mid=s00000017198003007000&mc=1" />  
+                      <img width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3HOQGX+3SCAB6+3OP8+HWI5T" alt="" />
+                    </div>
+                  </a>
+                  <p className="careful">※ DMM Bitcoin公式サイトに遷移後、当サイトから遷移した旨のメッセージが表示されますが、全く問題ありませんのでご安心ください</p>
+                </div>
               </div>
           </div>
 
@@ -259,11 +268,12 @@ export default function AccountComponent() {
             </div>
           </div>
 
+          <hr/>
           <Advertisement htmlString={AppConstant.ledgerNano} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
           <h2 id="sec5">{subTitle5}</h2>
           <div className={styles.content_main}>
-            <div className={styles.check_point}>
+            <div className="check-point">
                 <ul className={styles.matome_ul}>
                     <li><strong>口座開設費・維持費は無料です。</strong></li>
                     <li>口座開設審査に少し時間がかかる事があります。</li>
