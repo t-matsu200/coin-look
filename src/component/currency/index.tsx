@@ -524,7 +524,7 @@ export default function AccountComponent() {
 
           <h2 id="sec17">{subTitle17}</h2>
           <div className={styles.content_main}>
-            <div className={styles.check_point}>
+            <div className="check-point">
               <ul className={styles.matome_ul}>
                   <li>初心者は<strong>安い価格帯を推移している銘柄を狙って少しずつ買い増し・長期保有</strong>がおすすめです。</li>
                   <li>各仮想通貨で<strong>開発目的</strong>が異なります。</li>

@@ -162,8 +162,8 @@ export default function ExchangeComponent() {
                     <p>国内では最多となる17銘柄を扱っており、初心者にもおすすめです。</p>
                     <p><span className="yellow-border">貸暗号資産というレンディングサービス</span>があり、保有している暗号資産を一定期間{coincheck}に預けることにより利用料が貰えます。<br/>14日間で年率1%、30日間で年率2%と預け入れる期間が長くなる程年率が高くなりますが、年率の高い枠は人気ですので申請が受理されるまでかなりかかります。<br/>参考までに、筆者が所有しているIOSTを30日間の枠で申請した所、貸し出されるまでに1ヶ月かかりました。</p>
 
-                    <div className={styles.check_point}>
-                        <a className={styles.account_link} href={AppConstant.coincheck}>口座開設する</a>
+                    <div className="check-point">
+                        <a className="account-link" href={AppConstant.coincheck}>口座開設する</a>
                     </div>
 
                     <p>また{coincheck}では、国内初のIEO（Initial Exchange Offering）として「{pallet}」が実施されました。<br/>今後もまたIEOが実施される可能性もありますので、募集に応募できるように口座開設を済ませておくと良いでしょう。</p>
@@ -195,8 +195,8 @@ export default function ExchangeComponent() {
                     <p>また、テゾス({tezos})やポルカドット({polkadot})など、{coincheck}では扱っていない銘柄も取り扱っていますので、こちらも口座開設を済ませておく事をおすすめします。</p>
                 </div>
 
-                <div className={styles.check_point}>
-                    <a className={styles.account_link} href="https://bitflyer.com/invitation?id=e3ilarco&lang=ja-JP">公式アプリをダウンロード</a>
+                <div className="check-point">
+                    <a className="account-link" href="https://bitflyer.com/invitation?id=e3ilarco&lang=ja-JP">公式アプリをダウンロード</a>
                 </div>
             </div>
 
@@ -213,9 +213,9 @@ export default function ExchangeComponent() {
                     <p>2021/11/30まで、<span className="yellow-border">JMYが最大15,500円相当貰えるキャンペーンを実施中</span>ですので、口座開設するなら今がお得です。</p>
                 </div>
 
-                <div className={styles.check_point}>
+                <div className="check-point">
                     <a href={AppConstant.bitPoint} target="_blank" rel="noopener noreferrer">
-                        <div className={styles.appeal_img}>
+                        <div className="appeal-img">
                             <img src={bitpointCampaign.src} alt="BITPoint" width={400} height={230} />
                         </div>
                     </a>
@@ -235,9 +235,9 @@ export default function ExchangeComponent() {
                     <p><strong>HT（フォビトークン）</strong>というEthereumブロックチェーン上の分散型仮想通貨を取り扱っており、<strong>保有量に応じて全8段階の取引手数料の割引</strong>が行われます。2021/11/1現在、評価額は1,500円前後となっています。</p>
                     <p>2022/1/24まで、<span className="yellow-border">HTが最大30,000円相当貰えるキャンペーンを実施中</span>ですので、口座開設するなら今がお得です。</p>
                 </div>
-                <div className={styles.check_point}>
+                <div className="check-point">
                     <a href={AppConstant.huobiJp} rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
-                        <div className={styles.appeal_img}>
+                        <div className="appeal-img">
                             <img src={huobiCampaign.src} alt="フォビジャパン（Huobi Japan)" />
                         </div>
                     </a>
@@ -269,9 +269,16 @@ export default function ExchangeComponent() {
                     <p>また、送金手数料が他の取引所に比べ割安なのが特徴です。</p>
                     <p>よく口座開設キャンペーンを実施している印象がありますので、他の取引所よりもお得に口座開設できるかもしれません。</p>
                 </div>
+                <div className="check-point">
+                    <a href={AppConstant.dmmCoin} rel="nofollow">
+                        <div className="appeal-img">
+                            <img width="300" height="250" alt="" src="https://www20.a8.net/svt/bgt?aid=211106049229&wid=001&eno=01&mid=s00000017198003007000&mc=1" />  
+                            <img width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3HOQGX+3SCAB6+3OP8+HWI5T" alt="" />
+                        </div>
+                    </a>
+                    <p className="careful">※ DMM Bitcoin公式サイトに遷移後、当サイトから遷移した旨のメッセージが表示されますが、全く問題ありませんのでご安心ください</p>
+                </div>
             </div>
-
-            <Advertisement htmlString={AppConstant.ledgerNano} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
             <h2 id="sec3">{subTitle3}</h2>
             <div className={styles.foreign_block}>
@@ -299,6 +306,9 @@ export default function ExchangeComponent() {
                 </div>
             </div>
 
+            <hr/>
+            <Advertisement htmlString={AppConstant.ledgerNano} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
+
             <h2 id="sec4">{subTitle4}</h2>
             <div className={styles.content_main}>
                 <p>海外の取引所には<span style={colorYellowBorder}>日本では上場されないような草コイン</span>が上場されていたり、<span style={colorYellowBorder}>ステーキングの利率</span>などが魅力的だと思います。</p>
@@ -314,7 +324,7 @@ export default function ExchangeComponent() {
 
             <h2 id="sec5">{subTitle5}</h2>
             <div className={styles.content_main}>
-                <div className={styles.check_point}>
+                <div className="check-point">
                     <ul className={styles.matome_ul}>
                         <li>IEOや新規銘柄の上場に備え、すぐに売買はしなくても口座開設を済ませておくと良いでしょう。</li>
                         <li>仮想通貨初心者でも分かりやすいUIの国内取引所について解説しました。</li>

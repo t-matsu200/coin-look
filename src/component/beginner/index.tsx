@@ -52,7 +52,7 @@ export default function BeginnerComponent() {
           <Advertisement htmlString={AppConstant.huobiRect} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
           <h2 id="sec1">{subTitle1}</h2>
-          <div className={styles.check_point}>
+          <div className="check-point">
             <ul className={styles.matome_ul}>
               <li>仮想通貨購入は必ず余剰資金ですること</li>
               <li>最初は小額の取引をコツコツと続けていくこと</li>
@@ -109,11 +109,25 @@ export default function BeginnerComponent() {
               <p>なお、この計算方法は<strong>国内で得た場合</strong>の計算方法です。</p>
               <p><strong>ステーキング等で得た利益を売却する場合</strong>は、以下のように雑所得に加算します。<br/>計算結果がマイナスの場合、加算はされません。</p>
               <p><strong>売却額 - (受け取る権利が確定した時点での時価 * 数量)</strong></p>
+              <p>
+                <a href="https://px.a8.net/svt/ejp?a8mat=3HOQGX+4BE6FU+4DGW+5YJRM" rel="nofollow">CRYPTACT（クリプタクト）</a>
+                <img width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3HOQGX+4BE6FU+4DGW+5YJRM" alt="" />
+                という税金を自動計算してくれるサービスもあります。
+                国内取引所のみの利用であれば無料プラン内で済ませることも可能ですので、一度チェックしてみてはいかがでしょうか？
+              </p>
+            </div>
+            <div className="check-point">
+              <div className="appeal-img">
+                <a href="https://px.a8.net/svt/ejp?a8mat=3HOQGX+4BE5O2+4DGW+5ZU29" rel="nofollow">
+                  <img width="468" height="60" alt="" src="https://www23.a8.net/svt/bgt?aid=211106049261&wid=001&eno=01&mid=s00000020408001007000&mc=1" />
+                </a>
+                <img width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3HOQGX+4BE5O2+4DGW+5ZU29" alt="" />
+              </div>
             </div>
           </div>
 
           <h2 id="sec6">{subTitle6}</h2>
-          <div className={styles.check_point}>
+          <div className="check-point">
             <ul className={styles.matome_ul}>
               <li>仮想通貨購入は必ず余剰資金ですること</li>
               <li>最初は小額の取引をコツコツと続けていくこと</li>
