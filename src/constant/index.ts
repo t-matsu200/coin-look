@@ -2,6 +2,7 @@ export default class AppConstant {
     static coincheck = 'https://coincheck.com/ja/registrations?code=VXNlcjoyOTA1Nzcw';
     static bitPoint = 'https://www.bitpoint.co.jp/lp/referral/?invitationCd=YIHBHIRLFT&afid=PaAKUxGd&argument=E4y65Xyx&dmai=a60e69a5d44eea';
     static huobiJp = 'https://h.accesstrade.net/sp/cc?rk=0100orb700lt2u';
+    static gmoCoin = 'https://coin.z.com/jp/member/signup';
     static dmmCoin = 'https://px.a8.net/svt/ejp?a8mat=3HOQGX+3SCAB6+3OP8+HWI5T';
     static biccore = '<a href="https://h.accesstrade.net/sp/cc?rk=0100ovex00lt2u" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://h.accesstrade.net/sp/rr?rk=0100ovex00lt2u" alt="ビッコレ" border="0" /></a>';
     static huobiRect = '<a href="https://h.accesstrade.net/sp/cc?rk=0100ny5500lt2u" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://h.accesstrade.net/sp/rr?rk=0100ny5500lt2u" alt="【フォビジャパン（Huobi Japan】仮想通貨取引所" border="0" /></a>';

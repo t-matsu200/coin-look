@@ -163,7 +163,7 @@ export default function ExchangeComponent() {
                     <p><span className="yellow-border">貸暗号資産というレンディングサービス</span>があり、保有している暗号資産を一定期間{coincheck}に預けることにより利用料が貰えます。<br/>14日間で年率1%、30日間で年率2%と預け入れる期間が長くなる程年率が高くなりますが、年率の高い枠は人気ですので申請が受理されるまでかなりかかります。<br/>参考までに、筆者が所有しているIOSTを30日間の枠で申請した所、貸し出されるまでに1ヶ月かかりました。</p>
 
                     <div className="check-point">
-                        <a className="account-link" href={AppConstant.coincheck}>口座開設する</a>
+                        <a className="account-link" href={AppConstant.coincheck} target="_blank" rel="noopener noreferrer">口座開設する</a>
                     </div>
 
                     <p>また{coincheck}では、国内初のIEO（Initial Exchange Offering）として「{pallet}」が実施されました。<br/>今後もまたIEOが実施される可能性もありますので、募集に応募できるように口座開設を済ませておくと良いでしょう。</p>
@@ -196,7 +196,46 @@ export default function ExchangeComponent() {
                 </div>
 
                 <div className="check-point">
-                    <a className="account-link" href="https://bitflyer.com/invitation?id=e3ilarco&lang=ja-JP">公式アプリをダウンロード</a>
+                    <a className="account-link" href="https://bitflyer.com/invitation?id=e3ilarco&lang=ja-JP" target="_blank" rel="noopener noreferrer">公式アプリをダウンロード</a>
+                </div>
+            </div>
+
+            <hr />
+            <h3>GMOコイン</h3>
+            <div className={styles.exchange_block}>
+                <div className={styles.bg_logo}>
+                    <img src={bgGmoCoinLogo.src} alt="GMO coin logo" width={400} height={300}/>
+                </div>
+                <div className={styles.content_main}>
+                    <p>2016年に設立されたGMOコイン株式会社が運営する暗号資産取引所。</p>
+                    <p>スマホアプリの使い勝手に定評があり、初心者にもおすすめの取引所です。</p>
+                    <p>基本的な手数料が全部無料であることも特徴の一つです。<br/>他の取引所やウォレットに小額の送金が必要になった場合など、口座開設を済ませておくとスムーズに利用できて便利です。</p>
+                </div>
+                <div className="check-point">
+                    <a className="account-link" href={AppConstant.gmoCoin} target="_blank" rel="noopener noreferrer">口座開設する</a>
+                </div>
+            </div>
+
+            <hr />
+            <h3>DMM Bitcoin</h3>
+            <div className={styles.exchange_block}>
+                <div className={styles.bg_logo}>
+                    <img src={bgDmmCoinLogo.src} alt="DMM Bitcoin logo" width={400} height={300} />
+                </div>
+                <div className={styles.content_main}>
+                    <p>2016年に設立された株式会社DMM Bitcoinが運営する暗号資産取引所。</p>
+                    <p>アルトコインのレバレッジ取引を行うことができる点に特徴があります。<br/>レバレッジ取引とは元手を担保にその何倍もの取引を可能にする方法です。<br/>他の取引所ではアルトコインのレバレッジ取引は、あまり対応していないことが多いです。</p>
+                    <p>また、送金手数料が他の取引所に比べ割安なのが特徴です。</p>
+                    <p>よく口座開設キャンペーンを実施している印象がありますので、他の取引所よりもお得に口座開設できるかもしれません。</p>
+                </div>
+                <div className="check-point">
+                    <a href={AppConstant.dmmCoin} rel="nofollow">
+                        <div className="appeal-img">
+                            <img width="300" height="250" alt="" src="https://www20.a8.net/svt/bgt?aid=211106049229&wid=001&eno=01&mid=s00000017198003007000&mc=1" />  
+                            <img width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3HOQGX+3SCAB6+3OP8+HWI5T" alt="" />
+                        </div>
+                    </a>
+                    <p className="careful">※ DMM Bitcoin公式サイトに遷移後、当サイトから遷移した旨のメッセージが表示されますが、全く問題ありませんのでご安心ください</p>
                 </div>
             </div>
 
@@ -241,42 +280,6 @@ export default function ExchangeComponent() {
                             <img src={huobiCampaign.src} alt="フォビジャパン（Huobi Japan)" />
                         </div>
                     </a>
-                </div>
-            </div>
-
-            <hr />
-            <h3>GMOコイン</h3>
-            <div className={styles.exchange_block}>
-                <div className={styles.bg_logo}>
-                    <img src={bgGmoCoinLogo.src} alt="GMO coin logo" width={400} height={300}/>
-                </div>
-                <div className={styles.content_main}>
-                    <p>2016年に設立されたGMOコイン株式会社が運営する暗号資産取引所。</p>
-                    <p>スマホアプリの使い勝手に定評があり、初心者にもおすすめの取引所です。</p>
-                    <p>基本的な手数料が全部無料であることも特徴の一つです。<br/>他の取引所やウォレットに小額の送金が必要になった場合など、口座開設を済ませておくとスムーズに利用できて便利です。</p>
-                </div>
-            </div>
-
-            <hr />
-            <h3>DMM Bitcoin</h3>
-            <div className={styles.exchange_block}>
-                <div className={styles.bg_logo}>
-                    <img src={bgDmmCoinLogo.src} alt="DMM Bitcoin logo" width={400} height={300} />
-                </div>
-                <div className={styles.content_main}>
-                    <p>2016年に設立された株式会社DMM Bitcoinが運営する暗号資産取引所。</p>
-                    <p>アルトコインのレバレッジ取引を行うことができる点に特徴があります。<br/>レバレッジ取引とは元手を担保にその何倍もの取引を可能にする方法です。<br/>他の取引所ではアルトコインのレバレッジ取引は、あまり対応していないことが多いです。</p>
-                    <p>また、送金手数料が他の取引所に比べ割安なのが特徴です。</p>
-                    <p>よく口座開設キャンペーンを実施している印象がありますので、他の取引所よりもお得に口座開設できるかもしれません。</p>
-                </div>
-                <div className="check-point">
-                    <a href={AppConstant.dmmCoin} rel="nofollow">
-                        <div className="appeal-img">
-                            <img width="300" height="250" alt="" src="https://www20.a8.net/svt/bgt?aid=211106049229&wid=001&eno=01&mid=s00000017198003007000&mc=1" />  
-                            <img width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3HOQGX+3SCAB6+3OP8+HWI5T" alt="" />
-                        </div>
-                    </a>
-                    <p className="careful">※ DMM Bitcoin公式サイトに遷移後、当サイトから遷移した旨のメッセージが表示されますが、全く問題ありませんのでご安心ください</p>
                 </div>
             </div>
 
