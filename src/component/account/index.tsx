@@ -114,7 +114,7 @@ export default function AccountComponent() {
                   </tbody>
                 </table>
                 <div className="check-point">
-                  <a className="account-link" href={AppConstant.coincheck}>口座開設する</a>
+                  <a className="account-link" href={AppConstant.coincheck} target="_blank" rel="noopener noreferrer">口座開設する</a>
                 </div>
               </div>
 
@@ -142,67 +142,7 @@ export default function AccountComponent() {
                   </tbody>
                 </table>
                 <div className="check-point">
-                  <a className="account-link" href="https://bitflyer.com/invitation?id=e3ilarco&lang=ja-JP">公式アプリをダウンロード</a>
-                </div>
-              </div>
-
-              <h3>BITPoint</h3>
-              <div className={styles.table_block}>
-                <img src={bgBitPointLogo.src} alt="BITPoint logo" style={{margin: "60px 0 60px"}} />
-                <table>
-                  <thead>
-                    <tr>
-                      <th>入金手数料</th>
-                      <td>
-                        <div>・銀行振込：無料<br/>・即時入金：無料</div>
-                      </td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>板取引可能</th>
-                      <td>BTC, TRX, XRP, ETH, BCH, LTC, BAT</td>
-                    </tr>
-                    <tr>
-                      <th>備考</th>
-                      <td>・即時入金ができるのは「住信SBIネット銀行」と「PayPay銀行」、「イオン銀行」のみ<br/>・国内の取引所では取扱の少ない銘柄を上場<br/>・口座開設キャンペーンをよく実施している</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div className="check-point">
-                  <a href={AppConstant.bitPoint} target="_blank" rel="noopener noreferrer">
-                    <div className="appeal-img">
-                      <img src={bitpointCampaign.src} alt="BITPoint" width={400} height={230} />
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <h3>Huobi Japan</h3>
-              <div className={styles.table_block}>
-                <img src={bgHuobiLogo.src} alt="Huobi logo" />
-                <table>
-                  <thead>
-                    <tr>
-                      <th>入金手数料</th>
-                      <td>
-                        <div>・銀行振込：無料<br/>・クイック入金：無料</div>
-                      </td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>備考</th>
-                      <td>・入出金手数料が無料<br/>・HT保有量に応じて取引手数料が割引</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div className="check-point">
-                  <a href={AppConstant.huobiJp} rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
-                    <div className="appeal-img">
-                      <img src={huobiCampaign.src} alt="フォビジャパン（Huobi Japan)" />
-                    </div>
-                  </a>
+                  <a className="account-link" href="https://bitflyer.com/invitation?id=e3ilarco&lang=ja-JP" target="_blank" rel="noopener noreferrer">公式アプリをダウンロード</a>
                 </div>
               </div>
 
@@ -225,6 +165,9 @@ export default function AccountComponent() {
                     </tr>
                   </tbody>
                 </table>
+                <div className="check-point">
+                  <a className="account-link" href={AppConstant.gmoCoin} target="_blank" rel="noopener noreferrer">口座開設する</a>
+                </div>
               </div>
 
               <h3>DMM Bitcoin</h3>
@@ -256,6 +199,66 @@ export default function AccountComponent() {
                   <p className="careful">※ DMM Bitcoin公式サイトに遷移後、当サイトから遷移した旨のメッセージが表示されますが、全く問題ありませんのでご安心ください</p>
                 </div>
               </div>
+          </div>
+
+          <h3>BITPoint</h3>
+          <div className={styles.table_block}>
+            <img src={bgBitPointLogo.src} alt="BITPoint logo" style={{margin: "60px 0 60px"}} />
+            <table>
+              <thead>
+                <tr>
+                  <th>入金手数料</th>
+                  <td>
+                    <div>・銀行振込：無料<br/>・即時入金：無料</div>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>板取引可能</th>
+                  <td>BTC, TRX, XRP, ETH, BCH, LTC, BAT</td>
+                </tr>
+                <tr>
+                  <th>備考</th>
+                  <td>・即時入金ができるのは「住信SBIネット銀行」と「PayPay銀行」、「イオン銀行」のみ<br/>・国内の取引所では取扱の少ない銘柄を上場<br/>・口座開設キャンペーンをよく実施している</td>
+                </tr>
+              </tbody>
+            </table>
+            <div className="check-point">
+              <a href={AppConstant.bitPoint} target="_blank" rel="noopener noreferrer">
+                <div className="appeal-img">
+                  <img src={bitpointCampaign.src} alt="BITPoint" width={400} height={230} />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <h3>Huobi Japan</h3>
+          <div className={styles.table_block}>
+            <img src={bgHuobiLogo.src} alt="Huobi logo" />
+            <table>
+              <thead>
+                <tr>
+                  <th>入金手数料</th>
+                  <td>
+                    <div>・銀行振込：無料<br/>・クイック入金：無料</div>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>備考</th>
+                  <td>・入出金手数料が無料<br/>・HT保有量に応じて取引手数料が割引</td>
+                </tr>
+              </tbody>
+            </table>
+            <div className="check-point">
+              <a href={AppConstant.huobiJp} rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
+                <div className="appeal-img">
+                  <img src={huobiCampaign.src} alt="フォビジャパン（Huobi Japan)" />
+                </div>
+              </a>
+            </div>
           </div>
 
           <h2 id="sec4">{subTitle4}</h2>

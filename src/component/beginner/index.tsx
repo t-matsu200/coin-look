@@ -5,6 +5,8 @@ import Advertisement from '../advertisement';
 import AppConstant from '../../constant';
 
 import beginnerLogo from '../../../public/img/bg-beginner.png';
+import React from 'react';
+import Link from 'next/link';
 
 
 export default function BeginnerComponent() {
@@ -69,6 +71,8 @@ export default function BeginnerComponent() {
               <p>万が一投資した金額を全て失ったとしても、問題なく生活できるくらいの金額で取引しましょう。</p>
               <p>ポートフォリオの5%くらいが良いとされるレポートも有るようです。</p>
               <p>余裕資金が少ないのであれば、取引も控えましょう。</p>
+              <p>初心者向けに<Link href="/exchange">取引所の特徴</Link>や<Link href="/account">口座解説について</Link>も記事にしていますので、よかったら参考にしてみてください。</p>
+              <p>{makeLink(AppConstant.coincheck, 'Coincheck')}や{makeLink(AppConstant.gmoCoin, 'GMOコイン')}など、実績のある国内の取引所を紹介しています。</p>
             </div>
           </div>
 
