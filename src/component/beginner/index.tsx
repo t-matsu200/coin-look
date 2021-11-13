@@ -40,6 +40,7 @@ export default function BeginnerComponent() {
               <p><span className="danger"><strong>仮想通貨取引を始めるにあたって、何に気をつければ良いのでしょうか？</strong></span></p>
               <p>この記事では<strong>仮想通貨投資でやってはいけないこと</strong>について解説します。</p>
               <p>仮想通貨初心者が気をつけるべき点として、<span className="yellow-border">発生する税金</span>についても解説していきます。</p>
+              <p>国内取引所の各種サービスについて知りたい方は、<Link href="/exchange-jp">こちら</Link>で解説しています。</p>
           </div>
 
           <TableContent listItem={[

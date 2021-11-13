@@ -31,6 +31,9 @@ function Header() {
                 <Link href="/currency">通貨</Link>
               </div>
               <div>
+                <Link href="/exchange-jp">サービス</Link>
+              </div>
+              <div>
                 <Link href="/beginner">初心者の注意点</Link>
               </div>
               <div>

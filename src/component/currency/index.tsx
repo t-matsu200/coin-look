@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './index.module.scss';
 import ContentHeader from '../contentHeader';
 import TableContent from '../tableContent';
@@ -69,6 +70,7 @@ export default function AccountComponent() {
               <p>近年、大きな流行りとなっている仮想通貨、気になっている方も多いと思います。</p>
               <p>この記事では<strong>国内の仮想通貨取引所で買える銘柄</strong>について解説します。</p>
               <p>仮想通貨初心者におすすめの<span className="yellow-border">仮想通貨の買い方</span>や<span className="yellow-border">仮想通貨の銘柄、開発状況</span>についても解説していきます。</p>
+              <p>国内取引所の各種サービスについて知りたい方は、<Link href="/exchange-jp">こちら</Link>で解説しています。</p>
           </div>
 
           <TableContent listItem={[
