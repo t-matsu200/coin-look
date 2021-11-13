@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './index.module.scss';
 import ContentHeader from '../contentHeader';
 import TableContent from '../tableContent';
@@ -38,6 +39,7 @@ export default function AccountComponent() {
               <p><span className="danger"><strong>仮想通貨の売買を始めるには、仮想通貨取引所への口座開設（アカウント作成）をする必要があります。</strong></span></p>
               <p>この記事では<strong>取引所の口座開設の流れ</strong>について解説します。</p>
               <p>仮想通貨初心者にもおすすめの<span className="yellow-border">振込手数料がお得な銀行</span>や<span className="yellow-border">複数の取引所で口座開設するメリット</span>についても解説していきます。</p>
+              <p>国内取引所の各種サービスについて知りたい方は、<Link href="/exchange-jp">こちら</Link>で解説しています。</p>
           </div>
           <TableContent listItem={[
             {subTitle: subTitle1, path: '/account', as: '#sec1'},

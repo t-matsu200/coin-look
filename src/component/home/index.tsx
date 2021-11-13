@@ -5,6 +5,7 @@ import ContentHeader from '../../component/contentHeader';
 import exchangeLogo from '../../../public/img/exchange-s.png';
 import bankLogo from '../../../public/img/bank-s.png';
 import currencyLogo from '../../../public/img/currency.png';
+import exchangeJpLogo from '../../../public/img/exchange-jp.png';
 
 
 function HomeComponent() {
@@ -17,7 +18,7 @@ function HomeComponent() {
         </div>
         <div className={styles.content_body}>
           <p>当ブログは仮想通貨（暗号資産）取引の初心者に向けた解説サイトです。</p>
-          <p>暗号資産（仮想通貨）取引の始め方や取引所の特徴、銘柄、初心者が気をつける点などを解説しています。</p>
+          <p>暗号資産（仮想通貨）取引の始め方や取引所の特徴、銘柄、サービス比較、初心者が気をつける点などを解説しています。</p>
           <p>実際に仮想通貨取引所を利用してみて感じた事なども記事にしていますので、是非参考にしてみてください。</p><br/>
           <p>※ 資金決済法の改正（令和2年5月1日施行）により、法令上<strong>「仮想通貨」</strong>は<strong>「暗号資産」</strong>へ呼称変更されました。</p>
         </div>
@@ -33,6 +34,8 @@ function HomeComponent() {
             href="/account" imgUrl={bankLogo} />
           <HomeArticle title="暗号資産の銘柄｜暗号資産の銘柄（種類）を紹介！" description="国内の暗号資産取引所で購入できる銘柄の特徴ついて解説！"
             href="/currency" imgUrl={currencyLogo} />
+          <HomeArticle title="暗号資産取引サービス｜　暗号資産取引所の特徴的なサービスについて紹介！" description="各取引所で利用できるお得で便利なサービスの詳細を解説！"
+            href="/exchange-jp" imgUrl={exchangeJpLogo} />
         </div>
       </div>
     </>
