@@ -22,13 +22,14 @@ export default function CoincheckComponent() {
         )
     }
 
-    const subTitle1 = 'Coincheckのサービスについて';
-    const subTitle2 = '貸暗号資産（旧貸仮想通貨）';
-    const subTitle3 = '大口OTC取引';
-    const subTitle4 = 'Coincheckつみたて';
-    const subTitle5 = 'Coincheck NFT'
-    const subTitle6 = 'Coincheck IEO'
-    const subTitle7 = 'Coincheck まとめ';
+    const subTitle1 = 'Coincheckの特徴';
+    const subTitle2 = 'Coincheckのサービスについて';
+    const subTitle3 = '貸暗号資産（旧貸仮想通貨）';
+    const subTitle4 = '大口OTC取引';
+    const subTitle5 = 'Coincheckつみたて';
+    const subTitle6 = 'Coincheck NFT'
+    const subTitle7 = 'Coincheck IEO'
+    const subTitle8 = 'Coincheck まとめ';
     const currentPath = '/exchange-jp/coincheck';
     const plt = makeLink('https://hashpalette.com',  'PLT');
     const coincheck =  makeLink(AppConstant.coincheck,  'Coincheck');
@@ -47,7 +48,7 @@ export default function CoincheckComponent() {
                 </div>
                 <div className={styles.content_body}>
                 <div className={styles.content_main}>
-                    <p>この記事では<strong>{coincheck}</strong>で利用可能な各種サービスについて解説します。</p>
+                    <p>この記事では<strong>{coincheck}</strong>の特徴と利用可能な各種サービスについて解説します。</p>
                 </div>
                 <TableContent listItem={[
                     {subTitle: subTitle1, path: currentPath, as: '#sec1'},
@@ -56,12 +57,23 @@ export default function CoincheckComponent() {
                     {subTitle: subTitle4, path: currentPath, as: '#sec4'},
                     {subTitle: subTitle5, path: currentPath, as: '#sec5'},
                     {subTitle: subTitle6, path: currentPath, as: '#sec6'},
-                    {subTitle: subTitle7, path: currentPath, as: '#sec7'}
+                    {subTitle: subTitle7, path: currentPath, as: '#sec7'},
+                    {subTitle: subTitle8, path: currentPath, as: '#sec8'}
                     ]} />
                 
                 <Advertisement htmlString={AppConstant.huobiRect} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
                 <h2 id="sec1">{subTitle1}</h2>
+                <div>
+                    <div className={styles.content_main}>
+                        <p>{coincheck}の特徴としてまず挙げられるのは、取り扱い銘柄が17種類と国内では最多となります。<br/>アルトコインの取引に興味がある方は{coincheck}がおすすめです。</p>
+                        <p>豊富な各銘柄に対応した<strong>{subTitle3}</strong>や、他にはない大口取引時の優遇レート適用、NFTの売買やIEO実施など、多岐に渡る取り組みが行われています。</p>
+                        <p>初心者でも簡単に取引を開始できますので、口座開設を検討してみてはいかがでしょうか？</p>
+                    </div>
+                    {openAccount()}
+                </div>
+
+                <h2 id="sec2">{subTitle2}</h2>
                 <div>
                     <div className={styles.content_main}>
                         <p>{coincheck}で口座開設すると、以下のサービスが利用できます。</p>
@@ -73,10 +85,9 @@ export default function CoincheckComponent() {
                             <li>Coincheck IEO</li>
                         </ul>
                     </div>
-                    {openAccount()}
                 </div>
 
-                <h2 id="sec2">{subTitle2}</h2>
+                <h2 id="sec3">{subTitle3}</h2>
                 <div>
                     <div className={styles.content_main}>
                         <p><strong>貸暗号資産サービス</strong>は、保有する暗号資産を{coincheck}に一定期間貸し出すことで、期間満了後に預けた暗号資産と同量・同等の暗号資産 + 各年率で計算した利用料をその暗号資産でもらえるサービスです。</p>
@@ -117,9 +128,9 @@ export default function CoincheckComponent() {
                 <hr/>
                 <Advertisement htmlString={AppConstant.ledgerNano} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
-                <h2 id="sec3">{subTitle3}</h2>
+                <h2 id="sec4">{subTitle4}</h2>
                 <div className={styles.content_main}>
-                    <p><strong>{subTitle3}</strong>とは数千万以上の大口取引をする場合に、優遇レートで取引できるサービスです。</p>
+                    <p><strong>{subTitle4}</strong>とは数千万以上の大口取引をする場合に、優遇レートで取引できるサービスです。</p>
                     <p>取引可能銘柄はBTC, ETH, XRP, LTC, BCHの5種類です。</p>
                     <div className={styles.table_block} style={{textAlign: 'left'}}>
                         <table>
@@ -148,42 +159,41 @@ export default function CoincheckComponent() {
                     <p style={{opacity: 0.6, margin: 0, textAlign: 'right', marginRight: '10%'}}>※ 2021/11 現在のデータです</p>
                 </div>
 
-                <h2 id="sec4">{subTitle4}</h2>
+                <h2 id="sec5">{subTitle5}</h2>
                 <div className={styles.content_main}>
-                    <p><strong>{subTitle4}</strong>とは、毎月一定額を自動で積み立て、安定した暗号資産投資ができるサービスとなります。</p>
+                    <p><strong>{subTitle5}</strong>とは、毎月一定額を自動で積み立て、安定した暗号資産投資ができるサービスとなります。</p>
                     <p>レートに惑わされず少しずつ投資が出来るため、初心者にもおすすめのサービスです。</p>
                     <p>積立金額は月1万円からとなっており、購入パターンを月に一回購入するパターンと毎日に分散して購入するパターンから選べます。</p>
                     <p>BTCやETCなどの主要な暗号資産を少しずつ購入するのがおすすめです。</p>
-                    {openAccount()}
-                </div>
-
-                <h2 id="sec5">{subTitle5}</h2>
-                <div className={styles.content_main}>
-                    <p><strong>{subTitle5}（β版）</strong>とは、暗号資産とNFTを用いたトレカやゲーム内アイテムを売買することができるサービスです。</p>
-                    <p>アイドルのトレカや「{meebits}」のアバター、「{sandbox}」の土地や「{cryptoSpells}」のカードなどゲーム内アイテムが暗号資産で売買できます。</p>
-                    <p>「{cryptoSpells}」で入手したカードを売却したり、「{sandbox}」の土地を他のプレイヤーに貸し出すことにより利益を得ることも可能になるようですので、興味のある方は調べてみると面白いかもしれません。</p>
                 </div>
 
                 <h2 id="sec6">{subTitle6}</h2>
                 <div className={styles.content_main}>
-                    <p><strong>{subTitle6}</strong>とは、企業・プロジェクトによるトークン発行を通じた資金調達を支援することです。</p>
-                    <p>IEO参加者は企業・プロジェクトを支援することにより、トークンを取得することができます。</p>
-                    <p>{plt}の募集の際には<strong>1PLT=4.05円、一口1,000PLT、申込上限2400口</strong>という条件で募集されていて、申込み開始からわずか6分で調達目標金額を突破するほどでした。<br/>2021/11現在の{plt}価格は50円前後ですので、<strong>募集時の約10倍</strong>となっています。</p>
-                    <p>またIEOが実施されるかは不明ですが、今後いつ実施されても対応できるように、口座開設を済ませておくことをおすすめします。</p>
-                    {openAccount()}
+                    <p><strong>{subTitle6}（β版）</strong>とは、暗号資産とNFTを用いたトレカやゲーム内アイテムを売買することができるサービスです。</p>
+                    <p>アイドルのトレカや「{meebits}」のアバター、「{sandbox}」の土地や「{cryptoSpells}」のカードなどゲーム内アイテムが暗号資産で売買できます。</p>
+                    <p>「{cryptoSpells}」で入手したカードを売却したり、「{sandbox}」の土地を他のプレイヤーに貸し出すことにより利益を得ることも可能になるようですので、興味のある方は調べてみると面白いかもしれません。</p>
                 </div>
 
                 <h2 id="sec7">{subTitle7}</h2>
+                <div className={styles.content_main}>
+                    <p><strong>{subTitle7}</strong>とは、企業・プロジェクトによるトークン発行を通じた資金調達を支援することです。</p>
+                    <p>IEO参加者は企業・プロジェクトを支援することにより、トークンを取得することができます。</p>
+                    <p>{plt}の募集の際には<strong>1PLT=4.05円、一口1,000PLT、申込上限2400口</strong>という条件で募集されていて、申込み開始からわずか6分で調達目標金額を突破するほどでした。<br/>2021/11現在の{plt}価格は50円前後ですので、<strong>募集時の約10倍</strong>となっています。</p>
+                    <p>またIEOが実施されるかは不明ですが、今後いつ実施されても対応できるように、口座開設を済ませておくことをおすすめします。</p>
+                </div>
+
+                <h2 id="sec8">{subTitle8}</h2>
                 <div className={styles.content_main}>
                     <p>暗号資産のレンディングで利益を得たり、NFTの取引やIEOに参加できる{coincheck}は初心者に特におすすめの暗号資産取引所です。</p>
                     <p>この機会に是非、{coincheck}で口座開設をしてみましょう。</p>
                     <div className="check-point">
                         <ul className={styles.matome_ul}>
-                            <li><strong>{subTitle2}</strong>で何もせずに暗号資産が増やせます。</li>
-                            <li>大口の取引をする場合、<strong>{subTitle3}</strong>を利用することでお得なレートで取引できます。</li>
-                            <li><strong>{subTitle4}</strong>で、主要な暗号資産を少しずつ自動で積み立てが可能です。</li>
-                            <li><strong>{subTitle5}</strong>では、ブロックチェーンゲーム内のアイテムなどを暗号資産で売買できます。</li>
-                            <li><strong>{subTitle6}</strong>で、いつIEOが実施されても対応できるように口座開設を済ませておきましょう。</li>
+                            <li><strong>{subTitle3}</strong>で何もせずに暗号資産が増やせます。</li>
+                            <li>大口の取引をする場合、<strong>{subTitle4}</strong>を利用することでお得なレートで取引できます。</li>
+                            <li><strong>{subTitle5}</strong>で、主要な暗号資産を少しずつ自動で積み立てが可能です。</li>
+                            <li><strong>{subTitle6}</strong>では、ブロックチェーンゲーム内のアイテムなどを暗号資産で売買できます。</li>
+                            <li><strong>{subTitle7}</strong>で、いつIEOが実施されても対応できるように口座開設を済ませておきましょう。</li>
+                            <a className="account-link" href={AppConstant.coincheck} target="_blank" rel="noopener noreferrer" style={{marginTop: '5%'}}>口座開設する</a>
                         </ul>
                     </div>
                 </div>
