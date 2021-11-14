@@ -36,10 +36,10 @@ function Footer() {
                         <div className={styles.sitemap_list}>
                             <p className={styles.sitemap_list_label}>取引所一覧</p>
                             <ul className={styles.sitemap_list}>
-                                <li><Link href="/exchange-jp/coincheck">Coincheck</Link></li>
-                                <li><Link href="/exchange-jp/bitFlyer">bitFlyer</Link></li>
-                                <li><Link href="/exchange-jp/gmocoin">GMOコイン</Link></li>
-                                <li><Link href="/exchange-jp/bitpoint">BITPoint</Link></li>
+                                <li><Link href="/exchange-jp/[slug]" as="/exchange-jp/coincheck"><a>Coincheck</a></Link></li>
+                                <li><Link href="/exchange-jp/[slug]" as="/exchange-jp/bitFlyer"><a>bitFlyer</a></Link></li>
+                                <li><Link href="/exchange-jp/[slug]" as="/exchange-jp/gmocoin"><a>GMOコイン</a></Link></li>
+                                <li><Link href="/exchange-jp/[slug]" as="/exchange-jp/bitpoint"><a>BITPoint</a></Link></li>
                                 <li><a href="https://bitcoin.dmm.com/" target="_blank" rel="noopener noreferrer">DMM Bitcoin</a></li>
                             </ul>
                         </div>
