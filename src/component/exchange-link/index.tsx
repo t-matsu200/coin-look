@@ -17,25 +17,25 @@ export default function ExchangeLinkComponent() {
                 <li>
                     <div>
                         <img src={coincheckLogo.src} alt="Coincheck ロゴ" width={40} height={40} />
-                        <Link href="/exchange-jp/[slug]" as="/exchange-jp/coincheck">Coincheck 紹介ページ</Link>
+                        <Link href="/exchange-jp/[slug]" as="/exchange-jp/coincheck"><a>Coincheck 紹介ページ</a></Link>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src={bitFlyerLogo.src} alt="bitFlyer ロゴ" width={40} height={40} />
-                        <Link href="/exchange-jp/[slug]" as="/exchange-jp/bitFlyer">bitFlyer 紹介ページ</Link>
+                        <Link href="/exchange-jp/[slug]" as="/exchange-jp/bitFlyer"><a>bitFlyer 紹介ページ</a></Link>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src={gmoCoinLogo.src} alt="GMOコイン ロゴ" width={40} height={40} />
-                        <Link href="/exchange-jp/[slug]" as="/exchange-jp/gmocoin">GMO コイン 紹介ページ</Link>
+                        <Link href="/exchange-jp/[slug]" as="/exchange-jp/gmocoin"><a>GMO コイン 紹介ページ</a></Link>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src={bitPointLogo.src} alt="BITPoint ロゴ" width={40} height={40} />
-                        <Link href="/exchange-jp/[slug]" as="/exchange-jp/bitpoint">BITPoint 紹介ページ</Link>
+                        <Link href="/exchange-jp/[slug]" as="/exchange-jp/bitpoint"><a>BITPoint 紹介ページ</a></Link>
                     </div>
                 </li>
             </ul>
