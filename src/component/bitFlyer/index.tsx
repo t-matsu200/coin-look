@@ -34,15 +34,15 @@ export default function BitFlyerComponent() {
 
     return (
         <>
-            <div className={styles.content}>
+            <div className="content">
                 <div>
-                <div className={styles.content_head}>
+                <div className="content-head">
                     <ContentHeader title="日本国内の暗号資産取引所であるbitFlyerについて解説！" />
                     <img src={bgBitFlyerLogo.src} alt="bitFlyer ロゴ" width={584} height={440} />
                 </div>
                 </div>
-                <div className={styles.content_body}>
-                <div className={styles.content_main}>
+                <div className="content-body">
+                <div className="content-main">
                     <p>この記事では<strong>{bitFlyer}</strong>の特徴と利用可能な各種サービスについて解説します。</p>
                 </div>
                 <TableContent listItem={[
@@ -59,9 +59,9 @@ export default function BitFlyerComponent() {
 
                 <h2 id="sec1">{subTitle1}</h2>
                 <div>
-                    <div className={styles.content_main}>
+                    <div className="content-main">
                         <p>{bitFlyer}の特徴として、高いセキュリティがよく挙げられます。</p>
-                        <p>Webアプリケーション向けのセキュリティプラットフォーム「Sqreen」が、世界140の仮想通貨取引所を対象にセキュリティ対策の調査を実施した結果、{bitFlyer}がトップクラスの評価を得られたようです。</p>
+                        <p>Webアプリケーション向けのセキュリティプラットフォーム「Sqreen」が、<br/>世界140の仮想通貨取引所を対象にセキュリティ対策の調査を実施した結果、{bitFlyer}がトップクラスの評価を得られたようです。</p>
                         <p>また、2021年11月現在までにハッキング事故は一度も発生していませんので、安心して暗号資産の売買ができるのではないでしょうか。</p>
                         <p>他にもネットショッピング時にbitFlyerを経由するとビットコインが貰えたり、自動積み立てを1円単位から始められる等の特徴的なサービスも挙げられます。</p>
                     </div>
@@ -70,7 +70,7 @@ export default function BitFlyerComponent() {
 
                 <h2 id="sec2">{subTitle2}</h2>
                 <div>
-                    <div className={styles.content_main}>
+                    <div className="content-main">
                         <p>{bitFlyer}で口座開設すると、以下のサービスが利用できます。</p>
                         <ul className="padding-left-40">
                             <li>{subTitle3}</li>
@@ -83,7 +83,7 @@ export default function BitFlyerComponent() {
 
                 <h2 id="sec3">{subTitle3}</h2>
                 <div>
-                    <div className={styles.content_main}>
+                    <div className="content-main">
                         <p><strong>{subTitle3}</strong>は、bitFlyer経由でインターネットサービスを利用すると、ビットコインをもらうことができるサービスです。</p>
                         <p>{subTitle3}条件は会員登録や商品購入、カード発行等たくさんの種類の広告があり、他の取引所にはないサービスとなっています。</p>
                         <p>例えばbitFlyer経由で楽天やYahoo!ショッピングで買い物をすると、<br/><span className="yellow-border">購入額の0.6%相当</span>のビットコインが貰えます。（2021/11現在）</p>
@@ -94,7 +94,7 @@ export default function BitFlyerComponent() {
                 <Advertisement htmlString={AppConstant.ledgerNano} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
                 <h2 id="sec4">{subTitle4}</h2>
-                <div className={styles.content_main}>
+                <div className="content-main">
                     <p><strong>{subTitle4}</strong>とは暗号資産を一定の頻度と金額で、自動購入できるサービスです。</p>
                     <p>{bitFlyer}では一円単位からの自動積み立てが可能で、分散投資に適しています。<br/>他の取引所の同様サービスに比べ、圧倒的に敷居が低いことも特徴です。</p>
                     <p>積立頻度は「毎日 1 回」、「毎週 1 回」、「毎月 2 回（1 日と 15 日）」、「毎月 1 回」から選択可能です。</p>
@@ -105,7 +105,7 @@ export default function BitFlyerComponent() {
                 </div>
 
                 <h2 id="sec5">{subTitle5}</h2>
-                <div className={styles.content_main}>
+                <div className="content-main">
                     <p><strong>{subTitle5}</strong>とはその名の通り、ヤマダ電機でビットコイン払いが可能となるサービスです。</p>
                     <p>こちらのサービスも「bitFlyerウォレット」などで可能になります。。</p>
                     <p>1会計あたり30万円相当まで、ビットコインでの支払いが可能となりますので、{bitFlyer}で口座開設をしたら、決済機能に特化したビットコインの購入をおすすめします。</p>
@@ -113,7 +113,7 @@ export default function BitFlyerComponent() {
                 </div>
 
                 <h2 id="sec6">{subTitle6}</h2>
-                <div className={styles.content_main}>
+                <div className="content-main">
                     <p><strong>{subTitle6}</strong>とは、「Tポイント」をビットコインに交換できるサービスです。</p>
                     <p>100ポイントにつき85円相当のビットコインに交換可能で、大手共通ポイントが仮想通貨への交換に対応するのは{bitFlyer}のみとなります。（2021/11現在）</p>
                     <p>貯まった「Tポイント」をビットコインに交換することで将来的に数倍の価値になる可能性がありますので、興味のある方は利用してみてはいかがでしょうか？</p>
@@ -121,7 +121,7 @@ export default function BitFlyerComponent() {
                 </div>
 
                 <h2 id="sec7">{subTitle7}</h2>
-                <div className={styles.content_main}>
+                <div className="content-main">
                     <p>暗号資産取引の大前提となる堅牢なセキュリティや、決済周りでお得なサービスを展開する{bitFlyer}は初心者に特におすすめの暗号資産取引所です。</p>
                     <p>この機会に是非、{bitFlyer}で口座開設をしてみましょう。</p>
                     <div className="check-point">

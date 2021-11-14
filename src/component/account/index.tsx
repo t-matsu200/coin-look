@@ -1,8 +1,8 @@
-import Link from 'next/link';
 import styles from './index.module.scss';
 import ContentHeader from '../contentHeader';
 import TableContent from '../tableContent';
 import Advertisement from '../advertisement';
+import ExchangeLinkComponent from '../exchange-link';
 import AppConstant from '../../constant';
 
 import accountLogo from '../../../public/img/bg-account.png';
@@ -27,19 +27,19 @@ export default function AccountComponent() {
 
   return (
     <>
-      <div className={styles.content}>
+      <div className="content">
         <div>
-          <div className={styles.content_head}>
+          <div className="content-head">
               <ContentHeader title="仮想通貨取引所の口座開設方法について｜複数の仮想通貨取引所で口座開設するメリット、入金手数料を抑える方法についても解説！" />
               <img src={accountLogo.src} alt="仮想通貨取引口座の開設について解説" width={584} height={440} />
           </div>
         </div>
-        <div className={styles.content_body}>
-          <div className={styles.content_main}>
+        <div className="content-body">
+          <div className="content-main">
               <p><span className="danger"><strong>仮想通貨の売買を始めるには、仮想通貨取引所への口座開設（アカウント作成）をする必要があります。</strong></span></p>
               <p>この記事では<strong>取引所の口座開設の流れ</strong>について解説します。</p>
               <p>仮想通貨初心者にもおすすめの<span className="yellow-border">振込手数料がお得な銀行</span>や<span className="yellow-border">複数の取引所で口座開設するメリット</span>についても解説していきます。</p>
-              <p>国内取引所の各種サービスについて知りたい方は、<Link href="/exchange-jp">こちら</Link>で解説しています。</p>
+              <ExchangeLinkComponent />
           </div>
           <TableContent listItem={[
             {subTitle: subTitle1, path: '/account', as: '#sec1'},
@@ -53,7 +53,7 @@ export default function AccountComponent() {
 
           <h2 id="sec1">{subTitle1}</h2>
           <div>
-            <div className={styles.content_main}>
+            <div className="content-main">
               <h3>流れ</h3>
               <ol className="padding-left-40">
                 <li>メールアドレス・パスワードの登録</li>
@@ -71,7 +71,7 @@ export default function AccountComponent() {
 
           <h2 id="sec2">{subTitle2}</h2>
           <div>
-            <div className={styles.content_main}>
+            <div className="content-main">
               <h3>流れ</h3>
               <ol className="padding-left-40">
                 <li>取引所のWebサイトまたはスマートフォンアプリでログイン</li>
@@ -88,7 +88,7 @@ export default function AccountComponent() {
 
           <h2 id="sec3">{subTitle3}</h2>
           <div>
-              <div className={styles.content_main}>
+              <div className="content-main">
                 <p>仮想通貨を購入するには、取引所の口座に日本円を入金する必要があります。<br/>ここで気になるのが、<strong>入金手数料</strong>です。</p>
                 <p>多くの取引所では<strong>住信SBIネット銀行</strong>からの入金は手数料無料となっています。<br/>特に{coincheck}は手数料が高めですので、<strong>住信SBIネット銀行</strong>の口座も併せて開設しておくと良いでしょう。</p>
                 <p>入金方法や銀行口座によって手数料が変わる場合がありますので、注意してください。</p>
@@ -265,7 +265,7 @@ export default function AccountComponent() {
 
           <h2 id="sec4">{subTitle4}</h2>
           <div>
-            <div className={styles.content_main}>
+            <div className="content-main">
               <p>新規銘柄の上場の際に慌てて口座開設を申請しても、応募が多くて審査完了までに時間がかかる事があります。</p>
               <p>また、IEOなどの募集に応募したい場合にも口座開設が必要となります。</p>
               <p>複数の取引所で口座開設を済ませておくことで、<strong>すぐにアクションを起こせる状態</strong>となり、柔軟な対応が可能となります。</p>
@@ -277,7 +277,7 @@ export default function AccountComponent() {
           <Advertisement htmlString={AppConstant.ledgerNano} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
           <h2 id="sec5">{subTitle5}</h2>
-          <div className={styles.content_main}>
+          <div className="content-main">
             <div className="check-point">
                 <ul className={styles.matome_ul}>
                     <li><strong>口座開設費・維持費は無料です。</strong></li>

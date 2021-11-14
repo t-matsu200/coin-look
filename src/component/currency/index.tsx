@@ -1,8 +1,8 @@
-import Link from 'next/link';
 import styles from './index.module.scss';
 import ContentHeader from '../contentHeader';
 import TableContent from '../tableContent';
 import Advertisement from '../advertisement';
+import ExchangeLinkComponent from '../exchange-link';
 import AppConstant from '../../constant';
 
 import currencyLogo from '../../../public/img/bg-currency.png';
@@ -57,20 +57,20 @@ export default function AccountComponent() {
 
   return (
     <>
-      <div className={styles.content}>
+      <div className="content">
         <div>
-            <div className={styles.content_head}>
+            <div className="content-head">
                 <ContentHeader title="国内の仮想通貨取引所で買える銘柄・特徴について｜初心者におすすめの仮想通貨の買い方についても解説！" />
                 <img src={currencyLogo.src} alt="国内の仮想通貨取引所で買える銘柄について解説" width={584} height={440} />
             </div>
         </div>
-        <div className={styles.content_body}>
-          <div className={styles.content_main}>
+        <div className="content-body">
+          <div className="content-main">
               <p><span className="danger"><strong>仮想通貨で儲けるためには、将来性があって安全な通貨を適切に選び、投資する必要があります。</strong></span></p>
               <p>近年、大きな流行りとなっている仮想通貨、気になっている方も多いと思います。</p>
               <p>この記事では<strong>国内の仮想通貨取引所で買える銘柄</strong>について解説します。</p>
               <p>仮想通貨初心者におすすめの<span className="yellow-border">仮想通貨の買い方</span>や<span className="yellow-border">仮想通貨の銘柄、開発状況</span>についても解説していきます。</p>
-              <p>国内取引所の各種サービスについて知りたい方は、<Link href="/exchange-jp">こちら</Link>で解説しています。</p>
+              <ExchangeLinkComponent />
           </div>
 
           <TableContent listItem={[
@@ -97,14 +97,14 @@ export default function AccountComponent() {
 
           <h2 id="sec1">{subTitle1}</h2>
           <div>
-              <div className={styles.content_main}>
+              <div className="content-main">
                 <h3>仮想通貨の買い方</h3>
                 <p>取引所に開設した口座に日本円を入金すると、その取引所内で仮想通貨を購入できます。</p>
                 <p>仮想通貨取引所には<strong>「販売所」</strong>と<strong>「取引所」</strong>の2種類があります。<br/><strong>「販売所」</strong>では仮想通貨取引所と直接仮想通貨の取引を行います。<br/><strong>「取引所」</strong>では取引所に登録している個人同士(ユーザー間)で仮想通貨の取引を行います。</p>
                 <p><strong>「取引所」</strong>で取引した方が<span className="yellow-border">スプレッド（実質的な手数料）が安く抑えられる</span>ので、基本的には取引所での取引をおすすめします。<br/><strong>「販売所」</strong>でしか取り扱いのない銘柄もありますので、各取引所の案内を確認してみてください。</p>
                 <p>所謂「板取引」というのは、取引所での取引をさす事が多いです。<br/>初心者の方が初めて「板取引」を行う場合、購入または売却価格を指定して注文する<span className="yellow-border">「指値注文」</span>が分かりやすいと思います。</p>
               </div>
-              <div className={styles.content_main}>
+              <div className="content-main">
                 <h3>仮想通貨を買うタイミング</h3>
                 <p>大体の取引所では、各銘柄の<strong>仮想通貨/日本円のチャート</strong>が確認できます。</p>
                 <p>チャートから最大で約1年前までの価格変動が確認できますので、現在の価格が過去と比べてどの辺りを推移しているのかが確認できます。</p>
@@ -119,7 +119,7 @@ export default function AccountComponent() {
 
           <h2 id="sec2">{subTitle2}</h2>
           <div>
-            <div className={styles.content_main}>
+            <div className="content-main">
               <p><strong>仮想通貨には開発目的があります。</strong></p>
               <p>仮想通貨の開発目的が時代にあっているか、人気が出そうかなどを見極める事が将来性を見極める判断材料となりそうです。</p>
               <p>各仮想通貨の運営元の公式サイトなどを確認すると良いでしょう。<br/>英語サイトでもGoogle翻訳を使えば問題なく読む事ができます。</p>
@@ -159,7 +159,7 @@ export default function AccountComponent() {
               </tr>
               <tr>
                 <th>特徴</th>
-                <td>・日本ではビッグカメラやDMM.comなどで決済可能。<br/>・決済に特化、徐々に使える場所が増えている。<br/>・過去にはビットコインとビットコインキャッシュにハードフォーク（分裂）した。</td>
+                <td>・日本ではビッグカメラやDMM.comなどで決済可能。<br/>・決済に特化、徐々に使える場所が増えている。<br/>・過去にはビットコインとビットコインキャッシュにハードフォーク（分裂）した。<br/>・0.00000001 BTC = 1 Satoshi</td>
               </tr>
             </table>
           </div>
@@ -517,7 +517,7 @@ export default function AccountComponent() {
 
           <h2 id="sec16">{subTitle16}</h2>
           <div>
-            <div className={styles.content_main}>
+            <div className="content-main">
               <p>仮想通貨の開発状況は<span className="yellow-border">公式サイトのロードマップ</span>や<span className="yellow-border">GitHub上のソースコード</span>などから確認できます。<br/>GitHubのリンクは上の記事で紹介していますので、興味のある方は確認してみてください。</p>
               <p>全てではありませんが各仮想通貨は<span className="yellow-border">国際会議</span>を開催しているので、そちらもチェックしておくと良いでしょう。</p>
               <p>また、<span className="yellow-border">Twitter公式アカウントのつぶやき</span>なども参考になりますので、フォローしておくのも良いでしょう。</p>
@@ -525,7 +525,7 @@ export default function AccountComponent() {
           </div>
 
           <h2 id="sec17">{subTitle17}</h2>
-          <div className={styles.content_main}>
+          <div className="content-main">
             <div className="check-point">
               <ul className={styles.matome_ul}>
                   <li>初心者は<strong>安い価格帯を推移している銘柄を狙って少しずつ買い増し・長期保有</strong>がおすすめです。</li>
