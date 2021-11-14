@@ -39,7 +39,7 @@ function Footer() {
                                 <li><Link href="/exchange-jp/coincheck">Coincheck</Link></li>
                                 <li><Link href="/exchange-jp/bitFlyer">bitFlyer</Link></li>
                                 <li><Link href="/exchange-jp/gmocoin">GMOコイン</Link></li>
-                                <li><a href="https://www.bitpoint.co.jp/" target="_blank" rel="noopener noreferrer">BITPoint</a></li>
+                                <li><Link href="/exchange-jp/bitpoint">BITPoint</Link></li>
                                 <li><a href="https://bitcoin.dmm.com/" target="_blank" rel="noopener noreferrer">DMM Bitcoin</a></li>
                             </ul>
                         </div>

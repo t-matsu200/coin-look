@@ -2,6 +2,7 @@ import styles from './index.module.scss';
 import ContentHeader from '../contentHeader';
 import TableContent from '../tableContent';
 import Advertisement from '../advertisement';
+import ExchangeLinkComponent from '../exchange-link';
 import AppConstant from '../../constant';
 
 import beginnerLogo from '../../../public/img/bg-beginner.png';
@@ -27,20 +28,20 @@ export default function BeginnerComponent() {
 
   return (
     <>
-      <div className={styles.content}>
+      <div className="content">
         <div>
-            <div className={styles.content_head}>
+            <div className="content-head">
                 <ContentHeader title="仮想通貨取引初心者の注意すべき点｜仮想通貨取引で発生する税金についても解説！" />
                 <img src={beginnerLogo.src} alt="仮想通貨取引初心者の注意すべき点について解説" width={584} height={440} />
             </div>
         </div>
 
-        <div className={styles.content_body}>
-          <div className={styles.content_main}>
+        <div className="content-body">
+          <div className="content-main">
               <p><span className="danger"><strong>仮想通貨取引を始めるにあたって、何に気をつければ良いのでしょうか？</strong></span></p>
               <p>この記事では<strong>仮想通貨投資でやってはいけないこと</strong>について解説します。</p>
               <p>仮想通貨初心者が気をつけるべき点として、<span className="yellow-border">発生する税金</span>についても解説していきます。</p>
-              <p>国内取引所の各種サービスについて知りたい方は、<Link href="/exchange-jp">こちら</Link>で解説しています。</p>
+              <ExchangeLinkComponent />
           </div>
 
           <TableContent listItem={[
@@ -66,7 +67,7 @@ export default function BeginnerComponent() {
 
           <h2 id="sec2">{subTitle2}</h2>
           <div>
-            <div className={styles.content_main}>
+            <div className="content-main">
               <p>仮想通貨取引は投資です。</p>
               <p><strong>人生を賭けるような無理な投資は絶対にしてはいけません。</strong></p>
               <p>万が一投資した金額を全て失ったとしても、問題なく生活できるくらいの金額で取引しましょう。</p>
@@ -79,7 +80,7 @@ export default function BeginnerComponent() {
 
           <h2 id="sec3">{subTitle3}</h2>
           <div>
-            <div className={styles.content_main}>
+            <div className="content-main">
               <p>仮想通貨の価格が上昇している間は様子を見ましょう。</p>
               <p>取引所のチャートで価格の推移が確認できますので、比較的低価格帯に推移している銘柄を狙いましょう。</p>
               <p>ただし、いつもいつも低価格の銘柄があるとは限りませんので、その場合は小額で少しずつ買い増していく事をおすすめします。</p>
@@ -90,7 +91,7 @@ export default function BeginnerComponent() {
 
           <h2 id="sec4">{subTitle4}</h2>
           <div>
-            <div className={styles.content_main}>
+            <div className="content-main">
               <p>国内の取引所で行うレバレッジ取引では、簡単にいうと元手の金額の2倍の金額で取引が可能です。</p>
               <p>販売所や取引所での単純な売買ではありませんので、レバレッジ取引をする際は仕組みをしっかり理解してから行ってください。</p>
               <p>初心者の方であれば、レバレッジ取引は行わなくても良いくらいに思っています。</p>
@@ -100,7 +101,7 @@ export default function BeginnerComponent() {
 
           <h2 id="sec5">{subTitle5}</h2>
           <div>
-            <div className={styles.content_main}>
+            <div className="content-main">
               <p>仮想通貨取引で発生した利益は全て<strong>雑所得</strong>となります。（個人の場合）</p>
               <p>仮想通貨取引で得た利益の他に副業などをしていれば、それらを合算した金額が雑所得となります。</p>
               <p>雑所得が<strong>20万円以上</strong>の場合、その利益に対して<strong>所得税</strong>がかかります。</p>

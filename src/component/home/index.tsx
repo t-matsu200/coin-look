@@ -34,7 +34,7 @@ function HomeComponent() {
             href="/account" imgUrl={bankLogo} />
           <HomeArticle title="暗号資産の銘柄｜暗号資産の銘柄（種類）を紹介！" description="国内の暗号資産取引所で購入できる銘柄の特徴ついて解説！"
             href="/currency" imgUrl={currencyLogo} />
-          <HomeArticle title="暗号資産取引サービス｜　暗号資産取引所の特徴的なサービスについて紹介！" description="各取引所で利用できるお得で便利なサービスの詳細を解説！"
+          <HomeArticle title="取引サービス｜暗号資産取引所の特徴的なサービスについて紹介！" description="各取引所で利用できるお得で便利なサービスの詳細を解説！"
             href="/exchange-jp" imgUrl={exchangeJpLogo} />
         </div>
       </div>

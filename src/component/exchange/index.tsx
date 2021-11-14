@@ -3,6 +3,7 @@ import styles from './index.module.scss';
 import ContentHeader from '../../component/contentHeader';
 import TableContent from '../../component/tableContent';
 import Advertisement from '../advertisement';
+import ExchangeLinkComponent from '../exchange-link';
 import AppConstant from '../../constant';
 
 import chartLogo from '../../../public/img/chart1.svg';
@@ -50,18 +51,18 @@ export default function ExchangeComponent() {
 
     return (
     <>
-      <div className={styles.content}>
+      <div className="content">
         <div>
-            <div className={styles.content_head}>
-                <ContentHeader title="国内の仮想通貨取引所の特徴・サービス比較｜取引所毎の特徴・海外の取引所をおすすめしない理由を紹介！" />
+            <div className="content-head">
+                <ContentHeader title="国内の仮想通貨取引所の特徴・サービス比較｜国内取引所の特徴・おすすめする理由を紹介！" />
                 <img src={chartLogo.src} alt="国内の仮想通貨取引所について解説" width={584} height={390} />
             </div>
         </div>
-        <div className={styles.content_body}>
-            <div className={styles.content_main}>
+        <div className="content-body">
+            <div className="content-main">
                 <p><strong>仮想通貨取引初心者の方には、海外の取引所ではなく国内の取引所での仮想通取引をおすすめします。</strong></p>
                 <p>この記事では仮想通貨初心者におすすめの<span className="yellow-border">国内取引所の特徴</span>や<span className="yellow-border">国内取引所をおすすめする理由</span>について解説していきます。</p>
-                <p>国内取引所の各種サービスについて、<Link href="/exchange-jp">こちら</Link>で解説しています。</p>
+                <ExchangeLinkComponent />
             </div>
             <TableContent listItem={[
               {subTitle: subTitle1, path: '/exchange', as: '#sec1'},
@@ -156,7 +157,7 @@ export default function ExchangeComponent() {
                 <div className={styles.bg_logo}>
                     <img src={bgCoincheckLogo.src} alt="Coincheck logo" width={400} height={300} />
                 </div>
-                <div className={styles.content_main}>
+                <div className="content-main">
                     <p>2012年に創業のコインチェック株式会社が運営する暗号資産取引所。</p>
                     <p>国内では最多となる17銘柄を扱っており、初心者にもおすすめです。</p>
                     <p><span className="yellow-border">貸暗号資産</span>というレンディングサービスがあり、保有している暗号資産を一定期間{coincheck}に預けることにより利用料が貰えます。<br/>14日間で年率1%、30日間で年率2%と預け入れる期間が長くなる程年率が高くなりますが、年率の高い枠は人気ですので申請が受理されるまでかなりかかります。<br/>参考までに、筆者が所有しているIOSTを30日間の枠で申請した所、貸し出されるまでに1ヶ月かかりました。</p>
@@ -188,7 +189,7 @@ export default function ExchangeComponent() {
                 <div className={styles.bg_logo}>
                     <img src={bgBitFlyerLogo.src} alt="bitFlyer logo" width={400} height={300} />
                 </div>
-                <div className={styles.content_main}>
+                <div className="content-main">
                     <p>2014年に創業の株式会社bitFlyerが運営する暗号資産取引所。</p>
                     <p>取扱銘柄は{coincheck}よりも少ないですが、ブラウザUIやスマホアプリが扱いやすくこちらも初心者におすすめです。<br/>スマホアプリからだと<strong>クイック本人確認</strong>が利用できて始めやすいと思います。</p>
                     <p>口座開設後のログイン時に表示されるメニューにある「{getBitcoin}」を経由して楽天やYahooショッピングを利用すると、商品価格の0.6%相当のビットコインがもらえます。（2021/11 現在）<br/>ポイントサイトと同じような感覚で利用でき、ビットコインがもらえる条件はその他にも色々あります。</p>
@@ -208,7 +209,7 @@ export default function ExchangeComponent() {
                 <div className={styles.bg_logo}>
                     <img src={bgGmoCoinLogo.src} alt="GMO coin logo" width={400} height={300}/>
                 </div>
-                <div className={styles.content_main}>
+                <div className="content-main">
                     <p>2016年に設立されたGMOコイン株式会社が運営する暗号資産取引所。</p>
                     <p>スマホアプリの使い勝手に定評があり、初心者にもおすすめの取引所です。</p>
                     <p>基本的な手数料が全部無料であることも特徴の一つです。<br/>他の取引所やウォレットに小額の送金が必要になった場合など、口座開設を済ませておくとスムーズに利用できて便利です。</p>
@@ -225,7 +226,7 @@ export default function ExchangeComponent() {
                 <div className={styles.bg_logo}>
                     <img src={bgDmmCoinLogo.src} alt="DMM Bitcoin logo" width={400} height={300} />
                 </div>
-                <div className={styles.content_main}>
+                <div className="content-main">
                     <p>2016年に設立された株式会社DMM Bitcoinが運営する暗号資産取引所。</p>
                     <p>アルトコインのレバレッジ取引を行うことができる点に特徴があります。<br/>レバレッジ取引とは元手を担保にその何倍もの取引を可能にする方法です。<br/>他の取引所ではアルトコインのレバレッジ取引は、あまり対応していないことが多いです。</p>
                     <p>また、送金手数料が他の取引所に比べ割安なのが特徴です。</p>
@@ -248,7 +249,7 @@ export default function ExchangeComponent() {
                 <div className={styles.bg_logo} style={{margin: '80px 0 80px'}}>
                     <img src={bgBitPointLogo.src} alt="BITPoint logo" width={400} height={88} />
                 </div>
-                <div className={styles.content_main}>
+                <div className="content-main">
                     <p>2016年に創業の株式会社ビットポイントジャパンが運営する暗号資産取引所。</p>
                     <p>ADAコイン({cardano})やジャスミー({jasmy})など他の国内取引所では扱っていない銘柄を立て続けに上場しています。<br/>今後も国内で取り扱いの少ない銘柄が上場される可能性がありますので、口座開設を済ませておく事をおすすめします。</p>
                     <p>また、こちらもブラウザUIやスマホアプリが扱いやすいので、初心者におすすめの取引所となります。</p>
@@ -270,7 +271,7 @@ export default function ExchangeComponent() {
                 <div className={styles.bg_logo}>
                     <img src={bgHuobiLogo.src} alt="Huobi Japan logo" width={400} height={300} />
                 </div>
-                <div className={styles.content_main}>
+                <div className="content-main">
                     <p>170か国で数千万人のユーザーにサービスを提供する<strong>Huobiグループ</strong>の日本法人、フォビジャパン株式会社が運営する暗号資産取引所。</p>
                     <p>Huobiグループは<strong>セキュリティーが強い</strong>ことで高い評価を得ているようです。</p>
                     <p>日本の法律に則った金融サービスを展開しており、<strong>入金手数料は無料</strong>です。</p>
@@ -316,7 +317,7 @@ export default function ExchangeComponent() {
             <Advertisement htmlString={AppConstant.ledgerNano} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
             <h2 id="sec4">{subTitle4}</h2>
-            <div className={styles.content_main}>
+            <div className="content-main">
                 <p>海外の取引所には<span className="yellow-border">日本では上場されないような草コイン</span>が上場されていたり、<span className="yellow-border">ステーキングの利率</span>などが魅力的だと思います。</p>
                 <p>しかし、よく分からないまま利用するのは<span className="danger"><strong>初心者には危険</strong></span>です。</p>
                 <p>どうしても海外の取引所を利用したい場合は、<strong>税制や法律をよく理解</strong>してから臨む事をおすすめします。</p>
@@ -329,7 +330,7 @@ export default function ExchangeComponent() {
             </div>
 
             <h2 id="sec5">{subTitle5}</h2>
-            <div className={styles.content_main}>
+            <div className="content-main">
                 <div className="check-point">
                     <ul className={styles.matome_ul}>
                         <li>IEOや新規銘柄の上場に備え、すぐに売買はしなくても口座開設を済ませておくと良いでしょう。</li>

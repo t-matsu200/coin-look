@@ -11,9 +11,9 @@ export default function ExchangeJpComponent() {
 
     return (
         <MainLayout>
-            <Seo pageTitle={`【国内取引所】日本国内の仮想通貨／ビットコイン国内取引所を紹介！`}
-                pageDescription='国内取引所の一覧ページです。各取引所の比較、メリットなどの確認にお使いください。' />
-            <BreadCrunb itemList={[{name: '国内取引所', path: '/exchange-jp'}]} />
+            <Seo pageTitle="【国内取引所】日本国内の仮想通貨／ビットコイン国内取引所で利用できるサービスを紹介！"
+                pageDescription='国内取引所のサービス紹介ページです。各取引所のサービス比較、メリットなどの確認にお使いください。' />
+            <BreadCrunb itemList={[{name: 'サービス', path: '/exchange-jp'}]} />
             <div>
                 <div className={styles.display_flex}>
                     <ExchangeJp />

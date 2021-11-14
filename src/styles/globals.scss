@@ -10,6 +10,17 @@ html {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+@media (max-width: 767px) {
+  html {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 body {
   margin: 0;
   background-color: #f9f9f9;
@@ -68,14 +79,62 @@ thead, tbody, tfoot, tr, td, th {
   font-size: 12px;
 }
 
-@media (max-width: 767px) {
-  html {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-overflow-scrolling: touch;
+.content-head {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.content-head img {
+  width: 100%;
+}
+
+.content-body {
+  background-color: #fff;
+  padding: 10px 20px;
+  word-wrap: break-word;
+}
+
+.content-main p {
+  margin: 20px 0;
+  line-height: 28px;
+}
+
+.content-body h2 {
+  color: #fff;
+  font-size: 23px;
+  position: relative;
+  padding: 0.5em;
+  margin: 30px 0 45px;
+  background-color: #10bdc2;
+}
+
+.content-body h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  border-left: solid 4px #baac71;
+  padding-left: 0.42em;
+  margin: 1em 0;
+  line-height: 1.25;
+}
+
+@media (max-width: 560px) {
+
+  .content-head img {
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    max-width: 624px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 624px;
+    flex: 0 0 624px;
+    margin: 0 16px 40px 0;
+  }
+
+  .content-body h2 {
+    margin: 20px 0 30px;
   }
 }
 

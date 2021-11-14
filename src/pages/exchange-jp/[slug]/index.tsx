@@ -9,6 +9,7 @@ import styles from '../../../styles/Home.module.scss';
 import Coincheck from '../../../component/coincheck';
 import BitFlyer from '../../../component//bitFlyer';
 import GmoCoin from '../../../component/gmocoin';
+import BitPoint from '../../../component/bitpoint';
 
 
 export default function ExchangeSlugComponent() {
@@ -23,6 +24,9 @@ export default function ExchangeSlugComponent() {
                 break;
             case 'gmocoin':
                 Component = GmoCoin;
+                break;
+            case 'bitpoint':
+                Component = BitPoint;
                 break;
             default:
                 break;
@@ -41,6 +45,9 @@ export default function ExchangeSlugComponent() {
             case 'gmocoin':
                 title = 'GMO コイン';
                 break;
+            case 'bitpoint':
+                title = 'BITPoint';
+                break;
             default:
                 break;
         }
@@ -52,7 +59,7 @@ export default function ExchangeSlugComponent() {
             <Seo pageTitle={`【${getTitle()}】仮想通貨／ビットコイン国内取引所の${getTitle()}を紹介！`}
                 pageDescription={`これから暗号資産(仮想通貨)投資を始めたい初心者向けに、${getTitle()}で口座開設するメリットを紹介！`} />
             <BreadCrunb itemList={[
-                {name: '国内取引所', path: '/exchange-jp'},
+                {name: 'サービス', path: '/exchange-jp'},
                 {name: getTitle(), path: `/exchange-jp/${slug}`}
                 ]} />
             <div>
