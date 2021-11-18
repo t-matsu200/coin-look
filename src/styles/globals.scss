@@ -10,17 +10,6 @@ html {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-@media (max-width: 767px) {
-  html {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-overflow-scrolling: touch;
-  }
-}
-
 body {
   margin: 0;
   background-color: #f9f9f9;
@@ -117,26 +106,6 @@ thead, tbody, tfoot, tr, td, th {
   line-height: 1.25;
 }
 
-@media (max-width: 560px) {
-
-  .content-head img {
-    height: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .content {
-    max-width: 624px;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 624px;
-    flex: 0 0 624px;
-    margin: 0 16px 40px 0;
-  }
-
-  .content-body h2 {
-    margin: 20px 0 30px;
-  }
-}
 
 .check-point {
   padding: 25px 30px;
@@ -161,6 +130,32 @@ thead, tbody, tfoot, tr, td, th {
   background-color: #fff;
   width: 150px;
   text-align: center;
+}
+
+.account-point {
+  @extend .check-point;  
+}
+
+.account-point:before {
+  content: "口座開設リンク";
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 21px;
+  color: #10bdc2;
+  font-weight: 700;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
+  width: 150px;
+  text-align: center;
+}
+
+.account-link-img {
+  animation: vibrations 2s linear infinite;
+  margin-left: 5%;
 }
 
 .account-link{
@@ -188,6 +183,43 @@ thead, tbody, tfoot, tr, td, th {
   animation: vibrations 2s linear infinite;
   transition: 0.3s;
   text-align: center;
+}
+
+
+@media (max-width: 767px) {
+  html {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .account-link-img {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .content-head img {
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    max-width: 624px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 624px;
+    flex: 0 0 624px;
+    margin: 0 16px 40px 0;
+  }
+
+  .content-body h2 {
+    margin: 20px 0 30px;
+  }
 }
 
 @keyframes vibrations{0%{-webkit-transform:translate(0);transform:translate(0)}1%{-webkit-transform:translate(4px);transform:translate(4px)}2%{-webkit-transform:translate(0);transform:translate(0)}3%{-webkit-transform:translate(-4px);transform:translate(-4px)}4%{-webkit-transform:translate(0);transform:translate(0)}5%{-webkit-transform:translate(4px);transform:translate(4px)}6%{-webkit-transform:translate(0);transform:translate(0)}7%{-webkit-transform:translate(-4px);transform:translate(-4px)}8%{-webkit-transform:translate(0);transform:translate(0)}9%{-webkit-transform:translate(4px);transform:translate(4px)}10%{-webkit-transform:translate(0);transform:translate(0)}11%{-webkit-transform:translate(-4px);transform:translate(-4px)}12%{-webkit-transform:translate(0);transform:translate(0)}100%{-webkit-transform:translate(0);transform:translate(0)}}

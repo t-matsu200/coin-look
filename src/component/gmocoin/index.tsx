@@ -11,13 +11,18 @@ export default function GmoCoinComponent() {
 
     function makeLink(url: string, text: string) {
         const colorLink = {color: '#5fc7ca', textDecoration: 'underline'};
+        if (text === 'GMOコイン') {
+            return <a href="https://h.accesstrade.net/sp/cc?rk=0100mdoh00lt2u" rel="nofollow" referrerPolicy="no-referrer-when-downgrade">{text}</a>
+        }
         return <a href={url} target="_blank" rel="noopener noreferrer" style={colorLink}>{text}</a>
     }
 
     function openAccount() {
         return (
-            <div className="check-point">
-                <a className="account-link" href={AppConstant.gmoCoin} target="_blank" rel="noopener noreferrer">口座開設する</a>
+            <div className="account-point">
+                <a href="https://h.accesstrade.net/sp/cc?rk=0100mdoh00lt2u" rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
+                    <img className="account-link-img" src="https://h.accesstrade.net/sp/rr?rk=0100mdoh00lt2u" alt="GMOコイン" />
+                </a>
             </div>
         )
     }

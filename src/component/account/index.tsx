@@ -167,8 +167,10 @@ export default function AccountComponent() {
                     </tr>
                   </tbody>
                 </table>
-                <div className="check-point">
-                  <a className="account-link" href={AppConstant.gmoCoin} target="_blank" rel="noopener noreferrer">口座開設する</a>
+                <div className="account-point">
+                    <a href="https://h.accesstrade.net/sp/cc?rk=0100mdoh00lt2u" rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
+                        <img className="account-link-img" src="https://h.accesstrade.net/sp/rr?rk=0100mdoh00lt2u" alt="GMOコイン" />
+                    </a>
                 </div>
               </div>
 
