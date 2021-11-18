@@ -129,7 +129,7 @@ export default function ExchangeComponent() {
                         </tr>
                         <tr>
                             <td>
-                                <a href="https://coin.z.com/jp" target="_blank" rel="noopener noreferrer">
+                                <a href={AppConstant.gmoCoin} target="_blank" rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
                                     <div><img src={gmoCoinLogo.src} alt="GMO coin logo"></img></div>GMOコイン
                                 </a>
                             </td>
@@ -139,7 +139,7 @@ export default function ExchangeComponent() {
                         </tr>
                         <tr>
                             <td>
-                                <a href="https://bitcoin.dmm.com/" target="_blank" rel="noopener noreferrer">
+                                <a href={AppConstant.dmmCoin} target="_blank" rel="noopener noreferrer">
                                     <div><img src={dmmCoinLogo.src} alt="DMM Bitcoin logo"></img></div>DMM Bitcoin
                                 </a>
                             </td>
@@ -163,7 +163,7 @@ export default function ExchangeComponent() {
                     <p><span className="yellow-border">貸暗号資産</span>というレンディングサービスがあり、保有している暗号資産を一定期間{coincheck}に預けることにより利用料が貰えます。<br/>14日間で年率1%、30日間で年率2%と預け入れる期間が長くなる程年率が高くなりますが、年率の高い枠は人気ですので申請が受理されるまでかなりかかります。<br/>参考までに、筆者が所有しているIOSTを30日間の枠で申請した所、貸し出されるまでに1ヶ月かかりました。</p>
                     <p>Coincheckで利用可能な各種サービスについては、<Link href="/exchange-jp/coincheck">こちら</Link>で解説しています。</p>
 
-                    <div className="check-point">
+                    <div className="account-point">
                         <a className="account-link" href={AppConstant.coincheck} target="_blank" rel="noopener noreferrer">口座開設する</a>
                     </div>
 
@@ -198,7 +198,7 @@ export default function ExchangeComponent() {
                     <p>bitFlyerで利用可能な各種サービスについては、<Link href="/exchange-jp/bitFlyer">こちら</Link>で解説しています。</p>
                 </div>
 
-                <div className="check-point">
+                <div className="account-point">
                     <a className="account-link" href="https://bitflyer.com/invitation?id=e3ilarco&lang=ja-JP" target="_blank" rel="noopener noreferrer">公式アプリをダウンロード</a>
                 </div>
             </div>
@@ -215,8 +215,10 @@ export default function ExchangeComponent() {
                     <p>基本的な手数料が全部無料であることも特徴の一つです。<br/>他の取引所やウォレットに小額の送金が必要になった場合など、口座開設を済ませておくとスムーズに利用できて便利です。</p>
                     <p>GMOコインで利用可能な各種サービスについては、<Link href="/exchange-jp/gmocoin">こちら</Link>で解説しています。</p>
                 </div>
-                <div className="check-point">
-                    <a className="account-link" href={AppConstant.gmoCoin} target="_blank" rel="noopener noreferrer">口座開設する</a>
+                <div className="account-point">
+                    <a href="https://h.accesstrade.net/sp/cc?rk=0100mdoh00lt2u" rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
+                        <img className="account-link-img" src="https://h.accesstrade.net/sp/rr?rk=0100mdoh00lt2u" alt="GMOコイン" />
+                    </a>
                 </div>
             </div>
 
@@ -232,7 +234,7 @@ export default function ExchangeComponent() {
                     <p>また、送金手数料が他の取引所に比べ割安なのが特徴です。</p>
                     <p>よく口座開設キャンペーンを実施している印象がありますので、他の取引所よりもお得に口座開設できるかもしれません。</p>
                 </div>
-                <div className="check-point">
+                <div className="account-point">
                     <a href={AppConstant.dmmCoin} rel="nofollow">
                         <div className="appeal-img">
                             <img width="300" height="250" alt="" src="https://www20.a8.net/svt/bgt?aid=211106049229&wid=001&eno=01&mid=s00000017198003007000&mc=1" />  
@@ -256,7 +258,7 @@ export default function ExchangeComponent() {
                     <p>2021/11/30まで、<span className="yellow-border">JMYが最大15,500円相当貰えるキャンペーンを実施中</span>ですので、口座開設するなら今がお得です。</p>
                 </div>
 
-                <div className="check-point">
+                <div className="account-point">
                     <a href={AppConstant.bitPoint} target="_blank" rel="noopener noreferrer">
                         <div className="appeal-img">
                             <img src={bitpointCampaign.src} alt="BITPoint" width={400} height={230} />
@@ -278,7 +280,7 @@ export default function ExchangeComponent() {
                     <p><strong>HT（フォビトークン）</strong>というEthereumブロックチェーン上の分散型仮想通貨を取り扱っており、<strong>保有量に応じて全8段階の取引手数料の割引</strong>が行われます。2021/11/1現在、評価額は1,500円前後となっています。</p>
                     <p>2022/1/24まで、<span className="yellow-border">HTが最大30,000円相当貰えるキャンペーンを実施中</span>ですので、口座開設するなら今がお得です。</p>
                 </div>
-                <div className="check-point">
+                <div className="account-point">
                     <a href={AppConstant.huobiJp} rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
                         <div className="appeal-img">
                             <img src={huobiCampaign.src} alt="フォビジャパン（Huobi Japan)" />
