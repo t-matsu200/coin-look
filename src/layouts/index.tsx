@@ -26,7 +26,7 @@ function MainLayout({ children }: LayoutProps): JSX.Element {
           <div className={styles.side_column}></div>
           <div className={styles.sticky_bar}></div>
         </div>
-        <Advertisement htmlString={AppConstant.huobiWide} width="100%" textAlign="center" minHeight="100px" padding="16px" />
+        <Advertisement htmlString={AppConstant.coincheckWideBanner} width="100%" textAlign="center" minHeight="100px" padding="16px" />
         <Footer />
       </div>
     </>

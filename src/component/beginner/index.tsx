@@ -53,7 +53,7 @@ export default function BeginnerComponent() {
             {subTitle: subTitle6, path: '/beginner', as: '#sec6'}
             ]} />
           
-          <Advertisement htmlString={AppConstant.huobiRect} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
+          <Advertisement htmlString={AppConstant.coincheckRectBanner} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
           <h2 id="sec1">{subTitle1}</h2>
           <div className="check-point">

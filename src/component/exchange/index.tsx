@@ -72,7 +72,7 @@ export default function ExchangeComponent() {
               {subTitle: subTitle5, path: '/exchange', as: '#sec5'}
               ]} />
 
-            <Advertisement htmlString={AppConstant.huobiRect} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
+            <Advertisement htmlString={AppConstant.coincheckRectBanner} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
             <h2 id="sec1">{subTitle1}</h2>
             <p>この記事で紹介する<span className="yellow-border">国内の仮想通貨取引所</span>の一覧となります。</p><br/>
@@ -155,7 +155,9 @@ export default function ExchangeComponent() {
             <h3>Coincheck</h3>
             <div className={styles.exchange_block}>
                 <div className={styles.bg_logo}>
-                    <img src={bgCoincheckLogo.src} alt="Coincheck logo" width={400} height={300} />
+                    <a href="https://h.accesstrade.net/sp/cc?rk=0100nbcw00lt2u" rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
+                        <img src={bgCoincheckLogo.src} alt="Coincheck logo" width={400} height={300} />
+                    </a>
                 </div>
                 <div className="content-main">
                     <p>2012年に創業のコインチェック株式会社が運営する暗号資産取引所。</p>
@@ -164,7 +166,9 @@ export default function ExchangeComponent() {
                     <p>Coincheckで利用可能な各種サービスについては、<Link href="/exchange-jp/coincheck">こちら</Link>で解説しています。</p>
 
                     <div className="account-point">
-                        <a className="account-link" href={AppConstant.coincheck} target="_blank" rel="noopener noreferrer">口座開設する</a>
+                        <a href="https://h.accesstrade.net/sp/cc?rk=0100nbcz00lt2u" rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
+                            <img className="account-link-img" src="https://h.accesstrade.net/sp/rr?rk=0100nbcz00lt2u" alt="コインチェック" />
+                        </a>
                     </div>
 
                     <p>また{coincheck}では、国内初のIEO（Initial Exchange Offering）として「{pallet}」が実施されました。<br/>今後もまたIEOが実施される可能性もありますので、募集に応募できるように口座開設を済ませておくと良いでしょう。</p>

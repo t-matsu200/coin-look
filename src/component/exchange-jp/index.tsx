@@ -27,7 +27,7 @@ export default function ExchangeJpComponent() {
               <ExchangeLinkComponent />
           </div>
 
-          <Advertisement htmlString={AppConstant.huobiRect} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
+          <Advertisement htmlString={AppConstant.coincheckRectBanner} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
         </div>
       </div>
     </>

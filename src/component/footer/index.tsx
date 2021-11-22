@@ -40,7 +40,7 @@ function Footer() {
                                 <li><Link href="/exchange-jp/[slug]" as="/exchange-jp/bitFlyer"><a>bitFlyer</a></Link></li>
                                 <li><Link href="/exchange-jp/[slug]" as="/exchange-jp/gmocoin"><a>GMOコイン</a></Link></li>
                                 <li><Link href="/exchange-jp/[slug]" as="/exchange-jp/bitpoint"><a>BITPoint</a></Link></li>
-                                <li><a href="https://bitcoin.dmm.com/" target="_blank" rel="noopener noreferrer">DMM Bitcoin</a></li>
+                                <li><a href="https://px.a8.net/svt/ejp?a8mat=3HOQGX+3SCAB6+3OP8+HWI5T" target="_blank" rel="noopener noreferrer">DMM Bitcoin</a></li>
                             </ul>
                         </div>
                     </div>

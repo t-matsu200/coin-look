@@ -61,7 +61,7 @@ export default function GmoCoinComponent() {
                     {subTitle: subTitle7, path: currentPath, as: '#sec7'}
                     ]} />
                 
-                <Advertisement htmlString={AppConstant.huobiRect} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
+                <Advertisement htmlString={AppConstant.gmocoinRect} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
                 <h2 id="sec1">{subTitle1}</h2>
                 <div>
@@ -149,7 +149,7 @@ export default function GmoCoinComponent() {
                             <li><strong>{subTitle4}</strong>では{subTitle3}と異なり、預入期間の縛りなしでXTZを増やせます。</li>
                             <li><strong>{subTitle5}</strong>で、500円から複数の暗号資産の自動積み立てが可能です。</li>
                             <li><strong>{subTitle6}</strong>では、2倍のレバレッジで取引可能です。</li>
-                            <a className="account-link" href={AppConstant.gmoCoin} target="_blank" rel="noopener noreferrer" style={{marginTop: '5%'}}>口座開設する</a>
+                            <a className="account-link" href={AppConstant.gmoCoin} target="_blank" rel="nofollow" referrerPolicy="no-referrer-when-downgrade" style={{marginTop: '5%'}}>口座開設する</a>
                         </ul>
                     </div>
                 </div>

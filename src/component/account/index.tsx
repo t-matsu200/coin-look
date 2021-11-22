@@ -49,7 +49,7 @@ export default function AccountComponent() {
             {subTitle: subTitle5, path: '/account', as: '#sec5'}
             ]} />
           
-          <Advertisement htmlString={AppConstant.huobiRect} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
+          <Advertisement htmlString={AppConstant.coincheckRectBanner} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
           <h2 id="sec1">{subTitle1}</h2>
           <div>
@@ -96,7 +96,9 @@ export default function AccountComponent() {
 
               <h3>Coincheck</h3>
               <div className={styles.table_block}>
-                <img src={bgCoincheckLogo.src} alt="Coincheck logo" width={400} height={300} />
+                <a href="https://h.accesstrade.net/sp/cc?rk=0100nbcw00lt2u" rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
+                  <img src={bgCoincheckLogo.src} alt="Coincheck logo" width={400} height={300} />
+                </a>
                 <table>
                   <thead>
                     <tr>
@@ -115,8 +117,10 @@ export default function AccountComponent() {
                     </tr>
                   </tbody>
                 </table>
-                <div className="check-point">
-                  <a className="account-link" href={AppConstant.coincheck} target="_blank" rel="noopener noreferrer">口座開設する</a>
+                <div className="account-point">
+                  <a href="https://h.accesstrade.net/sp/cc?rk=0100nbcz00lt2u" rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
+                    <img className="account-link-img" src="https://h.accesstrade.net/sp/rr?rk=0100nbcz00lt2u" alt="コインチェック" />
+                  </a>
                 </div>
               </div>
 
