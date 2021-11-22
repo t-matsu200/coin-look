@@ -16,8 +16,10 @@ export default function CoincheckComponent() {
 
     function openAccount() {
         return (
-            <div className="check-point">
-                <a className="account-link" href={AppConstant.coincheck} target="_blank" rel="noopener noreferrer">口座開設する</a>
+            <div className="account-point">
+                <a href="https://h.accesstrade.net/sp/cc?rk=0100nbcz00lt2u" rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
+                    <img className="account-link-img" src="https://h.accesstrade.net/sp/rr?rk=0100nbcz00lt2u" alt="コインチェック" />
+                </a>
             </div>
         )
     }
@@ -41,10 +43,12 @@ export default function CoincheckComponent() {
         <>
             <div className="content">
                 <div>
-                <div className="content-head">
-                    <ContentHeader title="日本国内の暗号資産取引所であるCoincheckについて解説！" />
-                    <img src={bgCoincheckLogo.src} alt="Coincheck ロゴ" width={584} height={440} />
-                </div>
+                    <div className="content-head">
+                        <ContentHeader title="日本国内の暗号資産取引所であるCoincheckについて解説！" />
+                        <a href="https://h.accesstrade.net/sp/cc?rk=0100nbcw00lt2u" rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
+                            <img src={bgCoincheckLogo.src} alt="Coincheck logo" width={400} height={300} style={{maxWidth: '400px'}} />
+                        </a>
+                    </div>
                 </div>
                 <div className="content-body">
                 <div className="content-main">
@@ -61,7 +65,7 @@ export default function CoincheckComponent() {
                     {subTitle: subTitle8, path: currentPath, as: '#sec8'}
                     ]} />
                 
-                <Advertisement htmlString={AppConstant.huobiRect} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
+                <Advertisement htmlString={AppConstant.coincheckRectBanner} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
 
                 <h2 id="sec1">{subTitle1}</h2>
                 <div>
