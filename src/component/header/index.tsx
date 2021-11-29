@@ -34,6 +34,9 @@ function Header() {
                 <Link href="/exchange-jp">サービス</Link>
               </div>
               <div>
+                <Link href="/ieo">IEO</Link>
+              </div>
+              <div>
                 <Link href="/beginner">初心者の注意点</Link>
               </div>
               <div>
