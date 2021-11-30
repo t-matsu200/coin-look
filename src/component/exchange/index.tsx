@@ -113,7 +113,7 @@ export default function ExchangeComponent() {
                                     <div><img src={bitPointLogo.src} alt="BITPoint logo"></img></div>BITPoint
                                 </a>
                             </td>
-                            <td>10種類</td>
+                            <td>11種類</td>
                             <td>○</td>
                             <td>○</td>
                         </tr>
@@ -259,7 +259,7 @@ export default function ExchangeComponent() {
                     <p>2016年に創業の株式会社ビットポイントジャパンが運営する暗号資産取引所。</p>
                     <p>ADAコイン({cardano})やジャスミー({jasmy})など他の国内取引所では扱っていない銘柄を立て続けに上場しています。<br/>今後も国内で取り扱いの少ない銘柄が上場される可能性がありますので、口座開設を済ませておく事をおすすめします。</p>
                     <p>また、こちらもブラウザUIやスマホアプリが扱いやすいので、初心者におすすめの取引所となります。</p>
-                    <p>2021/11/30まで、<span className="yellow-border">JMYが最大15,500円相当貰えるキャンペーンを実施中</span>ですので、口座開設するなら今がお得です。</p>
+                    <p>2021/12/29まで、<span className="yellow-border">JMY・ADA・LNKの3通貨が貰えるキャンペーンを実施中</span>ですので、口座開設するなら今がお得です。</p>
                 </div>
 
                 <div className="account-point">
