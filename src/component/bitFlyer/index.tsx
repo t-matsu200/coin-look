@@ -25,10 +25,11 @@ export default function BitFlyerComponent() {
     const subTitle1 = 'bitFlyerの特徴';
     const subTitle2 = 'bitFlyerのサービスについて';
     const subTitle3 = 'ビットコインをもらう';
-    const subTitle4 = 'かんたん積立';
-    const subTitle5 = 'ヤマダ電機でのビットコイン決済サービス';
-    const subTitle6 = 'Tポイントをビットコインに交換できる';
-    const subTitle7 = 'bitFlyer まとめ';
+    const subTitle4 = 'bitFlyer クレカ';
+    const subTitle5 = 'かんたん積立';
+    const subTitle6 = 'ヤマダ電機でのビットコイン決済サービス';
+    const subTitle7 = 'Tポイントをビットコインに交換できる';
+    const subTitle8 = 'bitFlyer まとめ';
     const currentPath = '/exchange-jp/bitFlyer';
     const bitFlyer = makeLink('https://bitflyer.com/ja-jp/account-create', 'bitFlyer');
 
@@ -52,7 +53,8 @@ export default function BitFlyerComponent() {
                     {subTitle: subTitle4, path: currentPath, as: '#sec4'},
                     {subTitle: subTitle5, path: currentPath, as: '#sec5'},
                     {subTitle: subTitle6, path: currentPath, as: '#sec6'},
-                    {subTitle: subTitle7, path: currentPath, as: '#sec7'}
+                    {subTitle: subTitle7, path: currentPath, as: '#sec7'},
+                    {subTitle: subTitle8, path: currentPath, as: '#sec8'}
                     ]} />
                 
                 <Advertisement htmlString={AppConstant.huobiRect} width="100%" textAlign="center" minHeight="100px" padding="16px 0 0" />
@@ -77,6 +79,7 @@ export default function BitFlyerComponent() {
                             <li>{subTitle4}</li>
                             <li>{subTitle5}</li>
                             <li>{subTitle6}</li>
+                            <li>{subTitle7}</li>
                         </ul>
                     </div>
                 </div>
@@ -95,32 +98,40 @@ export default function BitFlyerComponent() {
 
                 <h2 id="sec4">{subTitle4}</h2>
                 <div className="content-main">
-                    <p><strong>{subTitle4}</strong>とは暗号資産を一定の頻度と金額で、自動購入できるサービスです。</p>
+                    <p><strong>{subTitle4}</strong>とは、{bitFlyer}のWEBサイトからMastercardを発行して、そのクレジットカードでカードショッピングをすると0.5〜1.0%相当のビットコインが貯まるというサービスです。</p>
+                    <p>種類はスタンダードとプラチナがあり、スタンダートは永年無料、プラチナは2年目以降から年会費が発生します。</p>
+                    <p>クレジットカードの申し込みを行う前に、bitFlyerの口座開設を済ませておく必要があります。</p>
+                    <p>詳細は{makeLink('https://bitflyer.com/creditcard', '公式サイト')}で確認できます。</p>
+                </div>
+
+                <h2 id="sec5">{subTitle5}</h2>
+                <div className="content-main">
+                    <p><strong>{subTitle5}</strong>とは暗号資産を一定の頻度と金額で、自動購入できるサービスです。</p>
                     <p>{bitFlyer}では一円単位からの自動積み立てが可能で、分散投資に適しています。<br/>他の取引所の同様サービスに比べ、圧倒的に敷居が低いことも特徴です。</p>
                     <p>積立頻度は「毎日 1 回」、「毎週 1 回」、「毎月 2 回（1 日と 15 日）」、「毎月 1 回」から選択可能です。</p>
-                    <p>{subTitle4}はスマホアプリ「<strong>bitFlyer ウォレット</strong>」からのみ利用可能ですので、先にインストールしておくことをおすすめします。</p>
+                    <p>{subTitle5}はスマホアプリ「<strong>bitFlyer ウォレット</strong>」からのみ利用可能ですので、先にインストールしておくことをおすすめします。</p>
                     <div className="check-point">
                         <a className="account-link" style={{background: 'yellowgreen'}} href="https://bitflyer.com/invitation?id=e3ilarco&lang=ja-JP" target="_blank" rel="noopener noreferrer">公式アプリをダウンロード</a>
                     </div>
                 </div>
 
-                <h2 id="sec5">{subTitle5}</h2>
+                <h2 id="sec6">{subTitle6}</h2>
                 <div className="content-main">
-                    <p><strong>{subTitle5}</strong>とはその名の通り、ヤマダ電機でビットコイン払いが可能となるサービスです。</p>
+                    <p><strong>{subTitle6}</strong>とはその名の通り、ヤマダ電機でビットコイン払いが可能となるサービスです。</p>
                     <p>こちらのサービスも「bitFlyerウォレット」などで可能になります。。</p>
                     <p>1会計あたり30万円相当まで、ビットコインでの支払いが可能となりますので、{bitFlyer}で口座開設をしたら、決済機能に特化したビットコインの購入をおすすめします。</p>
                     <p>日本円に換金してから出金するなどの手間が省け、便利なサービスとなっています。</p>
                 </div>
 
-                <h2 id="sec6">{subTitle6}</h2>
+                <h2 id="sec7">{subTitle7}</h2>
                 <div className="content-main">
-                    <p><strong>{subTitle6}</strong>とは、「Tポイント」をビットコインに交換できるサービスです。</p>
+                    <p><strong>{subTitle7}</strong>とは、「Tポイント」をビットコインに交換できるサービスです。</p>
                     <p>100ポイントにつき85円相当のビットコインに交換可能で、大手共通ポイントが仮想通貨への交換に対応するのは{bitFlyer}のみとなります。（2021/11現在）</p>
                     <p>貯まった「Tポイント」をビットコインに交換することで将来的に数倍の価値になる可能性がありますので、興味のある方は利用してみてはいかがでしょうか？</p>
                     <p>通常の売買と異なり、元手が必要ない事も魅力的なサービスです。</p>
                 </div>
 
-                <h2 id="sec7">{subTitle7}</h2>
+                <h2 id="sec8">{subTitle8}</h2>
                 <div className="content-main">
                     <p>暗号資産取引の大前提となる堅牢なセキュリティや、決済周りでお得なサービスを展開する{bitFlyer}は初心者に特におすすめの暗号資産取引所です。</p>
                     <p>この機会に是非、{bitFlyer}で口座開設をしてみましょう。</p>
@@ -128,9 +139,9 @@ export default function BitFlyerComponent() {
                         <ul className={styles.matome_ul}>
                             <li>{bitFlyer}では<strong>今までに一度もハッキング事故が発生しておらず</strong>、安心して暗号資産の取引が可能です。</li>
                             <li><strong>{subTitle3}</strong>では、{bitFlyer}経由で買い物などをすると、<br/>無料で暗号資産が貰えてお得です。</li>
-                            <li><strong>{subTitle4}</strong>で、<span className="yellow-border">何と1円から</span>暗号資産の自動積み立てが可能です。</li>
-                            <li><strong>{subTitle5}</strong>では、日本円に換金しなくても買い物が可能です。</li>
-                            <li><strong>{subTitle6}</strong>では、貯まったTポイントをビットコインに交換できます。</li>
+                            <li><strong>{subTitle5}</strong>で、<span className="yellow-border">何と1円から</span>暗号資産の自動積み立てが可能です。</li>
+                            <li><strong>{subTitle6}</strong>では、日本円に換金しなくても買い物が可能です。</li>
+                            <li><strong>{subTitle7}</strong>では、貯まったTポイントをビットコインに交換できます。</li>
                             <a className="account-link" href='https://bitflyer.com/ja-jp/account-create' target="_blank" rel="noopener noreferrer" style={{marginTop: '5%'}}>口座開設する</a>
                         </ul>
                     </div>
