@@ -14,6 +14,7 @@ import bgDmmCoinLogo from '../../../public/img/bg-dmmCoin.png';
 import bgHuobiLogo from '../../../public/img/bg-huobi.png';
 import huobiCampaign from '../../../public/img/huobi-campaign.png';
 import bitpointCampaign from '../../../public/img/bitpoint-campaign.png';
+import Link from 'next/link';
 
 
 export default function AccountComponent() {
@@ -39,6 +40,7 @@ export default function AccountComponent() {
               <p><span className="danger"><strong>仮想通貨の売買を始めるには、仮想通貨取引所への口座開設（アカウント作成）をする必要があります。</strong></span></p>
               <p>この記事では<strong>取引所の口座開設の流れ</strong>について解説します。</p>
               <p>仮想通貨初心者にもおすすめの<span className="yellow-border">振込手数料がお得な銀行</span>や<span className="yellow-border">複数の取引所で口座開設するメリット</span>についても解説していきます。</p>
+              <p><Link href="/exchange-jp/[slug]" as="/exchange-jp/bitpoint"><a>ビットポイント（BITPoint）</a></Link>やDMM Bitcoin、フォビジャパンでは、口座開設すると仮想通貨がもらえるキャンペーンを開催していますので、そちらも要チェックです。</p>
               <ExchangeLinkComponent />
           </div>
           <TableContent listItem={[

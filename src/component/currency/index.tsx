@@ -60,16 +60,16 @@ export default function AccountComponent() {
       <div className="content">
         <div>
             <div className="content-head">
-                <ContentHeader title="国内の仮想通貨取引所で買える銘柄・特徴について｜初心者におすすめの仮想通貨の買い方についても解説！" />
-                <img src={currencyLogo.src} alt="国内の仮想通貨取引所で買える銘柄について解説" width={584} height={440} />
+                <ContentHeader title="国内の取引所で買えるアルトコインの銘柄・特徴について｜初心者におすすめの仮想通貨の買い方についても解説！" />
+                <img src={currencyLogo.src} alt="国内の取引所で買えるアルトコインの銘柄について解説" width={584} height={440} />
             </div>
         </div>
         <div className="content-body">
           <div className="content-main">
               <p><span className="danger"><strong>仮想通貨で儲けるためには、将来性があって安全な通貨を適切に選び、投資する必要があります。</strong></span></p>
               <p>近年、大きな流行りとなっている仮想通貨、気になっている方も多いと思います。</p>
-              <p>この記事では<strong>国内の仮想通貨取引所で買える銘柄</strong>について解説します。</p>
-              <p>仮想通貨初心者におすすめの<span className="yellow-border">仮想通貨の買い方</span>や<span className="yellow-border">仮想通貨の銘柄、開発状況</span>についても解説していきます。</p>
+              <p>この記事では<strong>ビットコインをはじめ、国内の仮想通貨取引所で買えるアルトコインの銘柄</strong>について解説します。</p>
+              <p>仮想通貨初心者におすすめの<span className="yellow-border">仮想通貨の買い方・タイミング</span>や<span className="yellow-border">仮想通貨の銘柄、開発状況</span>についても解説していきます。</p>
               <ExchangeLinkComponent />
           </div>
 
@@ -188,7 +188,7 @@ export default function AccountComponent() {
               </tr>
               <tr>
                 <th>特徴</th>
-                <td>・スマートコントラクト。<br/>・過去にはイーサリアムとイーサリアムクラシックにハードフォーク（分裂）した。</td>
+                <td>・スマートコントラクト。<br/>・過去にはイーサリアムとイーサリアムクラシックにハードフォーク（分裂）した。<br/>・dApps（分散型アプリケーション）という管理者が介在しない非中央集権的なアプリケーションを構築できる事で有名。</td>
               </tr>
             </table>
           </div>

@@ -34,7 +34,7 @@ export default function BitPointComponent() {
     const trx = makeLink('https://tron.network/index?lng=jap',  'TRX（トロン）');
     const campaign = makeLink('https://www.bitpoint.co.jp/news/campaign/', '公式サイト');
     const jmy = makeLink('https://www.jasmy.co.jp/',  'JMY（ジャスミー）');
-    const ada = makeLink('https://cardano.org/',  'ADA（エイダコイン）');
+    const ada = makeLink('https://cardano.org/',  'ada（エイダコイン）');
     const bat = makeLink('https://basicattentiontoken.org/', 'BAT（ベーシックアテンショントークン）')
 
     return (
