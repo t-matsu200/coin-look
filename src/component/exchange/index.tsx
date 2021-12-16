@@ -60,8 +60,9 @@ export default function ExchangeComponent() {
         </div>
         <div className="content-body">
             <div className="content-main">
-                <p><strong>仮想通貨取引初心者の方には、海外の取引所ではなく国内の取引所での仮想通取引をおすすめします。</strong></p>
+                <p><strong>仮想通貨取引初心者の方には、海外の取引所ではなく国内の取引所での取引をおすすめします。</strong></p>
                 <p>この記事では仮想通貨初心者におすすめの<span className="yellow-border">国内取引所の特徴</span>や<span className="yellow-border">国内取引所をおすすめする理由</span>について解説していきます。</p>
+                <p><Link href="/exchange-jp/[slug]" as="/exchange-jp/bitpoint"><a>ビットポイント（BITPoint）</a></Link>やDMM Bitcoin、フォビジャパンでは、口座開設すると仮想通貨がもらえるキャンペーンを開催していますので、併せて解説します。</p>
                 <ExchangeLinkComponent />
             </div>
             <TableContent listItem={[
