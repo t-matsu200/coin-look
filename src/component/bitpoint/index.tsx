@@ -109,7 +109,7 @@ export default function BitPointComponent() {
                 <div className="content-main">
                     <p><strong>{subTitle5}</strong>として、Twitterのリツイートで暗号資産が貰えたり、購入額の10%相当が付与されるなどのキャンペーンをよく開催しています。</p>
                     <p>キャンペーン内容はその時によって内容が異なりますので、詳細は{campaign}を確認してみてください。</p>
-                    <p>2021年12月29日まで<span className="yellow-border">JMY・ADA・LNKの3通貨が貰えるキャンペーン</span>が開催中です！</p>
+                    <p>2022年1月31日まで<span className="yellow-border">JMYが貰えるキャンペーン</span>が開催中です！</p>
                     <div className="check-point">
                         <a href={AppConstant.bitPoint} target="_blank" rel="noopener noreferrer">
                             <div className="appeal-img">
