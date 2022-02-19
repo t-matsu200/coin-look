@@ -70,7 +70,7 @@ export default function CoincheckComponent() {
                 <h2 id="sec1">{subTitle1}</h2>
                 <div>
                     <div className="content-main">
-                        <p>{coincheck}の特徴としてまず挙げられるのは、取り扱い銘柄が17種類と国内では最多となります。<br/>アルトコインの取引に興味がある方は{coincheck}がおすすめです。</p>
+                        <p>{coincheck}の特徴としてまず挙げられるのは、取り扱い銘柄が17種類と多い事です。<br/>アルトコインの取引に興味がある方は{coincheck}がおすすめです。</p>
                         <p>豊富な各銘柄に対応した<strong>貸暗号資産</strong>や、他にはない大口取引時の優遇レート適用、NFTの売買やIEO実施など、多岐に渡る取り組みが行われています。</p>
                         <p>暗号資産取引を始められる方は、とりあえず口座開設しておいて損はないと思います。</p>
                     </div>

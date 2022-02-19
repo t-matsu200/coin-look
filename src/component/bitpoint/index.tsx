@@ -66,7 +66,7 @@ export default function BitPointComponent() {
                     <div className="content-main">
                         <p>{bitPoint}の特徴は、他の国内取引所では取り扱いの少ないアルトコインを上場している点にあります。</p>
                         <p>具体的には{trx}や{ada}、{jmy}などが挙げられます。</p>
-                        <p>2021年11月30日にLNK（チェーンリンク）が新たに上場され、取扱銘柄数は11種類となりました。</p>
+                        <p>2022年1月26日にDEP（ディープコイン）が新たに上場され、取扱銘柄数は12種類となりました。</p>
                         <p>新規銘柄の上場の際に、対象銘柄が貰えるキャンペーンを開催することが多いので、口座開設をしておくだけで暗号資産がもらえるかもしれません。<br/><span style={{opacity: 0.6}}>※ キャンペーン内容は要確認</span></p>
                         <p>また、<span className="yellow-border">各種手数料が全て無料</span>な点と<span className="yellow-border">アルトコインの板取引</span>ができる点が挙げられます。</p>
                         <p>{bitPoint}は国内で取り扱いの少ない銘柄が上場されており、アルトコインの取引をしたい方におすすめの暗号資産取引所です。</p>
@@ -100,16 +100,15 @@ export default function BitPointComponent() {
 
                 <h2 id="sec4">{subTitle4}</h2>
                 <div className="content-main">
-                    <p><strong>{subTitle4}</strong>で取り扱いのある銘柄の中に、{trx}や{bat}があります。</p>
-                    <p>特にBATはレートがよく動くように思いますので、短期保有の方には良いのではないでしょうか。</p>
-                    <p>{ada}の板取引も9月末に開始予定でしたが延期となり、<br/>2021年11月現在ADAの板取引はできない状態となっています。</p>
+                    <p><strong>{subTitle4}</strong>で取り扱いのある銘柄の中に、{ada}や{trx}、{bat}があります。</p>
+                    <p>アルトコインを短期保有でトレードしたい方におすすめの取引所です。</p>
                 </div>
 
                 <h2 id="sec5">{subTitle5}</h2>
                 <div className="content-main">
                     <p><strong>{subTitle5}</strong>として、Twitterのリツイートで暗号資産が貰えたり、購入額の10%相当が付与されるなどのキャンペーンをよく開催しています。</p>
                     <p>キャンペーン内容はその時によって内容が異なりますので、詳細は{campaign}を確認してみてください。</p>
-                    <p>2022年1月31日まで<span className="yellow-border">JMYが貰えるキャンペーン</span>が開催中です！</p>
+                    <p>2022年3月31日まで<span className="yellow-border">DEPが貰えるキャンペーン</span>が開催中です！</p>
                     <div className="check-point">
                         <a href={AppConstant.bitPoint} target="_blank" rel="noopener noreferrer">
                             <div className="appeal-img">
