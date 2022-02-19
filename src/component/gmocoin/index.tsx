@@ -67,8 +67,9 @@ export default function GmoCoinComponent() {
                 <div>
                     <div className="content-main">
                         <p>{gmoCoin}の親会社は東証一部上場企業である「GMOインターネットグループ」です。<br/>ネット証券やFX事業、インターネットインフラ事業も展開しており、セキュリティ面を含む金融系のノウハウに信頼感があります。</p>
+                        <p>2022年2月時点で、国内最多となる19銘柄を取り扱っています。</p>
                         <p>また、<span className="yellow-border">各種手数料が全て無料</span>な点もよく挙げられます。<br/>その影響か、海外取引所に送金する際に{gmoCoin}を利用する方も多いようです。</p>
-                        <p>XTZを保有しているだけでステーキングが可能であったり、貸暗号資産というレンディングサービスで暗号資産を増やす事も可能です。</p>
+                        <p>XTZやXYMを保有しているだけでステーキングが可能であったり、貸暗号資産というレンディングサービスで暗号資産を増やす事も可能です。</p>
                         <p>{gmoCoin}は初心者にもおすすめの暗号資産取引所です。</p>
                     </div>
                     {openAccount()}
@@ -93,7 +94,7 @@ export default function GmoCoinComponent() {
                         <p><strong>貸暗号資産サービス</strong>は、保有する暗号資産を{gmoCoin}に一定期間貸し出すことで、期間満了後に預けた暗号資産と同量・同等の暗号資産 + 各年率で計算した利用料をその暗号資産でもらえるサービスです。</p>
                         <p>貸出期間は1ヶ月間・3ヶ月間から選ぶことができ、年率は1ヶ月=1%、3ヶ月=3%になっています。</p>
                         <p>また、アルトコインは日本円で10万円程度から貸出可能となります。</p>
-                        <p>貸出可能銘柄は以下となっており、中でもXTZ（テゾス）、DOT（ポルカドット）、ATOM（コスモス）は{coincheck}ではレンディングできない銘柄となっています。</p>
+                        <p>貸出可能銘柄は以下となっており、中でもXTZ（テゾス）、DOT（ポルカドット）、ATOM（コスモス）等は{coincheck}ではレンディングできない銘柄となっています。</p>
                         <ul className={styles.menu_list}>
                             <li>BTC（ビットコイン）</li>
                             <li>ETH（イーサリアム）</li>
@@ -109,6 +110,11 @@ export default function GmoCoinComponent() {
                             <li>ENJ（エンジンコイン）</li>
                             <li>DOT（ポルカドット）</li>
                             <li>ATOM（コスモス）</li>
+                            <li>XYM（シンボル）</li>
+                            <li>MONA（モナコイン）</li>
+                            <li>ADA（カルダノ）</li>
+                            <li>MKR（メイカー）</li>
+                            <li>DAI（ダイ）</li>
                         </ul>
                     </div>
                 </div>
@@ -119,9 +125,9 @@ export default function GmoCoinComponent() {
                 <h2 id="sec4">{subTitle4}</h2>
                 <div className="content-main">
                     <p><strong>{subTitle4}</strong>とはビットコインにおけるマイニングに相当するプロセスで、保有しているだけで報酬を得ることができる仕組みです。</p>
-                    <p>{gmoCoin}では、ステーキング対象の暗号資産であるXTZ（テゾス）を保有するだけで、ステーキング報酬を受け取ることができます。</p>
+                    <p>{gmoCoin}では、ステーキング対象の暗号資産であるXTZ（テゾス）またはXYM（シンボル）を保有するだけで、ステーキング報酬を受け取ることができます。</p>
                     <p>{subTitle2}との違いとして、ステーキングは期間に縛りがない為、急な価格変動にも対応可能です。</p>
-                    <p>ステーキングによる報酬は、年率3%～6%程度の見込となり、年率は一定ではありません。また、現状はXTZのみの取り扱いとなります。（2021/11 現在）</p>
+                    <p>ステーキングによる報酬は、年率3%～6%程度の見込となり、年率は一定ではありません。また、現状はXTZとXYMのみの取り扱いとなります。（2022/2 現在）</p>
                 </div>
 
                 <h2 id="sec5">{subTitle5}</h2>
@@ -146,7 +152,7 @@ export default function GmoCoinComponent() {
                         <ul>
                             <li><strong>各種手数料が無料</strong>。</li>
                             <li><strong>{subTitle3}</strong>で何もせずに暗号資産が増やせます。</li>
-                            <li><strong>{subTitle4}</strong>では{subTitle3}と異なり、預入期間の縛りなしでXTZを増やせます。</li>
+                            <li><strong>{subTitle4}</strong>では{subTitle3}と異なり、預入期間の縛りなしでXTZやXYMを増やせます。</li>
                             <li><strong>{subTitle5}</strong>で、500円から複数の暗号資産の自動積み立てが可能です。</li>
                             <li><strong>{subTitle6}</strong>では、2倍のレバレッジで取引可能です。</li>
                             <a className="account-link" href={AppConstant.gmoCoin} target="_blank" rel="nofollow" referrerPolicy="no-referrer-when-downgrade" style={{marginTop: '5%'}}>口座開設する</a>

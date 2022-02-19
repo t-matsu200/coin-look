@@ -114,7 +114,7 @@ export default function ExchangeComponent() {
                                     <div><img src={bitPointLogo.src} alt="BITPoint logo"></img></div>BITPoint
                                 </a>
                             </td>
-                            <td>11種類</td>
+                            <td>12種類</td>
                             <td>○</td>
                             <td>○</td>
                         </tr>
@@ -124,7 +124,7 @@ export default function ExchangeComponent() {
                                     <div><img src={huobiLogo.src} alt="Huobi logo"></img></div>Huobi Japan
                                 </a>
                             </td>
-                            <td>14種類</td>
+                            <td>15種類</td>
                             <td>○</td>
                             <td>○</td>
                         </tr>
@@ -134,7 +134,7 @@ export default function ExchangeComponent() {
                                     <div><img src={gmoCoinLogo.src} alt="GMO coin logo"></img></div>GMOコイン
                                 </a>
                             </td>
-                            <td>14種類</td>
+                            <td>19種類</td>
                             <td>○</td>
                             <td>○</td>
                         </tr>
@@ -144,7 +144,7 @@ export default function ExchangeComponent() {
                                     <div><img src={dmmCoinLogo.src} alt="DMM Bitcoin logo"></img></div>DMM Bitcoin
                                 </a>
                             </td>
-                            <td>12種類</td>
+                            <td>14種類</td>
                             <td>○</td>
                             <td>○</td>
                         </tr>
@@ -162,8 +162,8 @@ export default function ExchangeComponent() {
                 </div>
                 <div className="content-main">
                     <p>2012年に創業のコインチェック株式会社が運営する暗号資産取引所。</p>
-                    <p>国内では最多となる17銘柄を扱っており、初心者にもおすすめです。</p>
-                    <p><span className="yellow-border">貸暗号資産</span>というレンディングサービスがあり、保有している暗号資産を一定期間{coincheck}に預けることにより利用料が貰えます。<br/>14日間で年率1%、30日間で年率2%と預け入れる期間が長くなる程年率が高くなりますが、年率の高い枠は人気ですので申請が受理されるまでかなりかかります。<br/>参考までに、筆者が所有しているIOSTを30日間の枠で申請した所、貸し出されるまでに1ヶ月かかりました。</p>
+                    <p>取り扱い銘柄数は17となっており、国内では2番目に取り扱い銘柄数が多い取引所です。（2022年2月現在）</p>
+                    <p><span className="yellow-border">貸暗号資産</span>というレンディングサービスがあり、保有している暗号資産を一定期間{coincheck}に預けることにより利用料が貰えます。<br/>14日間で年率1%、30日間で年率2%と預け入れる期間が長くなる程年率が高くなりますが、年率の高い枠は人気ですので申請が受理されるまでかなり時間がかかります。<br/>参考までに、筆者が所有しているIOSTを30日間の枠で申請した所、貸し出されるまでに1ヶ月かかりました。</p>
                     <p>Coincheckで利用可能な各種サービスについては、<Link href="/exchange-jp/coincheck">こちら</Link>で解説しています。</p>
 
                     <div className="account-point">
@@ -216,8 +216,10 @@ export default function ExchangeComponent() {
                 </div>
                 <div className="content-main">
                     <p>2016年に設立されたGMOコイン株式会社が運営する暗号資産取引所。</p>
+                    <p>2022年2月時点で、国内最多となる19銘柄を取り扱っています。</p>
                     <p>スマホアプリの使い勝手に定評があり、初心者にもおすすめの取引所です。</p>
-                    <p>基本的な手数料が全部無料であることも特徴の一つです。<br/>他の取引所やウォレットに小額の送金が必要になった場合など、口座開設を済ませておくとスムーズに利用できて便利です。</p>
+                    <p>基本的な手数料が全部無料であることも特徴の一つです。<br/>他の取引所やウォレットに小額の送金が必要になった場合は、GMOコインで暗号資産を購入して送金すると良いでしょう。</p>
+                    <p>Coincheckと同じように、保有している暗号資産を貸暗号資産というサービスで増やす事が可能です。</p>
                     <p>GMOコインで利用可能な各種サービスについては、<Link href="/exchange-jp/gmocoin">こちら</Link>で解説しています。</p>
                 </div>
                 <div className="account-point">
@@ -283,7 +285,7 @@ export default function ExchangeComponent() {
                     <p>Huobiグループは<strong>セキュリティーが強い</strong>ことで高い評価を得ているようです。</p>
                     <p>日本の法律に則った金融サービスを展開しており、<strong>入金手数料は無料</strong>です。</p>
                     <p><strong>HT（フォビトークン）</strong>というEthereumブロックチェーン上の分散型仮想通貨を取り扱っており、<strong>保有量に応じて全8段階の取引手数料の割引</strong>が行われます。2021/11/1現在、評価額は1,500円前後となっています。</p>
-                    <p>2022/1/24まで、<span className="yellow-border">HTが最大30,000円相当貰えるキャンペーンを実施中</span>ですので、口座開設するなら今がお得です。</p>
+                    <p>2022/4/26まで、<span className="yellow-border">HTが最大30,000円相当貰えるキャンペーンを実施中</span>ですので、口座開設するなら今がお得です。</p>
                 </div>
                 <div className="account-point">
                     <a href={AppConstant.huobiJp} rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
