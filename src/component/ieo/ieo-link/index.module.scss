@@ -1,0 +1,39 @@
+.check_point {
+    padding: 25px 30px;
+    border: 1px solid #10bdc2;
+    border-radius: 8px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.check_point:before {
+    content: "国内の暗号資産取引所";
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 21px;
+    color: #10bdc2;
+    font-weight: 700;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #fff;
+    width: 180px;
+    text-align: center;
+}
+  
+.check_point ul {
+    list-style: none;
+    padding: 4px 0;
+}
+
+.check_point ul li a {
+    margin-top: 10px;
+    margin-left: 12px;
+    color: #551AB8;
+}
+
+.check_point div {
+    display: flex;
+}

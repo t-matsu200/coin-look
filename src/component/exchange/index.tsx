@@ -45,7 +45,7 @@ export default function ExchangeComponent() {
     const polkadot = makeLink('https://polkadot.network/ja/', 'Polkadot');
     const tezos = makeLink('https://tezos.com', 'Tezos/XTZ');
 
-    const cardano = makeLink('https://cardano.org', 'CARDANO/ADA COIN');
+    const deepCoin = makeLink('https://note.com/deepcoinjp/', 'DEP');
     const jasmy = makeLink('https://www.jasmy.co.jp', 'Jasmy');
     const chainLink = makeLink('https://chain.link/', 'チェーンリンク（LINK）');
 
@@ -62,7 +62,6 @@ export default function ExchangeComponent() {
             <div className="content-main">
                 <p><strong>仮想通貨取引初心者の方には、海外の取引所ではなく国内の取引所での取引をおすすめします。</strong></p>
                 <p>この記事では仮想通貨初心者におすすめの<span className="yellow-border">国内取引所の特徴</span>や<span className="yellow-border">国内取引所をおすすめする理由</span>について解説していきます。</p>
-                <p><Link href="/exchange-jp/[slug]" as="/exchange-jp/bitpoint"><a>ビットポイント（BITPoint）</a></Link>やDMM Bitcoin、フォビジャパンでは、口座開設すると仮想通貨がもらえるキャンペーンを開催していますので、併せて解説します。</p>
                 <ExchangeLinkComponent />
             </div>
             <TableContent listItem={[
@@ -94,7 +93,7 @@ export default function ExchangeComponent() {
                                     <div><img src={coincheckLogo.src} alt="Coincheck logo"></img></div>Coincheck
                                 </a>
                             </td>
-                            <td>17種類</td>
+                            <td>16種類</td>
                             <td>○</td>
                             <td>○</td>
                         </tr>
@@ -134,7 +133,7 @@ export default function ExchangeComponent() {
                                     <div><img src={gmoCoinLogo.src} alt="GMO coin logo"></img></div>GMOコイン
                                 </a>
                             </td>
-                            <td>19種類</td>
+                            <td>20種類</td>
                             <td>○</td>
                             <td>○</td>
                         </tr>
@@ -144,7 +143,7 @@ export default function ExchangeComponent() {
                                     <div><img src={dmmCoinLogo.src} alt="DMM Bitcoin logo"></img></div>DMM Bitcoin
                                 </a>
                             </td>
-                            <td>14種類</td>
+                            <td>15種類</td>
                             <td>○</td>
                             <td>○</td>
                         </tr>
@@ -162,7 +161,7 @@ export default function ExchangeComponent() {
                 </div>
                 <div className="content-main">
                     <p>2012年に創業のコインチェック株式会社が運営する暗号資産取引所。</p>
-                    <p>取り扱い銘柄数は17となっており、国内では2番目に取り扱い銘柄数が多い取引所です。（2022年2月現在）</p>
+                    <p>取り扱い銘柄数が多く、NFT売買などにも取り組んでいる取引所です。</p>
                     <p><span className="yellow-border">貸暗号資産</span>というレンディングサービスがあり、保有している暗号資産を一定期間{coincheck}に預けることにより利用料が貰えます。<br/>14日間で年率1%、30日間で年率2%と預け入れる期間が長くなる程年率が高くなりますが、年率の高い枠は人気ですので申請が受理されるまでかなり時間がかかります。<br/>参考までに、筆者が所有しているIOSTを30日間の枠で申請した所、貸し出されるまでに1ヶ月かかりました。</p>
                     <p>Coincheckで利用可能な各種サービスについては、<Link href="/exchange-jp/coincheck">こちら</Link>で解説しています。</p>
 
@@ -196,7 +195,7 @@ export default function ExchangeComponent() {
                 </div>
                 <div className="content-main">
                     <p>2014年に創業の株式会社bitFlyerが運営する暗号資産取引所。</p>
-                    <p>取扱銘柄は{coincheck}よりも少ないですが、ブラウザUIやスマホアプリが扱いやすくこちらも初心者におすすめです。<br/>スマホアプリからだと<strong>クイック本人確認</strong>が利用できて始めやすいと思います。</p>
+                    <p>ブラウザUIやスマホアプリが扱いやすくこちらも初心者におすすめです。<br/>スマホアプリからだと<strong>クイック本人確認</strong>が利用できて始めやすいと思います。</p>
                     <p>口座開設後のログイン時に表示されるメニューにある「{getBitcoin}」を経由して楽天やYahooショッピングを利用すると、商品価格の0.6%相当のビットコインがもらえます。（2021/11 現在）<br/>ポイントサイトと同じような感覚で利用でき、ビットコインがもらえる条件はその他にも色々あります。</p>
                     <p>また、テゾス({tezos})やポルカドット({polkadot})など、{coincheck}では扱っていない銘柄も取り扱っていますので、こちらも口座開設を済ませておく事をおすすめします。</p>
                     <p>2021年12月からbitFlyer クレカというサービスが提供開始となりました。<br/>簡単にいうとbitFlyerで発行したクレカをショッピングに利用すると0.5~1%のBTCが貯まるというサービスになっています。</p>
@@ -216,7 +215,7 @@ export default function ExchangeComponent() {
                 </div>
                 <div className="content-main">
                     <p>2016年に設立されたGMOコイン株式会社が運営する暗号資産取引所。</p>
-                    <p>2022年2月時点で、国内最多となる19銘柄を取り扱っています。</p>
+                    <p>2022年5月時点で、国内最多となる20銘柄を取り扱っています。</p>
                     <p>スマホアプリの使い勝手に定評があり、初心者にもおすすめの取引所です。</p>
                     <p>基本的な手数料が全部無料であることも特徴の一つです。<br/>他の取引所やウォレットに小額の送金が必要になった場合は、GMOコインで暗号資産を購入して送金すると良いでしょう。</p>
                     <p>Coincheckと同じように、保有している暗号資産を貸暗号資産というサービスで増やす事が可能です。</p>
@@ -260,7 +259,7 @@ export default function ExchangeComponent() {
                 </div>
                 <div className="content-main">
                     <p>2016年に創業の株式会社ビットポイントジャパンが運営する暗号資産取引所。</p>
-                    <p>ADAコイン({cardano})やジャスミー({jasmy})など他の国内取引所では扱っていない銘柄を立て続けに上場しています。<br/>今後も国内で取り扱いの少ない銘柄が上場される可能性がありますので、口座開設を済ませておく事をおすすめします。</p>
+                    <p>ディープコイン({deepCoin})やジャスミー({jasmy})など他の国内取引所では扱っていない銘柄を立て続けに上場しています。<br/>今後も国内で取り扱いの少ない銘柄が上場される可能性がありますので、口座開設を済ませておく事をおすすめします。</p>
                     <p>また、こちらもブラウザUIやスマホアプリが扱いやすいので、初心者におすすめの取引所となります。</p>
                     <p>口座開設キャンペーンをよく実施していますので、もれなく無料で暗号資産が貰えます。</p>
                 </div>
@@ -284,8 +283,7 @@ export default function ExchangeComponent() {
                     <p>170か国で数千万人のユーザーにサービスを提供する<strong>Huobiグループ</strong>の日本法人、フォビジャパン株式会社が運営する暗号資産取引所。</p>
                     <p>Huobiグループは<strong>セキュリティーが強い</strong>ことで高い評価を得ているようです。</p>
                     <p>日本の法律に則った金融サービスを展開しており、<strong>入金手数料は無料</strong>です。</p>
-                    <p><strong>HT（フォビトークン）</strong>というEthereumブロックチェーン上の分散型仮想通貨を取り扱っており、<strong>保有量に応じて全8段階の取引手数料の割引</strong>が行われます。2021/11/1現在、評価額は1,500円前後となっています。</p>
-                    <p>2022/4/26まで、<span className="yellow-border">HTが最大30,000円相当貰えるキャンペーンを実施中</span>ですので、口座開設するなら今がお得です。</p>
+                    <p><strong>HT（フォビトークン）</strong>というEthereumブロックチェーン上の分散型仮想通貨を取り扱っており、<strong>保有量に応じて全8段階の取引手数料の割引</strong>が行われます。¥</p>
                 </div>
                 <div className="account-point">
                     <a href={AppConstant.huobiJp} rel="nofollow" referrerPolicy="no-referrer-when-downgrade">
