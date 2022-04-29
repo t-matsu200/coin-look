@@ -161,7 +161,7 @@ export default function GmoCoinIEOComponent() {
                         <ul className={styles.matome_ul}>
                             <li>{gmocoin}と{fcRyukyu}が発行する{fcrCoin}のIEOを開始しました。</li>
                             <li>IEOに参加するには{gmocoin}の口座開設が必要です。</li>
-                            <a className="account-link" href={AppConstant.gmocoin} target="_blank" rel="noopener noreferrer" style={{marginTop: '5%'}}>口座開設する</a>
+                            <a className="account-link" href={AppConstant.gmoCoin} target="_blank" rel="noopener noreferrer" style={{marginTop: '5%'}}>口座開設する</a>
                         </ul>
                     </div>
                 </div>
