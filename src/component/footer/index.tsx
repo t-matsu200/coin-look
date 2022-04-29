@@ -15,7 +15,7 @@ function Footer() {
                         </Link>
                     </div>
                     <div className={styles.footer_desc}>
-                        <span>www.coin-look.net</span>
+                        <span>coin-look.pages.dev</span>
                     </div>
                     <div className={styles.footer_logo}>
                         <span>© CoinLook All Rights Reserved.</span>

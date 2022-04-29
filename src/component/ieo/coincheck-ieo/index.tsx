@@ -1,12 +1,12 @@
-import styles from './index.module.scss';
-import ContentHeader from '../../component/contentHeader';
-import TableContent from '../../component/tableContent';
-import Advertisement from '../../component/advertisement';
-import AppConstant from '../../constant';
-
-import bgCoinFinLogo from '../../../public/img/coincheck_financie.png';
 import React, { useLayoutEffect, useRef } from 'react';
 import Link from 'next/link';
+
+import styles from './index.module.scss';
+import ContentHeader from '../../../component/contentHeader';
+import TableContent from '../../../component/tableContent';
+import Advertisement from '../../../component/advertisement';
+import AppConstant from '../../../constant';
+import bgCoinFinLogo from '../../../../public/img/coincheck_financie.png';
 
 
 const TwitterCoinBlock = () => {

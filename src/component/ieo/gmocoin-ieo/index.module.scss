@@ -1,0 +1,46 @@
+
+.table_block table {
+  border-collapse: collapse;
+  border-color: currentColor;
+  caption-side: bottom;
+  text-indent: 0;
+  font-size: 1rem;
+  border: solid 1px #647190;
+  line-height: 1.6;
+  text-align: left;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table_block table tr {
+  width: 100%;
+}
+
+.table_block table th {
+  background: #19284d;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  position: sticky;
+  width: 140px;
+}
+
+.table_block table tr:nth-child(even) td {
+  background: #f2f5fa;
+}
+
+.table_block table th, .table_block table td {
+  padding: 10px;
+  vertical-align: middle;
+  border: solid 1px #647190;;
+}
+
+@media (min-width: 768px) {
+
+  .table_block table {
+    border: none;
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+}
