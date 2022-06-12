@@ -93,7 +93,7 @@ export default function ExchangeComponent() {
                                     <div><img src={coincheckLogo.src} alt="Coincheck logo"></img></div>Coincheck
                                 </a>
                             </td>
-                            <td>16種類</td>
+                            <td>17種類</td>
                             <td>○</td>
                             <td>○</td>
                         </tr>
@@ -113,7 +113,7 @@ export default function ExchangeComponent() {
                                     <div><img src={bitPointLogo.src} alt="BITPoint logo"></img></div>BITPoint
                                 </a>
                             </td>
-                            <td>12種類</td>
+                            <td>13種類</td>
                             <td>○</td>
                             <td>○</td>
                         </tr>
@@ -133,7 +133,7 @@ export default function ExchangeComponent() {
                                     <div><img src={gmoCoinLogo.src} alt="GMO coin logo"></img></div>GMOコイン
                                 </a>
                             </td>
-                            <td>20種類</td>
+                            <td>21種類</td>
                             <td>○</td>
                             <td>○</td>
                         </tr>
